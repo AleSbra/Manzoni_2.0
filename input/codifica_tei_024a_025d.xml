@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="xslt_manzoni.xsl"?>
+<?xml-model href="myTEI.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:svg="http://www.w3.org/2000/svg">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Prototipo Manzoni, un'edizione digitale per <hi style="italic">Fermo e
+                        Lucia</hi> e <hi style="italic">Sposi promessi</hi></title>
+            </titleStmt>
+            <editionStmt>
+                <edition>Digital Edition</edition>
+                <respStmt>
+                    <resp>Editor</resp>
+                    <name>Alessia Marini</name>
+                </respStmt>
+            </editionStmt>
+
+            <publicationStmt>
+                <distributor>
+                    <ref target="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0
+                        International (CC BY 4.0)</ref>
+                </distributor>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Le immagini sono prese dal manoscritto autografo che riporta sulla destra il
+                    testo in bella copia del <hi style="italic">Fermo e Lucia</hi> e sulla sinistra
+                    il testo riscritto e rivisto de <hi style="italic">Gli sposi promessi</hi></p>
+                <p>Trascrizione di Alessia Marini</p>
+            </sourceDesc>
+        </fileDesc>
+        <!--<encodingDesc>
+            <tagsDecl>
+                <rendition xml:id="mc">multiple crosses</rendition>
+                <rendition xml:id="c">cross</rendition>
+                <rendition xml:id="hl">horizontal line</rendition>
+            </tagsDecl>
+        </encodingDesc>-->
+        <profileDesc>
+            <creation>
+                <!--<change xml:id="">
+                        <desc></desc>
+                    </change>-->
+                <listChange xml:id="writing_sp">
+                    <change xml:id="csp01">
+                        <desc>titolo 024a</desc>
+                    </change>
+                    <change xml:id="csp2">
+                        <desc>testo iniziale 024a</desc>
+                    </change>
+                    <change xml:id="csp2-1" type="refused">
+                        <desc>cancellazione titoli 1 FL</desc>
+                    </change>
+                    <change xml:id="csp2-2" type="refused">
+                        <desc>cancellazione sottotitolo FL</desc>
+                    </change>
+                    <change xml:id="csp2-3" type="refused">
+                        <desc>cancellazione testo intero FL</desc>
+                    </change>
+                    <change xml:id="csp2-4">
+                        <desc>scrittura parziale 024a</desc>
+                    </change>
+                    <change xml:id="csp2-5" type="refused">
+                        <desc>cancellazione parziale 024a</desc>
+                    </change>
+                    <change xml:id="csp2-6">
+                        <desc>scrittura resto 024a</desc>
+                    </change>
+                    <change xml:id="csp3">
+                        <desc>testo intero 024b</desc>
+                    </change>
+                    <change xml:id="csp3-1" type="refused">
+                        <desc>cancellazione totale testo FL</desc>
+                    </change>
+                    <change xml:id="csp3-2" type="refused">
+                        <desc>riga spostata poi cancellata</desc>
+                    </change>
+                    <change xml:id="csp3-3" type="refused">
+                        <desc>porzione finale cancellata</desc>
+                    </change>
+                    <change xml:id="csp4">
+                        <desc>testo iniziale 024c</desc>
+                    </change>
+                    <change xml:id="csp4-1" type="refused">
+                        <desc>cancellazione totale testo iniziale</desc>
+                    </change>
+                    <change xml:id="csp5">
+                        <desc>nuovo testo iniziale</desc>
+                    </change>
+                    <change xml:id="csp5-1">
+                        <desc>testo sotto il cartiglio</desc>
+                    </change>
+                    <change xml:id="csp5-2" type="refused">
+                        <desc>cancellazione testo FL</desc>
+                    </change>
+                    <change xml:id="csp6">
+                        <desc>testo su cartiglio</desc>
+                    </change>
+                    <change xml:id="csp6-1">
+                        <desc>retro del cartiglio</desc>
+                    </change>
+                    <change xml:id="csp7">
+                        <desc>testo finale SP</desc>
+                    </change>
+                    <change xml:id="csp8">
+                        <desc>testo iniziale 024d</desc>
+                    </change>
+                    <change xml:id="csp8-1" type="refused">
+                        <desc>cancellazione totale FL</desc>
+                    </change>
+                    <change xml:id="csp8-2">
+                        <desc>testo coperto dal cartiglio024d</desc>
+                    </change>
+                    <change xml:id="csp8-3">
+                        <desc>testo finale 024d</desc>
+                    </change>
+                    <change xml:id="csp9">
+                        <desc>testo sul cartiglio</desc>
+                    </change>
+                    <change xml:id="csp10">
+                        <desc>testo intero 025a</desc>
+                    </change>
+                    <change xml:id="csp10-1" type="refused">
+                        <desc>cancellazione testo FL</desc>
+                    </change>
+                    <change xml:id="csp11">
+                        <desc>testo intero 025b</desc>
+                    </change>
+                    <change xml:id="csp11-1">
+                        <desc>testo intero 025b</desc>
+                    </change>
+                    <change xml:id="csp11-2" type="accepted">
+                        <desc>testo fl accettato</desc>
+                    </change>
+                     <change xml:id="csp11-3">
+                        <desc>testo FL rifiutato</desc>
+                    </change>
+                    <change xml:id="csp12">
+                        <desc>cartiglio I</desc>
+                    </change>
+
+                    <change xml:id="csp13">
+                        <desc>cartiglio II</desc>
+                    </change>
+                    <change xml:id="csp14">
+                        <desc>testo intero 025c</desc>
+                    </change>
+                    <change xml:id="csp14-1" type="refused">
+                        <desc>testo cancellato FL</desc>
+                    </change>
+                    <change xml:id="csp15">
+                        <desc>testo intero 025d</desc>
+                    </change>
+                    <change xml:id="csp15-1" type="refused">
+                        <desc>testo cancellato FL</desc>
+                    </change>
+                    <change xml:id="csp15-2" type="accepted">
+                        <desc>testo accettato fl</desc>
+                    </change>
+                </listChange>
+                <listChange xml:id="writing_fl">
+                    <change xml:id="cfl01">
+                        <desc>Titolo 1</desc>
+                    </change>
+                    <change xml:id="cfl2">
+                        <desc>titolo 2 in alto</desc>
+                    </change>
+                    <change xml:id="cfl2-1">
+                        <desc>cancellazione titolo 2</desc>
+                    </change>
+                    <change xml:id="cfl3">
+                        <desc>titolo 3 in basso</desc>
+                    </change>
+                    <change xml:id="cfl3-1">
+                        <desc>cancellazione titolo 3</desc>
+                    </change>
+                    <change xml:id="cfl4">
+                        <desc>sottotitolo</desc>
+                    </change>
+                    <change xml:id="cfl5">
+                        <desc>testo intero</desc>
+                    </change>
+                    <change xml:id="cfl6">
+                        <desc>testo intero 024b</desc>
+                    </change>
+                    <change xml:id="cfl7">
+                        <desc>testo intero 024c</desc>
+                    </change>
+                    <change xml:id="cfl8">
+                        <desc>testo intero 024d</desc>
+                    </change>
+                    <change xml:id="cfl9">
+                        <desc>testo intero 025a</desc>
+                    </change>
+                    <change xml:id="cfl10">
+                        <desc>testo intero 025b</desc>
+                    </change>
+                    <change xml:id="cfl11">
+                        <desc>testo intero 025c</desc>
+                    </change>
+                    <change xml:id="cfl12">
+                        <desc>testo intero 025d</desc>
+                    </change>
+                </listChange>
+                <listChange xml:id="reading_sp">
+                    <change xml:id="rsp01">
+                        <desc>titolo</desc>
+                    </change>
+                    <change xml:id="rsp2">
+                        <desc>testo iniziale 024a</desc>
+                    </change>
+                    <change xml:id="rsp3">
+                        <desc>testo finale 024a</desc>
+                    </change>
+                    <change xml:id="rsp4">
+                        <desc>testo iniziale 024b</desc>
+                    </change>
+                    <change xml:id="rsp5">
+                        <desc>due righe prima del caritglio</desc>
+                    </change>
+                    <change xml:id="rsp6">
+                        <desc>testo su cartiglio</desc>
+                    </change>
+                    <change xml:id="rsp7">
+                        <desc>testo finale 024c</desc>
+                    </change>
+                    <change xml:id="rsp8">
+                        <desc>testo iniziale</desc>
+                    </change>
+                    <change xml:id="rsp9">
+                        <desc>testo du cartiglio</desc>
+                    </change>
+                    <change xml:id="rsp10">
+                        <desc>testo finale</desc>
+                    </change>
+                    <change xml:id="rsp11">
+                        <desc>testo intero</desc>
+                    </change>
+                    <change xml:id="rsp12">
+                        <desc>testo cartiglio I</desc>
+                    </change>
+                    <change xml:id="rsp13">
+                        <desc>testo su SP</desc>
+                    </change>
+                    <change xml:id="rsp14" type="accepted">
+                        <desc>testo su FL</desc>
+                    </change>
+                    <change xml:id="rsp15">
+                        <desc>testo cartiglio II</desc>
+                    </change>
+                    <change xml:id="rsp16">
+                        <desc>testo intero 025c</desc>
+                    </change>
+                    <change xml:id="rsp17">
+                        <desc>testo intero SP</desc>
+                    </change>
+                    <change xml:id="rsp18" type="accepted">
+                        <desc>testo in comune con FL</desc>
+                    </change>
+                </listChange>
+                <listChange xml:id="reading_fl">
+                    <change xml:id="rfl01">
+                        <desc>titolo 1</desc>
+                    </change>
+                    <change xml:id="rfl2">
+                        <desc>sottotitolo</desc>
+                    </change>
+                    <change xml:id="rfl3">
+                        <desc>testo intero 024a</desc>
+                    </change>
+                    <change xml:id="rfl4">
+                        <desc>testo intero 024b</desc>
+                    </change>
+                    <change xml:id="rfl5">
+                        <desc>testo intero 024c</desc>
+                    </change>
+                    <change xml:id="rfl6">
+                        <desc>testo intero 024d</desc>
+                    </change>
+                    <change xml:id="rfl7">
+                        <desc>testo intero 025a</desc>
+                    </change>
+                    <change xml:id="rfl8">
+                        <desc>testo inniziale 025b</desc>
+                    </change><change xml:id="rfl8-1">
+                        <desc>testo restante 025b</desc>
+                    </change>
+                    <change xml:id="rfl9">
+                        <desc>testo intero 025c</desc>
+                    </change>
+                    <change xml:id="rfl10">
+                        <desc>testo intero 025d</desc>
+                    </change>
+                    <change xml:id="rfl10-1">
+                        <desc>testo in comune 025d</desc>
+                    </change>
+                </listChange>
+            </creation>
+        </profileDesc>
+    </teiHeader>
+    <sourceDoc>
+        <surfaceGrp xml:id="sg1">
+            <surface n="50r" xml:id="s1">
+                <graphic url="images/024a.jpg.png" width="1285.03125px"
+                    height="1870.03125px"/>
+                <zone n="1" xml:id="t1" ulx="733" uly="229" lrx="1000" lry="292"
+                    change="#cfl01 #rfl01" style="font-size:24" rend="posizione:1.1 2" >
+                    <line type="title">Cap. III</line>
+                </zone>
+                <zone n="2" xml:id="t1-1" ulx="733" uly="229" lrx="1000" lry="292" change="#csp2-1"
+                    style="nobox;">
+                    <delSpan rend="horizontal line" spanTo="#del1"/>
+                    <anchor xml:id="del1"/>
+                </zone>
+                <zone n="3" xml:id="t2" ulx="730" uly="136" lrx="964" lry="214" change="#cfl2"
+                    style="font-size:24" rend="posizione:1.5 2">
+                    <line>Capitolo III</line>
+                </zone>
+                <zone n="4" xml:id="t2-1" ulx="730" uly="136" lrx="964" lry="214" change="#cfl2-1"
+                    style="nobox;">
+                    <delSpan rend="horizontal line" spanTo="#del2"/>
+                    <anchor xml:id="del2"/>
+                </zone>
+                <zone n="5" xml:id="t3" ulx="700" uly="329" lrx="946" lry="403" change="#cfl3"
+                    style="font-size:24" rend="posizione:0.8 1">
+                    <line>Don Rodrigo</line>
+                </zone>
+                <zone n="6" xml:id="t3-1" ulx="700" uly="329" lrx="946" lry="403" change="#cfl3-1"
+                    style="nobox;">
+                    <delSpan rend="horizontal line" spanTo="#del3"/>
+                    <anchor xml:id="del3"/>
+                </zone>
+                <zone n="7" xml:id="t4" ulx="793" uly="287" lrx="1023" lry="337"
+                    change="#cfl4 #rfl2" style="font-size:24" rend="posizione:0.8 0.8" >
+                    <line type="subtitle">Il Causidico</line>
+                </zone>
+                <zone n="8" xml:id="t4-1" ulx="793" uly="287" lrx="1023" lry="337" change="#csp2-2"
+                    style="nobox;">
+                    <delSpan rend="horizontal line" spanTo="#del4"/>
+                    <anchor xml:id="del4"/>
+                </zone>
+
+                <zone n="9" xml:id="t5" ulx="616" uly="388" lrx="1242" lry="1771"
+                    change="#cfl5 #rfl3" style="font-size:24" rend="posizione:2.3 0.8">
+                    <line>I tre rimasti a consiglio erano agitati </line>
+                    <line>turbati per la stessa causa ma in diverso </line>
+                    <line>modo. Fermo si trovava nello stato d’un </line>
+                    <line>uomo il quale ad un tratto dalla prosperità </line>
+                    <line>e dalla gioja è balzato in una <add place="above" style="indent:1033"
+                            >sventura</add><del>miseria</del>
+                    </line>
+                    <line>
+                        <del>che non conosce ancora appieno; che </del>
+                    </line>
+                    <line>della quale non conosce che una parte; </line>
+                    <line>e ansioso di sapere il di più, vuole </line>
+                    <line>essere informato di tutto, aspetta sospira </line>
+                    <line>nuove rivelazioni e non ne può aspettare </line>
+                    <line>che non accrescano <del>e non ne può aspettare</del>
+                    </line>
+                    <line><del>che non accrescano</del> il suo rammarico che non </line>
+                    <line>peggiorino la sua condizione. Al dolore </line>
+                    <line>al rancore alla rabbia si aggiungeva </line>
+                    <line>ora il mantello della gelosia. Egli aveva </line>
+                    <line>sempre avuta piena fede in Lucia, </line>
+                    <line>ma un mistero di questo genere, un </line>
+                    <line>silenzio di questa materia lo tormentava, </line>
+                    <line>egli era come spaventato di conoscere </line>
+                    <line>che Lucia aveva una cosa sul cuore, e </line>
+                    <line>egli non ne aveva saputo nulla</line>
+                </zone>
+                <zone n="10" xml:id="t5-1" ulx="616" uly="388" lrx="1242" lry="1771"
+                    change="#csp2-3" style="nobox">
+                    <delSpan rend="multiple crosses" spanTo="#del5"/>
+                    <anchor xml:id="del5"/>
+                </zone>
+                <zone n="11" xml:id="t6" ulx="165" uly="295" lrx="373" lry="374"
+                    change="#csp01 #rsp01" style="font-size:24" rend="posizione:1.6 0.6" >
+                    <line type="title">Capitolo III</line>
+                </zone>
+                <zone n="12" xml:id="t7" ulx="48" uly="436" lrx="579" lry="631"
+                    change="#csp2 #rsp2" style="font-size:22" rend="posizione:1.8 0.8">
+                    <line>Lucia entrò nella stanza terrena che Fermo </line>
+                    <line>stava angosciosamente informando Agnese, </line>
+                    <line>la quale angosciosamente lo ascoltava.<del>Tutti</del></line></zone>
+                <zone n="12.1"  ulx="48" uly="631" lrx="579" lry="863" change="#csp2-4" style="font-size:22" rend="posizione:1.8 0.8"><line>e tre erano turbati per la stessa ragione,</line>
+                    <line>ma in diverso modo. Fermo come colui</line>
+                    <line>che ad un tratto dalla prosperità e dalla gioia</line>
+                    <line>Tutti e due si volsero</line></zone>
+                <zone n="12.2" xml:id="t7-3"  ulx="48" uly="863" lrx="579" lry="1699" change="#csp2-6 #rsp3" style="font-size:22" rend="posizione:1.65 -1"><line>Tutti e due si volsero a colei
+                            che ne sapeva</line>
+                        <line>più di loro, e <del>dalla quale</del>
+                            <add place="above" style="indent:241">da cui</add> aspettavano uno </line>
+                        <line>schiarimento, il quale non poteva essere che </line>
+                        <line>doloroso: tutti e due lasciavano travedere in </line>
+                        <line>mezzo al dolore e con l’amore diverso che </line>
+                        <line>ognuno d’essi portava a Lucia, un <del>profondo</del>
+                        </line>
+                        <line>cruccio pur diverso <del>per non</del>
+                            <del>del non essere</del>
+                        </line>
+                        <line><del>stati prima d’allora messi a parte</del>
+                            <del>fattì</del></line>
+                        <line>partecipi d’un perché ella avesse taciuta loro </line>
+                        <line>qualche cosa, e una tal cosa. Agnese, </line>
+                        <line>benché ansiosa di sentir parlare la figlia,</line>
+                        <line>(e dobbiamo confessare che in quell’ansia </line>
+                        <line>oltre tutti i sentimenti di una madre affettuosa,</line>
+                        <line>vi capiva anche un po’ di curiosità pura, come </line>
+                        <line>ella l’avrebbe provata se si fosse trattato di un </line></zone>
+                <zone n="13" xml:id="t7-1" ulx="48" uly="631" lrx="579" lry="863" change="#csp2-5"
+                    style="nobox">
+                    <delSpan rend="cross" spanTo="#del6"/>
+                    <anchor xml:id="del6"/>
+                </zone>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="sg2">
+            <surface n="50v" xml:id="s2">
+                <graphic url="images/024b.jpg.png" width="1285.03125px"
+                    height="1870.03125px"/>
+                <zone n="1" xml:id="t8" ulx="624" uly="227" lrx="1272" lry="1712"
+                    change="#cfl6 #rfl4" style="font-size:24" rend="posizione:2.2 0.8">
+                    <line>Agnese, la madre di Lucia era pure </line>
+                    <line>stupita, scandalizzata di essere all’</line>
+                    <line>oscuro di una cosa simile: ella che sapeva</line>
+                    <line>tante cose che non la toccavano per </line>
+                    <line>nulla, ignorava una cosa tanto importante</line>
+                    <line>della sua Lucia! Agnese le avrebbe </line>
+                    <line>fatto un rabotto terribile se in questo</line>
+                    <line>caso il bisogno d’ascoltare non avesse vinto</line>
+                    <line>d’assai quello di parlare. <del>Parla! Parla!</del>
+                    </line>
+                    <line><del>Parlate! Parlate!</del> Lucia… ma </line>
+                    <line>dalle sue parole il lettore intenderà lo stato</line>
+                    <line>del suo animo. Parla! Parla! Parlate! </line>
+                    <line>Parlate! Gridavano in una volta la </line>
+                    <line>madre e Fermo. Lucia atterrita, costernata,</line>
+                    <line>vergognosa, singhiozzando, arrossando, </line>
+                    <line>sclamò! <del>Vergine</del> Santissima Vergine! </line>
+                    <line>Chi avrebbe creduto che le cose sarebbero</line>
+                    <line>giunte a questo segno! Quel senza timore </line>
+                    <line>di Dio di Don Rodrigo veniva spesso </line>
+                    <line>alla filanda <del>dove io andava a</del><add place="above"
+                            style="indent:841">a vederci</add> lavorare la </line>
+                    <line>seta. Andava da un fornello all’</line>
+                    <line>altro facendo a questa e a quella mille</line>
+                    <line>vezzi l’uno peggio dell’altro: a chi</line>
+                </zone>
+                <zone n="2" xml:id="t8-1" ulx="624" uly="227" lrx="1272" lry="1712" change="#csp3-1"
+                    style="nobox">
+                    <delSpan rend="multiple crosses" spanTo="#del7"/>
+                    <anchor xml:id="del7"/>
+                </zone> <zone n="3.1" xml:base="t9-1" ulx="64" uly="295" lrx="622" lry="872"
+                    change="#rsp4" style="font-size:24" rend="posizione:1.9 0.8">
+                    <line>estranei) pure non pote’ <del>trattenersi dal</del></line>
+                    <line>tenersi di farle un rimprovero.</line>
+                    <line>- A tua madre non dir niente d’una</line>
+                    <line>cosa simile!</line>
+                    <line>- Ora vi dirò tutto, rispose Lucia, asciu</line>
+                    <line>gandosi gli occhi col grembiule.</line>
+                    <line>- Parla parla! Parlate, parlate! Gridavano</line>
+                    <line>in una volta la madre e lo sposo.</line>
+                    <line>- Santissima Vergine! sclamò Lucia, </line>
+                    <line>chi avrebbe creduto che le cose potessero</line></zone>
+                <zone n="3.1" xml:base="t9-4" ulx="64" uly="295" lrx="622" lry="1646"
+                    change="#csp3" style="font-size:24" rend="posizione:1.9 0.8">
+                    <line>estranei) pure non pote’ <del>trattenersi dal</del></line>
+                    <line>tenersi di farle un rimprovero.</line>
+                    <line>- A tua madre non dir niente d’una</line>
+                    <line>cosa simile!</line>
+                    <line>- Ora vi dirò tutto, rispose Lucia, asciu</line>
+                    <line>gandosi gli occhi col grembiule.</line>
+                    <line>- Parla parla! Parlate, parlate! Gridavano</line>
+                    <line>in una volta la madre e lo sposo.</line>
+                    <line>- Santissima Vergine! sclamò Lucia, </line>
+                    <line>chi avrebbe creduto che le cose potessero</line>
+                    <line>andare a questo segno! E singhiozzando</line>
+                    <line>continuò. Colui continuando che Colui </line>
+                    <line>(che Dio … gli tocchi il cuore) cominciò</line>
+                    <line>quest’estate a venire alla filanda </line>
+                    <line>a vederci tirare la seta, e a sentirci cantare. </line>
+                    <line>Ci capitava addosso ora accompagnato </line>
+                    <line>soltanto da qualcuno dei suoi bravi, ora </line>
+                    <line>con <del>qualche</del> certi suoi amici, tutta gente</line>
+                    <line>della sessa legge. Andava lo sfaccia</line>
+                    <line>taccio da un fornello all’altro, tentando</line>
+                    <line>ora questa ora quella; a <del>quale</del><add place="above"
+                            style="indent:409">chi</add> diceva</line>
+                    <line>una parola <del type="gap"/> non mica <del>bella</del> buona, </line>
+                    <line>a chi faceva di peggio. Che noi ci</line>
+                </zone>
+                <zone n="4" xml:id="t9-2" ulx="91" uly="872" lrx="598" lry="928" style="nobox"
+                    change="#csp3-2">
+                    <delSpan rend="horizontal line" spanTo="#del8"/>
+                    <anchor xml:id="del8"/>
+                </zone>
+                <zone n="5" xml:id="t9-3" ulx="90" uly="928" lrx="622" lry="1646" style="nobox"
+                    change="#csp3-3">
+                    <delSpan rend="cross" spanTo="#del9"/>
+                    <anchor xml:id="del9"/>
+                </zone>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="sg3">
+            <surface n="51r" xml:id="s3">
+                <graphic url="images/024c.jpg.png" width="1285.03125px"
+                    height="1870.03125px"/>
+                <zone n="1" xml:id="t10" ulx="628" uly="193" lrx="1252" lry="1703"
+                    change="#cfl7 #rfl5" style="font-size:24" rend="posizione:2.2 0.8">
+                    <line>Ne diceva una trista a chi una peggio </line>
+                    <line>e si pigliava <del type="gap"/>
+                        <del>certe lib</del> tante libertà, chi</line>
+                    <line>fuggiva, chi gridava; e purtroppo c’era</line>
+                    <line>chi lasciava fare. <del>Il padrone</del>
+                    </line>
+                    <line>Se ci lamentavamo al padrone, egli </line>
+                    <line>ci diceva: badate a fare il fatto vostro, </line>
+                    <line>non gli fate ansa, sono scherzi, e borbottava</line>
+                    <line>poi: gli è un cavaliere; gli è un uomo</line>
+                    <line>che può fare del male, è un uomo che </line>
+                    <line>sa mostrare il viso. Quel tristo veniva</line>
+                    <line>talvolta con alcuni più amici, gente</line>
+                    <line>come lui<del>; veniva e mostrava ad essi</del></line>
+                    <line><del type="gap"/> . Un giorno mi trovò mentre </line>
+                    <line>io usciva e mi volle tirare in disparte </line>
+                    <line>e si prese con me più libertà: io gli </line>
+                    <line>sfuggii ed egli mi disse in collera:</line>
+                    <line>ci vediamo: i suoi amici ridevano </line>
+                    <line>di lui ed egli era ancor più arrabbiato.</line>
+                    <line>Allora io pensai di non andare più alla</line>
+                    <line>filanda per un po’ di baruffa colla </line>
+                    <line>Marcellina, <del>una e vi ricorderete mamma</del></line>
+                    <line>per avere un pretesto e vi ricorderete</line>
+                    <line>mamma ch’io vi dissi che non ci andai</line>
+                </zone>
+                <zone n="2" xml:id="t10-1" ulx="628" uly="193" lrx="1252" lry="1703"
+                    change="#csp5-2" style="nobox">
+                    <delSpan rend="multiple crosses" spanTo="#del10"/>
+                    <anchor xml:id="del10"/>
+                </zone>
+                <zone n="3" xml:id="t11" ulx="58" uly="244" lrx="579" lry="454" change="#csp4"
+                    style="font-size:24" rend="position:2.2 0.8">
+                    <line>Lamentavamo al padrone, il padrone </line>
+                    <line>ci rispondeva che <del>non</del>
+                        <del type="gap"/></line>
+                    <line>egli non sapeva che farci.</line>
+                </zone>
+                <zone n="4" xml:id="t11-1" ulx="58" uly="244" lrx="579" lry="465" change="#csp4-1"
+                    style="nobox">
+                    <delSpan rend="cross" spanTo="#del11"/>
+                    <anchor xml:id="del11"/>
+                </zone>
+                <zone n="5.1" xml:id="t12-1" ulx="36" uly="455" lrx="610" lry="592"
+                    change="#csp5 #rsp5" style="font-size:24" rend="position:2 0.8">
+                    <line>Arrivare a questo segno! E con voce rotta</line>
+                    <line>dal pianto raccontò che pochi giorni prima, </line>
+                </zone>
+                <zone n="5.2" ulx="36" uly="592" lrx="610" lry="1262" change="#csp5-1"
+                    corresp="#t13" style="font-size:24" rend="posizione:1.8 0.8" type="patch">
+                    <line>
+                        <del>tornando dalla filanda ella giunta già presso</del>
+                        <add place="above" style="indent:370">
+                            <del>e era giunta già</del>
+                        </add>
+                    </line>
+                    <line>
+                        <del>a casa, ella s’era sentita raggiungere da</del>
+                        <add place="above" style="indent:69">mentre ella tornava dalla filanda, ed
+                            era </add>
+                    </line>
+                    <line><del>due signori, uno dei quali</del><add place="above" style="indent:88"
+                                ><del>quello</del> già presso a casa,</add> le era passato </line>
+                    <line>dinanzi <del>Don Rodrigo</del>
+                        <add place="above" style="indent:207"><del>colui</del> Don Rodrigo</add><add
+                            place="below" style="indent:190">Don Rodrigo</add> in compagnia di un </line>
+                    <line>d’un altro signore; <del>e</del> che <del>il primo</del><add place="above"
+                            style="indent:408">colui</add> aveva </line>
+                    <line>cercato di trattenerla con <del>ciarle non</del></line>
+                    <line>chiacchiere <del>non mica buone</del>
+                        <add place="above" style="indent:177">com’ella diceva, non mica belle;</add>
+                        ma ella </line>
+                    <line>senza dargli retta, aveva affrettato il </line>
+                    <line>passo;<add place="above" style="indent:138">e raggiunte le compagne</add>
+                        e aveva <del>poi</del> sentito <del>che</del> quell’</line>
+                    <line>altro signore <del>rideva</del><add place="above" style="indent:249"
+                            >rider</add> forte, e Don Rodrigo </line>
+                    <line><del>diceva</del>
+                        <add place="above" style="indent:82">dire</add>: scommettiamo.</line></zone>
+                <zone n="5.3" xml:id="t12-3" ulx="81" uly="1262" lrx="609" lry="1666"
+                    change="#csp7 #rsp7" rend="posizione:1.7 0.8">
+                    <line>la <del>via, in</del> strada, ma Lucia era nel </line>
+                    <line>mezzo delle compagne con gli occhi bassi; </line>
+                    <line>e l’altro signore sghignazzava, e Don </line>
+                    <line><del>Rodrigo</del>
+                        <del>Rodrigo freme</del> Rodrigo diceva: </line>
+                    <line>vedremo, vedremo. Per grazia del cielo, </line>
+                    <line>continuò Lucia, quel giorno era l’ultimo </line>
+                    <line>della filanda. Io <del>non</del> raccontai subito…</line>
+                </zone>
+            </surface>
+            <surfaceGrp>
+                <surface n="51r.1" xml:id="s3.1" type="patch" subtype="recto" flipping="true"
+                    attachment="glued">
+                    <graphic url="images/024c1.jpg.png" width="607.03125px"
+                        height="702.03125px"/>
+                    <zone n="1" xml:id="t13" ulx="6" uly="36" lrx="597" lry="690"
+                        change="#csp6 #rsp6" style="font-size:24" rend="posizione:4.5 -1">
+                        <line>mentre ella tornava dalla filanda ed era </line>
+                        <line>rimasta addietro dalle sue compagne, le era</line>
+                        <line>passato innanzi Don Rodrigo, in compagnia</line>
+                        <line>d’un altro signore; che il primo aveva </line>
+                        <line>cercato di trattenerla con chiacchiere, com’ella</line>
+                        <line>diceva, non mica belle, ma essa </line>
+                        <line style="indent:50">senza dargli retta, aveva affrettato </line>
+                        <line style="indent:20">il passo e raggiunto le compagne; e </line>
+                        <line style="indent:30">intanto aveva sentito quell’altro </line>
+                        <line style="indent:40">signore ridere forte, e Don Rodrigo</line>
+                        <line style="indent:50">dire: scommettiamo. Il giorno </line>
+                        <line style="indent:35">appresso <del>colui</del><add place="above"
+                                style="indent:166">coloro</add> s’erano pur trovate sul</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp>
+                <surface n="51r.2" xml:id="s3.2" type="patch" subtype="verso" flipping="true"
+                    attachment="glued">
+                    <graphic url="images/024c2.jpg.png" width="607.03125px"
+                        height="702.03125px"/>
+                    <zone n="1" xml:id="t14" ulx="15" uly="323" lrx="597" lry="545" change="#csp6-1"
+                        style="font-size:24" rend="posizione:3.3 -2"><line style="indent:70">
+                            <del>ella rimasta addietro dalle sue compagne</del>
+                        </line>
+                        <line>
+                            <del>per caso</del>
+                        </line>
+                        <line>quand’ella tornava dalla filanda ed </line>
+                        <line>era rimasta alquan</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+        <surfaceGrp xml:id="sg4">
+            <surface n="51v" xml:id="s4">
+                <graphic url="images/024d.jpg" width="1285.03125px" height="1870.03125px"/>
+                <zone n="1" xml:id="t15" ulx="655" uly="182" lrx="1279" lry="1687"
+                    change="#cfl8 #rfl6" style="font-size:24" rend="posizione:2.4 0.8">
+                    <line>Ma la filanda era sul finire per </line>
+                    <line>grazia di Dio, e per quei pochi giorni io </line>
+                    <line>stetti sempre in mezzo alle altre </line>
+                    <line>di modo ch’egli non mi potè cogliere.</line>
+                    <line>Ma la persecuzione non finì: <del>quel</del>
+                    </line>
+                    <line>colui, mi aspettava quando io andava</line>
+                    <line>al mercato e vi ricorderete mamma </line>
+                    <line>ch’io vi dissi che aveva paura d’andar </line>
+                    <line>sola e non ci andai più: mi aspettava </line>
+                    <line>quand’io andava a lavare, ad ogni passo;</line>
+                    <line>io non dissi nulla, forse ho fatto male.</line>
+                    <line>Ma pregai tanto Fermo che aspettasse</line>
+                    <line>le nozze: pensava che quando sarei</line>
+                    <line>sua moglie colui non avrebbe più</line>
+                    <line>tormentarmi; ed ora… Qui l<del>a</del><add place="superimposed"
+                        >e</add></line>
+                    <line><del>povera</del> parole della povera Lucia</line>
+                    <line>furono tronche da un violento </line>
+                    <line>scoppio di pianto. <del>b</del>Birbone! Assassino!</line>
+                    <line>Dannato! Scalmava Fermo, correndeo </line>
+                    <line>su e giù per la stanza, e mettendo di</line>
+                    <line>tratto in tratto la mano sul manico</line>
+                    <line>del suo coltello. Ma perché non</line>
+                </zone>
+                <zone n="2" xml:id="t15-1" ulx="655" uly="182" lrx="1279" lry="1687"
+                    change="#csp8-1" style="nobox">
+                    <delSpan rend="multiple crosses" spanTo="#del12"/>
+                    <anchor xml:id="del12"/>
+                </zone>
+                <zone n="3.1" xml:id="t16-1" ulx="51" uly="221" lrx="649" lry="571"
+                    style="font-size:24" change="#csp8 #rsp8" rend="posizione:1.7 0.8">
+                    <line>- A chi hai raccontato? Domandò Agnese, </line>
+                    <line>andando incontro, non senza un po’ di sdegno,</line>
+                    <line><del>alla parola</del> al nome del confidente pre</line>
+                    <line>ferito.</line>
+                    <line>- Al Padre Cristoforo, in confessione,</line>
+                    <line>mamma: rispose Lucia, con un accento </line>
+                </zone>
+                <zone n="3.2" xml:id="t16-2" ulx="51" uly="571" lrx="649" lry="788"
+                    style="font-size:24" change="#csp8-2" corresp="#t17" rend="posizione:1.5 0.8" type="patch">
+                    <line>soave di scusa <del>e fu quel giorno, se vi</del>
+                    </line>
+                    <line>
+                        <del>L'autorità del Padre Cristoforo era tale</del>
+                    </line>
+                    <line>
+                        <del>ricordate che andai al convento </del>
+                        <add place="above" style="indent:397">
+                            <del>e fu</del>
+                        </add>
+                        <del>l’altra</del>
+                    </line>
+                    <line>volta che <del>andavamo</del> siamo andate alla </line>
+                </zone>
+                <zone n="3.3" xml:id="t16-3" ulx="51" uly="788" lrx="649" lry="1597"
+                    change="#csp8-3 #rsp10" style="font-size:24" rend="posizione:1.6 -0.5">
+                    <line>chiesa del convento: e, se avete posto mente,</line>
+                    <line><del>quel giorno io indugiava</del>
+                        <del>andava facendo</del>
+                        <add place="above" style="indent:85">quella mattina io andava mettendo
+                            mano</add> ora</line>
+                    <line>ad una cosa, <del>ora l’</del>
+                        <add place="above" style="indent:213">ora all’</add>altra per indugiare
+                            <del>a metterci</del></line>
+                    <line><del>in cammino</del> tanto che passasse altra gente </line>
+                    <line>del paese avviata a quella volta, <del>p</del><del>perchè</del></line>
+                    <line><del>dopo quell</del><del>e camminare in</del> e fare la </line>
+                    <line>strada di compagnia con loro; perché,</line>
+                    <line>dopo quell’incontro, <del>io</del> le strade mi </line>
+                    <line>facevano tanta paura… </line>
+                    <line>
+                        <del>Nel nome del Padre Cristoforo era così</del>
+                    </line>
+                    <line>
+                        <del>addolcito in quel caso </del>
+                    </line>
+                    <line>Al nome riverito del Padre Cristoforo, lo sdegno</line>
+                    <line>di Agense si raddolcì. – Hai fatto bene, </line>
+                    <line>diss’ella; ma perché non raccontar </line>
+                    <line>tutto anche a tua madre?</line>
+                </zone>
+            </surface>
+            <surfaceGrp>
+                <surface n="51v.1" xml:id="s4.1" type="patch" flipping="false" attachment="glued">
+                    <graphic url="images/024d1.jpg.png" width="556.03125px"
+                        height="213.03125px"/>
+                    <zone n="1" xml:id="t17" ulx="36" uly="6" lrx="540" lry="190"
+                        change="#csp9 #rsp9" style="font-size:24" rend="posizione:12 0.8">
+                        <line>soave di scusa. Gli raccontai tutto </line>
+                        <line>l’ultima volta che siamo andate </line>
+                        <line>insieme alla </line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+        <surfaceGrp xml:id="sg5">
+            <surface n="52r" xml:id="s5">
+                <graphic url="images/025a.jpg.png" width="1285.03125px"
+                    height="1870.03125px"/>
+                <zone n="1" xml:id="t18" ulx="645" uly="179" lrx="1269" lry="1660"
+                    change="#cfl9 #rfl7" style="font-size:24" rend="posizione:2.4 0.8">
+                    <line>Parlarne a tua madre? disse Agnese</line>
+                    <line><del type="gap"/> se io l’avessi saputo </line>
+                    <line>prima… Lucia non rispose perché </line>
+                    <line>la risposta che si sentiva in mente </line>
+                    <line>non era da darsi a sua madre: tutto </line>
+                    <line>il vicinato ne sarebbe stato informato.</line>
+                    <line><del>Lucia fu</del> I singulti di Lucia la dispen</line>
+                    <line>savano dall’obbligo di parlare. <del>Non l’hai</del></line>
+                    <line>Non ne <del>f </del>hai <del>detto</del> fatto parola </line>
+                    <line>con nessuno? Ridomandò Agnese. </line>
+                    <line>Si mamma l’ho detto al Padre <del>Galdino</del></line>
+                    <line><add place="margin" style="indent:546">Cristoforo</add> in confessione –
+                            <del>E Agn</del> Hai fatto bene;</line>
+                    <line>ma dovevi dirlo anche a tua madre. </line>
+                    <line>E che ti ha detto il Padre <del>Galdino</del>
+                        <add place="above" style="indent:972">Cristoforo</add>? </line>
+                    <line>Mi ha detto che cercassi di evitare </line>
+                    <line>colui; che non vedendomi non si curerebbe </line>
+                    <line>più di me; che <del>afr</del> affrettassi le nozze; </line>
+                    <line>e che egli ci penserebbe e che se </line>
+                    <line>durava la persecuzione egli ci penserebbe </line>
+                    <line><del>d’una</del>
+                        <del type="gap"/> Oh che imbroglio, che </line>
+                    <line>imbroglio! riprese la madre. Fermo </line>
+                    <line>si arrestò tutto ad un tratto; guardò</line>
+                </zone>
+                <zone n="2" xml:id="t18-1" ulx="645" uly="179" lrx="1269" lry="1660"
+                    change="#csp10-1" style="nobox">
+                    <delSpan rend="multiple crosses" spanTo="#del13"/>
+                    <anchor xml:id="del13"/>
+                </zone>
+                <zone n="3" xml:id="t19" ulx="43" uly="233" lrx="645" lry="1715"
+                    change="#csp10 #rsp11" style="font-size:24" rend="posizione:1.8 0.05">
+                    <line>Lucia aveva avuto due buone ragioni:</line>
+                    <line>l’una di non contristare <del>e</del>
+                        <add place="above" style="indent:354">né</add> spaventare</line>
+                    <line>
+                        <del>inutilmente la buona donna. L’altra di non</del>
+                    </line>
+                    <line><del>metter far viaggiare per molte</del> la buona</line>
+                    <line>donna, per colpa della quale essa non <del>poteva</del>
+                        <add place="above" style="indent:499">avrebbe potuto</add></line>
+                    <line><del>metter</del><add place="above" style="indent:64">trovar</add>
+                        rimedio; l’altra di non mettere</line>
+                    <line>a rischio di viaggiare per molte bocche una</line>
+                    <line>storia che voleva essere gelosamente sepolta;</line>
+                    <line>tanto più che Lucia pareva che le sue</line>
+                    <line>nozze con Fermo <del>l’</del>avrebbero troncata,</line>
+                    <line>
+                        <del>quella laida</del>
+                        <del>persecuzione</del>
+                        <add place="above" style="indent:73">
+                            <del>nel principiare</del>
+                        </add>
+                        <del>abbominata perse</del>
+                    </line>
+                    <line><del>cuzione fu poi principiare</del> sul principiare, quella</line>
+                    <line>abbominata persecuzione. Lucia <del type="gap"/> si contentò</line>
+                    <line><add place="above" style="indent:81">di allegare <del>il prim</del> la
+                            prima ragione.</add>– E a voi, diss’ella poi rivolgendosi</line>
+                    <line>a Fermo, con quella voce che vuol far</line>
+                    <line>riconoscere ad un amico ch’egli ha avuto</line>
+                    <line>il torto: e a voi doveva io parlare di</line>
+                    <line>questo? Purtroppo lo sapete ora!</line>
+                    <line>- E che ti ha detto il Padre? Domandò</line>
+                    <line>Agnese.</line>
+                    <line>- Ch’io cercassi di affrettare le nozze il</line>
+                    <line>più che potrei, e intanto mi stessi</line>
+                    <line>rinchiusa, che pregassi <del>il signo</del> bene</line>
+                    <line>il signore; e ch’egli sperava che colui</line>
+                    <line>non mi veggendo non si curerebbe più di me.</line>
+                </zone>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="sg6">
+            <surface n="52v" xml:id="s6">
+                <graphic url="images/025b.jpg.png" width="1285.03125px"
+                    height="1827.03125px"/>
+                <zone n="1.1" xml:id="t20-1" ulx="636" uly="179" lrx="1281" lry="1712"
+                    change="#cfl10 #rfl8" style="font-size:24" rend="posizione:2.5 0.8">
+                    <line>Lucia con un atto di tenerezza accorata</line>
+                    <line>e rabbiosa, e disse: questa è l’ultima</line>
+                    <line>
+                        <del>che fa quel birbante!</del>
+                    </line>
+                    <line>Per amor del cielo, gridò Lucia, <del>gettan</del></line>
+                    <line>
+                        <del>Gettandogli quasi le braccia al collo</del>
+                    </line>
+                    <line>No no per amor del cielo. <del>Come volete</del></line>
+                    <line><del>che Dio ci ajuti</del> Dio c’è anche pei poveri!</line>
+                    <line>Come volete ch’egli ci ajuti se facciamo</line>
+                    <line>del male? No no per amor del cielo</line>
+                    <line>ripeteva Agnese. Fermo disse Lucia,</line>
+                    <line>voi avete un mestiere, ed io so lavorare,</line>
+                    <line>andiamo lontano tanto che altrui non</line>
+                    <line>senta più parlare di noi. Ah! Lucia!</line>
+                    <line><del type="gap"/> e poi? Non siamo ancora</line>
+                    <line>marito e moglie: il curato vorrà farci</line>
+                    <line>la fede di stato libero? <del>Non</del><add place="above"
+                        style="indent:1023">non</add> saremo pigliati</line>
+                    <line>come vagabondi? Dove andarci a porre?</line>
+                    <line>Lucia ricadde nel pianto. Sentite!</line>
+                    <line>disse Agnese: sentitemi che son vecchia.</line>
+                    <line>Era questa una confessione che la buona</line>
+                    <line>Agnese faceva di rado, un caso di somma</line>
+                    <line>necessità e quando si trattava di dar fede</line>
+                </zone>
+                <zone n="1.1" xml:id="t20-3" ulx="636" uly="179" lrx="1281" lry="331"
+                    change="#csp11-2 #rsp14" style="font-size:24" rend="posizione:2.5 0.8">
+                    <line>Lucia con un atto di tenerezza accorata</line>
+                    <line>e rabbiosa, e disse: questa è l’ultima</line>
+                </zone>
+                <zone n="1.2" xml:id="t20-2" ulx="637" uly="331" lrx="1282" lry="1712"
+                    change="#csp11-3" corresp="#t23" style="font-size:26" rend="posizione:2.5 0.8"
+                    type="patch">
+                    <line>
+                        <del>che fa quel birbante!</del>
+                    </line>
+                    <line>Per amor del cielo, gridò Lucia, <del>gettan</del></line>
+                    <line>
+                        <del>Gettandogli quasi le braccia al collo</del>
+                    </line>
+                    <line>No no per amor del cielo. <del>Come volete</del></line>
+                    <line><del>che Dio ci ajuti</del> Dio c’è anche pei poveri!</line>
+                    <line>Come volete ch’egli ci ajuti se facciamo</line>
+                    <line>del male? No no per amor del cielo</line>
+                    <line>ripeteva Agnese. Fermo disse Lucia,</line>
+                    <line>voi avete un mestiere, ed io so lavorare,</line>
+                    <line>andiamo lontano tanto che altrui non</line>
+                    <line>senta più parlare di noi. Ah! Lucia!</line>
+                    <line><del type="gap"/> e poi? Non siamo ancora</line>
+                    <line>marito e moglie: il curato vorrà farci</line>
+                    <line>la fede di stato libero? <del>Non</del><add place="above"
+                            style="indent:1023">non</add> saremo pigliati</line>
+                    <line>come vagabondi? Dove andarci a porre?</line>
+                    <line>Lucia ricadde nel pianto. Sentite!</line>
+                    <line>disse Agnese: sentitemi che son vecchia.</line>
+                    <line>Era questa una confessione che la buona</line>
+                    <line>Agnese faceva di rado, un caso di somma</line>
+                    <line>necessità e quando si trattava di dar fede</line></zone>
+                <zone n="2" xml:id="t21" ulx="16" uly="214" lrx="621" lry="626" change="#csp11"
+                    style="font-size:22" corresp="#t22" rend="posizione:1.8 0.8" type="patch">
+                    <line>E fu allora ch’io mi forzai, proseguì</line>
+                    <line>ella, rivolgendosi di nuovo a Fermo <del type="gap"/>
+                        <add place="above" style="indent:452"><del>senza</del></add></line>
+                    <line>tutta vermiglia; e feci la sfacciata, e vi<add place="above"
+                            style="indent:77">però alzargli in volto gli occhi, e fatta</add></line>
+                    <line>pregai io che <del>chi</del>
+                        <del type="gap"/> proccuraste di <del>conchiudere</del><add place="above"
+                            style="indent:491">
+                            <del>far svelto</del> far</add></line>
+                    <line><del>presto</del>
+                        <add place="above" style="indent:36">presto, e di concludere</add> prima del
+                        tempo che si era stabilito.</line>
+                    <line>Dio sa che cosa avete pensato di me! Ma</line>
+                    <line>io faceva per bene.</line>
+                </zone>
+                <zone n="1.2" xml:id="t20-4" ulx="637" uly="331" lrx="1282" lry="1712"
+                    change="#cfl10" style="font-size:26" rend="posizione:2.5 0.8"
+                    type="patch">
+                   </zone>
+                <zone n="2.2" xml:id="t21-2" ulx="16" uly="621" lrx="618" lry="1477"
+                    change="#csp11-1 #rsp13" rend="posizione:1.8 1.5">
+                    <line>pensato di me! Ma, io facevo per</line>
+                    <line>bene ed era stata consigliata, e teneva</line>
+                    <line>per conto… e questa mattina io ero</line>
+                    <line>tanto lontana dal pensare…</line>
+                    <line>Qui le parole di Lucia furono tronche</line>
+                    <line>da un violento scoppio di pianto.</line>
+                    <line>- Ah birbone! Ah dannato! Ah</line>
+                    <line>assassino! Sclamava Fermo scorrendo</line>
+                    <line>su e giù per la stanza, <del>e mettendo</del><add place="above"
+                            style="indent:367">stringendo</add></line>
+                    <line>di tratto in tratto <del>la</del> il manico del suo</line>
+                    <line>coltello.</line>
+                    <line>- Oh che imbroglio, per amor di Dio!</line>
+                    <line>Sclamava Agnese. Il giovane si arrestò</line>
+                    <line><del>tutt</del> subitamente dinanzi a Lucia</line>
+                    <line>che piangeva; la guardò</line>
+                </zone>
+            </surface>
+            <surfaceGrp>
+                <surface n="52v.2" xml:id="s6.2" type="patch" flipping="false" attachment="glued">
+                    <graphic url="images/025b2.jpg.png" width="622.03125px"
+                        height="1252.03125px"/>
+                    <zone n="1" xml:id="t23" ulx="6" uly="6" lrx="600" lry="1150"
+                        change="#csp13 #rsp15" style="font-size:22" rend="posizione:2.2 2">
+                        <line>che fa quell’assassino.</line>
+                        <line>-Ah no, Fermo, per amor del cielo!</line>
+                        <line>Gridò Lucia. No, no, per amor del</line>
+                        <line>cielo. Iddio c’è anche pei poveri; e come</line>
+                        <line>volete che ci ajuti, se facciamo del male?</line>
+                        <line>– No, no, per amor del cielo, ripeteva</line>
+                        <line>Agnese.</line>
+                        <line>-Fermo disse Lucia, con un’aria di</line>
+                        <line>speranza, e di risoluzione più tranquilla:</line>
+                        <line>voi avere un mestiere, ed io so lavorare:</line>
+                        <line>andiamo tanto lontano che <del>costui non</del></line>
+                        <line>colui non senta più parlar di noi.</line>
+                        <line>-Ah! Lucia! E poi? Non siamo ancora</line>
+                        <line>marito e moglie! Il curato vorrà egli</line>
+                        <line>farci la fede di stato libero? E non saremo</line>
+                        <line>pigliati, come vagabondi? E dove andarci a</line>
+                        <line>porre?</line>
+                        <line>Lucia ricadde nel pianto: e tutti e tre</line>
+                        <line>rimasero <del>in un silenzio di sospensione e di</del></line>
+                        <line>
+                            <del>abbattimento, che faceva un tristo contrap</del>
+                        </line>
+                        <line><del>posto alla</del> silenzio, atteggiati in un</line>
+                        <line>abbattimento che faceva un tristo contrap</line>
+                        <line>posto colla pompa festiva dei loro abiti.</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+            <surfaceGrp>
+                <surface n="52v.1" xml:id="s6.1" type="patch" flipping="false" attachment="glued">
+                    <graphic url="images/025b1.jpg.png" width="597.03125px"
+                        height="432.03125px"/>
+                    <zone n="1" xml:id="t22" ulx="36" uly="15" lrx="578" lry="428"
+                        change="#csp12 #rsp12" style="font-size:27" rend="posizione:6.4 0.8">
+                        <line>E fu allora ch’io mi forzai, proseguì</line>
+                        <line>ella rivolgendosi di nuovo a Fermo,</line>
+                        <line>senza alzargli però gli occhi in volto,</line>
+                        <line>e arrossando tutta: fu allora ch’io</line>
+                        <line><del>si</del> feci la sfacciata, e che vi pregai</line>
+                        <line>io che procuraste di far presto, e di</line>
+                        <line>concludere prima del tempo che si</line>
+                        <line>era stabilito. Chi sa che cosa avete</line>
+                    </zone>
+                </surface>
+            </surfaceGrp>
+        </surfaceGrp>
+        <surfaceGrp xml:id="sg7">
+            <surface n="53r" xml:id="s12">
+                <graphic url="images/025c.jpg.png" width="1285.03125px"
+                    height="1891.03125px"/>
+                <zone n="1" xml:id="t24" ulx="643" uly="200" lrx="1267" lry="1711"
+                    change="#cfl11 #rfl9" style="font-size:24" rend="posizione:2.2 0.8">
+                    <line>alle sue parole. Io ho veduto un</line>
+                    <line>poco il mondo: <del>il diavolo</del> non bisogna</line>
+                    <line>spaventarsi troppo: il diavolo non è</line>
+                    <line>mai brutto come si dipinge; e a noi</line>
+                    <line>povera gente le cose pajono <add place="above" style="indent:996"
+                            >talvolta</add>imbrogliate</line>
+                    <line>imbrogliate perché non abbiamo la pratica</line>
+                    <line>per uscirne. <del>Ma, sapete, c’è della</del><add place="above"
+                            style="indent:853">Io ho veduto molte volte dei casi</add></line>
+                    <line><del>gente che si ride degli imbrogli</del><add place="above"
+                            style="indent:666">che parevano disperati ma un buon parere di un
+                            uomo</add><add place="below" style="indent:664">che aveva studiato,
+                            aggiustò tutto </add>. Fate</line>
+                    <line>a modo mio Fermo. Pigliati quei</line>
+                    <line>quattro capponi, poveretti! Che doveva</line>
+                    <line>sgozzare io questa mattina pel banchetto:</line>
+                    <line>teneteli ben stretti, per le gambe, andate</line>
+                    <line>a Lecco: sapere dove abita il dottor</line>
+                    <line><del type="gap"/>. – lo so benissimo- Bene</line>
+                    <line>andate da lui, presentategli i capponi:</line>
+                    <line>perché vedere quando provate che uno</line>
+                    <line>può <del>dare</del><add place="above" style="indent:727">regalare</add>
+                        gli si dà retta. Contategli</line>
+                    <line>tutto il fatto, e domandategli parere</line>
+                    <line>che ne ho visto io <del>dig</del> della gente che</line>
+                    <line>non sapevano dove dar del capo,</line>
+                    <line>che andando a consultarsi con lui non</line>
+                    <line>trovavano la strada, e dopo d’avergli</line>
+                    <line>parlato tornavano a casa vispi come</line>
+                </zone>
+                <zone n="2" xml:base="t24-1" ulx="643" uly="200" lrx="1267" lry="1711"
+                    change="#csp14-1" style="nobox">
+                    <delSpan rend="multiple crosses" spanTo="#del14"/>
+                    <anchor xml:id="del14"/>
+                </zone>
+                <zone n="3" xml:id="t25" ulx="30" uly="211" lrx="639" lry="1766"
+                    change="#csp14 #rsp16" style="font-size:24" rend="posizione:1.8 0.8">
+                    <line>- Sentite<del>, del</del> figliuoli; date retta a me,</line>
+                    <line>disse dopo qualche momento Agnese. Io</line>
+                    <line>sono venuta al mondo prima di voi; e il</line>
+                    <line>mondo lo conosco un poco. Non bisogna poi</line>
+                    <line>spaventarsi di troppo: il diavolo non è <del type="gap"/></line>
+                    <line><del>così</del> brutto come ci si dipinge. <del type="gap"/> A noi
+                        pove</line>
+                    <line>relli le cose pajono imbrogliate, imbrogliate,</line>
+                    <line>perché non abbiamo <del>la pratica di uscirne</del></line>
+                    <line>pratica: ma talvolta un parere, una parolina</line>
+                    <line>d’un uomo che abbia studiato basta a</line>
+                    <line>metter gli occhi in capo a chi che sia. Fate</line>
+                    <line>a mio modo, Fermo; andate a Lecco, andate</line>
+                    <line>a parlare al <del>dottore</del> dottor Azzezza-garbugli,</line>
+                    <line>raccontategli… ma non lo chiamate così,</line>
+                    <line>per amor del cielo: è un soprannome. Bisogna</line>
+                    <line>dire il signor dottor… oh come <del type="gap"/></line>
+                    <line>si chiama egli? To’, non lo so il nome vero:</line>
+                    <line>lo chiamano tutti a quel modo. Basta, cercate</line>
+                    <line>di quel dottore alto, asciutto, perlato, col</line>
+                    <line>naso rosso, e una voglia di lampone sulla</line>
+                    <line>guancia.</line>
+                    <line>- Lo conosco di vista, disse Fermo.</line>
+                    <line>- Bene, continuò Agnese; quegli è un uomo!</line>
+                    <line>Ho visto io più d’uno impicciato come</line>
+                    <line>un pulcino nella stoppa e che non sapeva</line>
+                    <line>dove dargli del capo, e dopo essere stato un’</line>
+                    <line>un’ora a quattrocchi col <del>dottor Azzecca</del> dottor</line>
+                </zone>
+            </surface>
+        </surfaceGrp>
+        <surfaceGrp xml:id="sg8">
+            <surface n="53v" xml:id="s13">
+                <graphic url="images/025d.jpg.png" width="1285.03125px"
+                    height="1872.03125px"/>
+                <zone n="1" xml:id="t26" ulx="600" uly="205" lrx="1258" lry="1676"
+                    change="#cfl12 #rfl10" style="font-size:24" rend="posizione:2.2 0.8">
+                    <line>un timollo che saltellando nella</line>
+                    <line>barca per disperazione cade nell’acqua</line>
+                    <line>e si trova in casa sua. Fate così Fermo.</line>
+                    <line><del>Quando</del> Nelle situazioni molto imbrogliate</line>
+                    <line>il parere che piace più è quello di pigliar</line>
+                    <line>tempo per avere un altro parere definitivo:</line>
+                    <line>ogni consiglio e determinato</line>
+                    <line>presenta ostacoli, difficoltà, nuovi imbrogli</line>
+                    <line>ma questo di consigliarsi di nuovo e</line>
+                    <line>meglio è semplice, non nuoce, e nello</line>
+                    <line>stesso tempo <del>lascia</del> dà una lusinga indeter</line>
+                    <line>minata che per questo mezzo si troverà</line>
+                    <line>una uscita. Fermo adunque abbracciò molto</line>
+                    <line>volentieri il parere <del>di Agnese che fu</del></line>
+                    <line><del>superba di averlo fatto</del>. Lucia <del>lo agg</del></line>
+                    <line>vi aggiunse la sua approvazione.</line>
+                    <line>Agnese superba d’averlo dato <del>prese</del><add place="above"
+                            style="indent:1300">pigliò</add></line>
+                    <line>i capponi,<del><add place="above" style="indent:744">dalle sue</add></del>
+                        riunì le loro otto gambe</line>
+                    <line>come se facesse un mazzo di fiori,</line>
+                    <line>le avvolse e le strinse con uno spago</line>
+                    <line>e consegnò la preda in mano a Fermo,</line>
+                    <line>che date e ricevute parole di speranza</line>
+                    <line><del>partì</del>
+                        <del type="gap"/> uscì per una porticella</line>
+                </zone>
+                <zone n="1.2" xml:id="t26-2" ulx="600" uly="1415" lrx="1258" lry="1676"
+                    change="#csp15-2 #rsp18" style="font-size:24" rend="posizione:2.2 0.8">
+                    <line>le avvolse e le strinse con uno spago</line>
+                    <line>e consegnò la preda in mano a Fermo,</line>
+                    <line>che date e ricevute parole di speranza</line>
+                    <line><del>partì</del>
+                        <del type="gap"/> uscì per una porticella</line>
+                </zone>
+                <zone n="2" xml:id="t26-1" ulx="600" uly="205" lrx="1258" lry="1415"
+                    change="#csp15-1">
+                    <delSpan rend="multiple crosses" spanTo="#del15"/>
+                    <anchor xml:id="del15"/>
+                </zone>
+                <zone n="3" xml:id="t27" ulx="36" uly="232" lrx="597" lry="1405"
+                    change="#csp15 #rsp17" style="font-size:22" rend="posizione:1.8 0">
+                    <line>Azzecca-garbugli (<del>però</del> badate bene</line>
+                    <line>di non chiamarlo così!) l’ho visto dico</line>
+                    <line>ridersene. Pigliate quei quattro capponi,</line>
+                    <line>poveretti! <del>I</del> che doveva sgozzare io pel banchetto</line>
+                    <line>di questa sera, e portateglieli; perché non</line>
+                    <line>bisogna mai andare colle mani vuote da</line>
+                    <line>quei signori. Raccontategli tutto l’accaduto;</line>
+                    <line>e vedete ch’egli saprà trovarvi il ban</line>
+                    <line>dolo.</line>
+                    <line>Nei frangenti difficoltosi, il parere che</line>
+                    <line>più apprenda generalmente è quello <del>di pigliar</del></line>
+                    <line><del>tempo</del> che dia occasione di pigliare tempo</line>
+                    <line>per <del>trovar</del><add place="above" style="indent:115">giungere</add>
+                        poi ad un altro parere definitivo.</line>
+                    <line>Fermo abbracciò dunque molto volentieri</line>
+                    <line>quello di Agnese; Lucia lo approvò; e</line>
+                    <line>Agnese superba di averlo <del>dato</del></line>
+                    <line>dato, tolse ad una ad una le</line>
+                    <line>povere bestie dalla capponaia,</line>
+                    <line>riunì le loro otto gambe, come</line>
+                    <line>se fosse un mazzetto di fiori;</line>
+                    <line style="indent:110"><del>tolse ad uno ad uno pigl</del></line>
+                </zone>
+            </surface>
+        </surfaceGrp>
+    </sourceDoc>
+</TEI>
