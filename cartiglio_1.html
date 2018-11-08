@@ -1,0 +1,476 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>popup cartigli</title>
+ <script type="text/javascript" src="../Prototipo_Manzoni_2.0/output/js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="../Prototipo_Manzoni_2.0/output/js/jquery-ui-1.9.0.custom.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../Prototipo_Manzoni_2.0/output/js/jquery-ui.css">
+        <style type="text/css">
+                     h1{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	color: #eeeeee;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 48px;
+	text-shadow: 3px 3px 0 rgba(0,0,0,1.00);
+}
+	h2{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	text-align: center;
+	text-align: center;
+	font-weight: bolder;}
+	
+	h3{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	text-align: center;
+	text-align: center;}
+	
+	h4{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	text-align: center;
+	text-align: center;}
+	
+	h5{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	color: #326273;
+	margin-top: 10px;
+	text-align: left}
+	
+	header{
+	background-color: #326273;
+	width: auto;
+	height: auto;
+	align-self: center;
+	align-content: center;
+	align-items: center;
+	float: none;
+	padding:3.5px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+}
+	body{
+	background-color: #eeeeee;
+	width: auto;
+	border-radius: 25%;
+	height: auto;
+	}
+	
+	b{
+	color: #326273;
+	font-size:14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+a{text-decoration:none;
+color: #5C9EAD;
+font-size:16px;
+}
+	p{marigin:2px;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	}
+	 #show-hide {
+            border: 1px solid #326273;
+        }
+	#cont{visibility:hidden;
+            width: 50%;
+			height: auto;
+            border: 1px solid green;
+            margin:auto;
+}
+
+            div#top_controls, div#canvas { margin-left: 2px; }
+            div#sliderwrap {padding: 1em 0 0 0;}
+            p#desc{ font-size: 70%; padding: 0 6em 0 0; height:1em; font-weight: bold; color:#326273; display: inline;}
+            div#side_controls {float: left;}
+            ul#actions, ul#minis { list-style: none; }
+            ul#actions li { margin-bottom: 10px;}
+            ul#minis li { 
+                border: 1px solid Black; 
+                background-color: gold;
+                padding: 1px; 
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            li#c_move { width: 16px; height: 16px; 
+                background-image: url('../Prototipo_Manzoni/output/images/move.png'); 
+                background-position: 0;
+                text-indent: -9999px; white-space: nowrap; }
+            li#c_mini { width: 16px; height: 16px; 
+                background-image: url('../Prototipo_Manzoni/output/images/minus.png'); 
+                background-position: 0; 
+                text-indent: -9999px; white-space: nowrap; }
+            #minip {display: none; position:absolute; font-weight: bold; font-size: 20px;}
+            #tooltip{
+                position:absolute;
+                text-indent: 0;
+                border:1px solid #333;
+                background:#f7f5d1;
+                padding:2px 5px;
+                color:#333;
+                display:none;
+            }
+			.box{
+	width: auto;
+	height: auto;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	margin-top: 5%;	
+	display:list-item;
+}
+            .but {
+                border : 1px solid;
+                padding : 2px 4px 2px 4px;
+                text-decoration : none;
+                color : #282828;
+                background : #FFFFFF;
+                margin-right : 20px
+            }
+            .title {
+               border: solid;
+	border-color:#5C9EAD;
+	margin-left:10%;
+	margin-right: 10%;
+	margin-top: 2px;
+	padding: 2px;
+            }
+            .imgframe {
+                min-height : 1171px
+                
+            }
+            .modeOn {
+               color:#326273; 
+            }
+            .button {
+			text-decoration: none;
+           width: auto;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 14px;
+	color: black;
+	padding: 4px;
+	background: #5C9EAD;
+	box-shadow: 0px 1px 3px rgba(000,000,000,0.5),
+                inset 0px 0px 3px rgba(255,255,255,1);
+	margin: 1.5%;
+            }
+	
+	.button:hover {
+	color: #326273;
+	font-weight: bold;
+	text-shadow: 0.5px 0.5px #000000
+            }
+        </style>
+</head>
+
+<body>
+<p><!--<a id="reading_sp" href="" class="button">Narrazione</a>
+
+			<a href="" id="writing_sp" class="button">Composizione</a>-->
+        <i><b>Pagine</b></i>
+ <select id="pagelist">
+    <option>51r.1</option>
+	<option>51v.1</option>
+	<option>52v.1</option>
+</select></p>
+      <!-- <div id="top_controls">
+            <div id="sliderwrap">
+                <div id="slider"></div>
+            </div>
+            <p id="desc"></p>
+</div>-->
+       <div id="canvas"></div>
+        
+        
+<script type="application/javascript">
+var filelist = [["51r.1--writing_sp.svg","51v.1--writing_sp.svg","52v.1--writing_sp.svg"],["51r.1--reading_sp.svg","51v.1--reading_sp.svg","52v.1--reading_sp.svg"]];
+var dirlist = ["output/writing_sp", "output/reading_sp"];
+var imgcounter = 0;
+var imglist = 0;
+
+function getsrc() {
+    return dirlist[imglist]+'/'+filelist[imglist][imgcounter % filelist[imglist].length];
+}
+
+function updatestyle(l) {
+    off = $(l).attr('id') == 'writing_sp' ? 'reading_sp' : 'writing_sp';
+    $('#'+off).removeClass('modeOn'); 
+    $(l).addClass('modeOn');
+}
+
+function updateimg() {
+    loadSVG(getsrc());
+}
+		
+function scaleSVG(svg) {
+    w = svg.attr("width");
+    h = svg.attr("height");
+
+    screen_w = window.screen.width;
+
+    // set width to 80% of screen size
+    new_w = (screen_w * 25) / 100;
+
+    scale = (new_w*100) / w;
+
+    new_h = (h*scale)/100;
+
+    //resize svg width
+    svg.attr("width", new_w)
+      .attr("height", new_h);
+
+    //return scaled svg
+    return svg;
+}
+
+function loadSVG(file) {
+  $.get(file, function(data){
+    if ($('#canvas > svg').length>0) {
+        $('#canvas > svg').remove();
+    }
+    svgRoot = $(data).find('svg');
+    scaled = scaleSVG(svgRoot);
+    $('#canvas').append(scaled);
+    $('#canvas').trigger("addToDom");
+  });
+}
+
+function makeSlider(sequence) {
+
+  function setStep(slider, ui) {
+    max = slider.slider("option","max");
+    s = ui.value/(max/slider_w);
+    gstep.step = s;
+    gstep.value = ui.value;
+  }
+
+  var slider_w = sequence.length;
+  $( "#slider" ).slider({
+    value: 0,
+    min: 0,
+    max: slider_w*100,
+    step: slider_w*100/slider_w,
+    start: function( event ,ui ) {
+        gstep.value = ui.value;
+    },
+    slide: function( event, ui ) {
+      if (ui.value > gstep.value) {
+        //show next
+        if (!sequence[gstep.step].minimized) { $(svg).find('#'+sequence[gstep.step].s).show(); }
+        $('#desc').text(function(){return $(svg).find('change[ref="'+sequence[gstep.step].s+'"]').text()});
+
+        setStep($(this), ui);
+      }
+      else if (ui.value < gstep.value) {
+        //hide previous
+        $(svg).find('#'+sequence[gstep.step-1].s).hide();
+        $('#desc').text(function(){return $(svg).find('change[ref="'+sequence[gstep.step-1].s+'"]').text()});
+
+        setStep($(this), ui);
+         
+     }
+    },
+    change: function( event, ui) {
+        for (var i=0;i<sequence.length;i++){
+            if (i < gstep.step && !sequence[i].minimized) $(svg).find('#'+sequence[i].s).show();    
+            else $(svg).find('#'+sequence[i].s).hide(); 
+        }
+        if (gstep.step != 0) $('#desc').text(function(){return $(svg).find('change[ref="'+sequence[gstep.step-1].s+'"]').text()});
+        else $('#desc').text('');
+    } 
+  });
+}
+
+function minimize(s, g) {
+    var step;
+    $(s).each(function(i, e) { 
+        if (e.s == $(g).attr('id')) { step = i; }
+    });
+    s[step].minimized = true;
+    $('#minis').append("<li class='button' id='s"+step+"'>"+(parseInt(step)+1)+"</li>");
+    $('#s'+step).click(function(){
+        // only show if sequence step is past the minimized step
+        if (gstep.step-1 >= step) { $(g).toggle(); }
+        $(this).remove();
+        s[step].minimized = false;
+        return false;
+    });
+}
+
+//Load first page
+loadSVG(dirlist[0]+'/'+filelist[0][0]);
+
+// global step object
+var gstep = {step:0, value:0, reset:gstep_reset};
+function gstep_reset(){this.step=0; this.value=0;}
+
+// sequence object
+function getSequence (svg) {
+    sequence = [] ;
+    $(svg).find('change').each(function() {
+      sequence.push(
+        {s : $(this).attr('ref'), minimized : false}
+        );
+    });
+    return sequence;
+}
+
+// side controls
+function tooltip(icon, e) {
+    text = icon.html();                                                                           
+    icon.append("<p id='tooltip'>"+ text +"</p>");
+    $("#tooltip")
+        .css("top",(e.pageY - 10) + "px")
+        .css("left",(e.pageX + 20) + "px")
+        .fadeIn("fast"); 
+}
+
+$("body").append("<span id='minip'>↓</span>");
+var moving = false;
+var minimizing = false;
+var cursor = false;
+$('#c_move')
+    .click(function() {moving = true; cursor=true; $('body').css("cursor","move");})
+    .hover(function(e){     
+        tooltip($(this), e);        
+    },
+    function(){       
+        $("#tooltip").remove();
+    });
+
+$('#c_mini').click(function(e) {
+    minimizing = true; cursor = true; 
+    // TODO fix cursor
+    //$('body').css("cursor","none");
+    // $('#minip').css("display", "block").css("left", e.pageX).css("top", e.pageY);
+    // $('body').mousemove(function(e){ 
+    //   $('#minip').css("left", e.pageX).css("top", e.pageY); 
+    // });
+    
+})
+.hover(function(e){     
+    tooltip($(this), e);        
+    },
+    function(){       
+        $("#tooltip").remove();
+    });
+$('body').click(function() {
+    if (cursor) {cursor=false}
+    else{
+        $('body').css("cursor","default");
+        $('#minip').css("display", "none");
+    }
+});
+
+$("#canvas").live("addToDom", function(e) {
+    svg = $(this).find('svg');
+    
+    //adjust slider width
+    $('#sliderwrap').css("width", $(svg).attr("width")+'px');
+
+    //create sequence data
+    var sequence = getSequence(svg);
+
+    //just finished dragging?
+    var dragstop = false;
+
+    $(svg).find('g > g').each(function(){ 
+
+        var dragging = false;
+        var child = $(this).find('>:first-child');
+        var origColor = child.css("fill");
+
+        $(this)
+            // show move icon
+            .mouseenter(function() { 
+                if (moving || minimizing) {
+                    $(this).find('>:first-child')
+                      .css("stroke-width", "3")
+                      .css("fill-opacity", "0.62666667")
+                      .css("fill", "Red"); 
+                }
+            })
+            .mouseleave(function() {
+                if (child.get(0).tagName=='path') {
+                    $(child).css("stroke-width", "1")
+                      .css("fill", "transparent");
+                } 
+                else {
+                    $(child).css("stroke-width", "1.28400004")
+                      .css("fill", origColor);
+
+                }
+             })
+            .mousedown(function(evt) {
+              if (moving) {
+                dragging = true;
+                selectedElement = this;
+                currentX = evt.clientX;
+                currentY = evt.clientY;
+                currentMatrix = $(selectedElement).attr("transform").slice(7,-1).split(' ');
+            
+                for(var i=0; i<currentMatrix.length; i++) {
+                  currentMatrix[i] = parseFloat(currentMatrix[i]);
+                }
+                $(selectedElement).mousemove(function(evt){
+                  if (dragging) {
+                    dx = evt.clientX - currentX;
+                    dy = evt.clientY - currentY;
+                    currentMatrix[4] += dx;
+                    currentMatrix[5] += dy;
+                      
+                    newMatrix = "matrix(" + currentMatrix.join(' ') + ")";
+                               
+                    selectedElement.setAttributeNS(null, "transform", newMatrix);
+                    currentX = evt.clientX;
+                    currentY = evt.clientY;
+                  }
+                })
+              }
+              else if (minimizing) {
+                $(this).toggle();
+                minimize(sequence, this);
+                minimizing = false;
+              }
+            })
+            .mouseup(function() {
+                dragging = false;
+                if (moving) dragstop = true;
+                else dragstop = false;
+                moving = false;                
+            });
+        
+        // hide all transcriptions    
+        $(this).hide(); 
+    });
+
+    // reset global step object
+    gstep.reset();
+    $('#desc').text("");
+
+    // draw slider
+    makeSlider(sequence);
+    
+    // set click event
+    $(svg).find(">g>image").click(function() {moving=false;});
+    $(svg).click(function() {
+      if (!dragstop && gstep.step < sequence.length) {
+        gstep.value = $('#slider').slider("option").value + $('#slider').slider("option").step;
+        $('#slider').slider("value", gstep.value);
+        $(svg).find('#'+sequence[gstep.step].s).show();
+        $('#desc').text(function(){return $(svg).find('change[ref="'+sequence[gstep.step].s+'"]').text()});
+        gstep.step++;
+      }
+      else dragstop = false;
+    });
+    
+});
+    
+// General Controls
+
+$('#writing_sp').click(function() {imglist=0; updateimg(); updatestyle(this); return false});
+$('#reading_sp').click(function() {imglist=1; updateimg(); updatestyle(this); return false});
+$('#pagelist').change(function() {imgcounter=$('#pagelist option:selected').index(); updateimg();});
+//$('#prev').click(function() {imgcounter--;updateimg(); $('#minis').children().remove(); return false;});
+//$('#next').click(function() {imgcounter++;updateimg(); $('#minis').children().remove(); return false;});
+</script>
+</body>
+</html>

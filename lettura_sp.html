@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lettura in pulito</title>
+ <script type="text/javascript" src="../Prototipo_Manzoni_2.0/output/js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="../Prototipo_Manzoni_2.0/output/js/jquery-ui-1.9.0.custom.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../Prototipo_Manzoni_2.0/output/js/jquery-ui.css">
+<style>
+	body{
+	background-color: #eeeeee;
+	width: 600px;
+	border-radius: 25%;
+	height:auto;
+	}
+	  .menu ul {
+	padding: 0;
+	margin: 0;
+}
+
+.menu li {
+	position: relative;
+	float: left;
+	width: 140px;
+	text-align: center;
+	list-style: none;
+}
+
+.menu li a {
+	background-color: #326273;
+	color: #FFF;
+	padding: 15px 20px;
+	text-decoration: none;
+	display: block;
+}
+
+.menu li a:hover {
+	background-color: #5c9ead;
+	text-shadow: 0px 0px 1px #FFF;
+}
+
+.menu ul ul {
+	position: absolute;
+	/*top: 48px;*/
+	visibility: hidden;
+}
+
+.menu ul li:hover ul {
+	visibility: visible;
+}
+
+/*.menu ul ul:hover {
+	box-shadow: 0px 20px 30px #5c9ead;
+}*/
+
+.menu ul ul li a {
+	color: black;
+	background-color:#9E9E93; 
+	border-color: #326273;
+}
+
+.menu ul ul li a:hover {
+	background-color: #5c9ead;
+}
+	.box{
+			text-decoration: none;
+	width: 15%;
+	height: auto;
+	position:absolute;	
+	text-align: center;
+	align-content: center;
+	align-items: center;
+}
+	#core {border: thin;
+		border-color: #5c9ead;
+	margin-left: 28%;
+	margin-right: 4%;
+	margin-top: 4%;
+	padding: 4px;
+	width: auto;
+	height: auto;
+	position: relative;
+     text-align: justify;  
+	}
+	</style>
+
+</head>
+
+<body>
+<div class="box">
+	<div id="nav" class="menu">
+		<ul>
+				<li><a>Sposi promessi</a>
+				  
+				<ul>
+				  <li><a id="50r" href="testi/sp/50r.html">50r</a></li>
+					<li><a id="50v" href="testi/sp/50v.html">50v</a></li>
+					<li><a id="51r" href="testi/sp/51r.html">51r</a></li>
+					<li><a id="51v" href="testi/sp/51v.html">51v</a></li>
+					<li><a id="52r" href="testi/sp/52r.html">52r</a></li>
+					<li><a id="52v" href="testi/sp/52v.html">52v</a></li>
+					<li><a id="53r" href="testi/sp/53r.html">53r</a></li>
+					<li><a id="53v" href="testi/sp/53v.html">53v</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	</div>
+<div id="core"></div>
+<script>
+     $(document).ready(function () {
+    $("#nav ul li ul li a").click(function (e) {
+        e.preventDefault();
+        $("#core").load($(this).attr("href"));
+    });
+});
+</script>
+</body>
+</html>
