@@ -1,3 +1,5 @@
+#Manzoni_2.0
+
 Il progetto **Dal *Fermo e Lucia* agli *Sposi promessi*: saggio per una filologia degli scartafacci** parte dall’analisi dei facsimili degli autografi del Manzoni, conservati presso la biblioteca Braidense, e dalla loro edizione critica ed ha lo scopo di valorizzare le fasi compositive e narrative.
 
 La realizzazione è stata possibile grazie ad una sola codifica XML-TEI (**codifica_tei_024a_025d.xml**) utilizzando il marcatore &lt;sourceDoc> che permette di marcare la pagina come una &lt;surface> invece della classica divisione della pagina in &lt;div>. Questa scelta permette una successiva individuazione, all’interno della stessa pagina, di zone di testo (utilizzando il tag &lt;zone>) che risulta più adatta ai nostri scopi e più conveniente anche per andare ad individuare il testo dei cartigli che vengono spesso utilizzati dall’autore nel procedere del processo creativo.

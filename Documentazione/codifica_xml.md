@@ -59,9 +59,11 @@ Tutte le &lt;zone> hanno diversi attributi, fondamentali sia per il riconoscimen
 7.	un @corresp utilizzato per richiamare una zona tramite il suo @xml:id quando essa corrisponde ad un cartiglio apposto su una porzione di testo della pagina.
 
 ##Le linee 
+
 Come si nota in fig. 1 ogni colonna di testo contiene delle righe: questa divisione è stata resa, in fase di codifica, utilizzando il tag &lt;line> che viene aperto e chiuso in corrispondenza di ogni singola riga. Va però specificato che se questa tecnica ci è utile per rendere fedelmente la posizione del testo manzoniano quando si opera la trasformazione con il file XSLT **xsl_manzoni.xsl**, essa risulta completamente inadeguata quando, con il **file xsl_pulito.xsl**, si intende ricreare un testo di lettura in pulito diviso in paragrafi. Per raggiungere questo obbiettivo è risultato utile inserire, ove necessario e facendo riferimento all’edizione cartacea, un tag &lt;milestone> che determina l’inizio di un paragrafo e la fine del precedente, ed ha come attributi @unit, @type e @xml:id.
 
 ##Le correzioni d’autore
+
 All’interno del testo occorrono cambiamenti, immediati o meno, apportati dall’autore: correzioni ed aggiunte, che fanno parte dell’avanzare del processo creativo, sono state rese in due maniere distinte all’interno della codifica.
 
 1.	&lt;del> che identifica le parole cancellate sovraimponendovi una linea, può avere un @type=’gap’ (che viene visualizzato come […]) nel caso in cui la cancellatura sia talmente marcata da impedire la lettura del testo sottostante;
