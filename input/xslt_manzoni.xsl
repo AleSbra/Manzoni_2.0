@@ -18,6 +18,7 @@
                     id="svg3170" version="1.1">
                     <defs id="defs3172"/>
                     <metadata>
+                        <!-- metadatazione e selezione dei <change> da considerare al cambiare del parametro-->
                         <xsl:choose>
                             <xsl:when test="$mode = 'reading_sp'">
                                 <xsl:for-each
@@ -92,11 +93,12 @@
                         </rdf:RDF>
                     </metadata>
                     <g id="layer1">
+                        <!-- selezione dell'immagine e delle dimensioni -->
                         <image xlink:href="{tei:surface[1]/tei:graphic/@url}"
                             height="{substring-before(tei:surface[1]/tei:graphic/@height, 'px')}"
                             width="{substring-before(tei:surface[1]/tei:graphic/@width,'px')}"/>
 
-                    
+                    <!-- ricerca dei @change all'interno delle zone per ogni parametro -->
                         <xsl:for-each select="tei:surface//tei:zone">
                             <xsl:variable name="ma_g">
                                 <xsl:choose>
@@ -155,6 +157,7 @@
                                 </xsl:choose>
                             </xsl:variable>
                             <g class="draggable" transform="matrix(1 0 0 1 0 0)">
+                               <!-- selezione stile per le zone sia per poligoni che per rettangoli -->
                                 <xsl:attribute name="id">
                                     <xsl:value-of select="$ma_g"/>
                                 </xsl:attribute>
@@ -164,19 +167,26 @@
                                             <xsl:attribute name="style">
 
                                                 <xsl:choose>
-                                                  <xsl:when
-                                                  test="tei:changeList/tei:change[@type = 'refused']">
-                                                  <xsl:text>fill:#AFEEEE</xsl:text>
-                                                  </xsl:when>
-                                                  <xsl:when
-                                                  test="tei:changeList/tei:change[@type = 'accepted']">
-                                                  <xsl:text>fill:#FFA07A</xsl:text>
-                                                  </xsl:when>
-                                                  <xsl:otherwise>
-                                                  <xsl:text>fill:#F0E68C</xsl:text>
-                                                  </xsl:otherwise>
+                                                    <xsl:when
+                                                        test="//tei:listChange/tei:change[@xml:id = $ma_g][@type = 'refused']">
+                                                        <xsl:text>fill:#54aedb;stroke:#4c4c4c;stroke-width:1.28400004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:0.5;</xsl:text>
+                                                    </xsl:when>
+                                                    <xsl:when
+                                                        test="//tei:listChange/tei:change[@xml:id = $ma_g][@type = 'accepted']">
+                                                        <xsl:text>fill:#f2ade1;stroke:#4c4c4c;stroke-width:1.28400004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:0.5;</xsl:text>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:choose>
+                                                            <xsl:when
+                                                                test="tei:surface//tei:zone, @type = 'patch'">
+                                                                <xsl:text>fill:#FFFFFF;stroke:#003399;stroke-width:1.28400004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5;fill-opacity:0.5;</xsl:text>
+                                                            </xsl:when>
+                                                            <xsl:otherwise>
+                                                                <xsl:text>fill:#F0E68C;stroke:#4c4c4c;stroke-width:1.28400004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:0.5;</xsl:text>
+                                                            </xsl:otherwise>
+                                                        </xsl:choose>
+                                                    </xsl:otherwise>
                                                 </xsl:choose>
-                                                <xsl:text>;stroke:#4c4c4c;stroke-width:1.28400004;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:0.50;</xsl:text>
                                             </xsl:attribute>
                                         </polygon>
                                     </xsl:when>
@@ -210,6 +220,7 @@
                                         </rect>
                                     </xsl:otherwise>
                                 </xsl:choose>
+                                <!-- stile per il testo -->
                                 <xsl:for-each select="tei:line | tei:space">
                                     <xsl:variable name="x-set">
                                         <xsl:choose>
@@ -285,6 +296,7 @@
             </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
+    <!-- template per i <del> -->
     <xsl:template match="tei:del">
         <xsl:choose>
             <xsl:when test="@type">
@@ -312,6 +324,7 @@
             <xsl:apply-templates mode="interlinear"/>
         </tspan>
     </xsl:template>
+    <!-- template per il testo in corsivo -->
     <xsl:template match="tei:hi" mode="#all">
         <xsl:choose>
             <xsl:when test="@style = 'italic'">
@@ -329,6 +342,7 @@
         </path>
     </xsl:template>
     <xsl:template match="tei:metamark/tei:desc"/>
+    <!-- templates per gli <add> -->
     <xsl:template mode="interlinear" match="tei:add[@place = 'above']">
         <xsl:variable name="font-size">
             <xsl:choose>
@@ -428,7 +442,7 @@
     </xsl:template>
     <xsl:template match="tei:add[@place = 'above']"/>
     <xsl:template match="tei:add[@place = 'below']"/>
-
+<!-- templates per definire i la visualizzazione dei diversi <delSpan> al variare delvalore di @rend -->
     <xsl:template match="tei:delSpan[@rend = 'cross']">
         <xsl:variable name="span" select="substring-after(@spanTo, '#')"/>
         <xsl:variable name="x1" select="ancestor::tei:zone[@ulx]/@ulx"/>

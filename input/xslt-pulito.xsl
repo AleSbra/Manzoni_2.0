@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs"
     xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0">
     <xsl:param name="fl-sp">fl</xsl:param>
-
+<!-- tempalte per l'applicazione di name="contenuto" al variare del parametro -->
     <xsl:template match="//tei:sourceDoc/tei:surfaceGrp/tei:surface[@n]">
         <xsl:choose>
             <xsl:when test="$fl-sp = 'sp'">
@@ -26,7 +26,7 @@
     <xsl:template match="tei:del">
        <!-- <sup><xsl:number count="tei:del" from="tei:surface" level="any"></xsl:number></sup>-->
     </xsl:template>
-
+<!-- definizione del template principale -->
     <xsl:template name="contenuto">
         <xsl:param name="fl-sp"/>
         <xsl:result-document href="../testi/{$fl-sp}/{@n}.html">
@@ -147,7 +147,7 @@
             </html>
         </xsl:result-document>
     </xsl:template>
-    
+    <!-- template per l'impaginazione in paragrafi -->
     <xsl:template match="tei:milestone">
        <xsl:variable name="cur-mile" select="@xml:id"/>
       
@@ -159,6 +159,6 @@
             
         
     </xsl:template>
-
+<!-- esclusione delle informazioni del teiHeader -->
     <xsl:template match="tei:teiHeader"/>
 </xsl:stylesheet>
