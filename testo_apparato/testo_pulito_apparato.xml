@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="xsl_pulito_2.0.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Manoscritti manzoniani con testo in pulito</title>
+         </titleStmt>
+         <editionStmt>
+            <edition>Digital Edition</edition>
+            <respStmt>
+               <resp>Editor</resp>
+               <name>Alessia Marini</name>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>
+               <ref target="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0
+                  International (CC BY 4.0)</ref>
+            </distributor>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div n="024a">
+            <head>Capitolo III</head>
+            <p><app>
+                  <lem n="0001">Lucia entrò nella stanza terrena che Fermo stava angosciosamente
+                     informando Agnese, la quale angosciosamente lo ascoltava. </lem>
+               </app><app>
+                  <lem n="0002">Tutti e due si volsero a colei che ne sapeva più di loro, e <app>
+                        <lem n="0002.1">da cui</lem>
+                        <rdg><del>dalla quale</del></rdg>
+                     </app>aspettavano <app>
+                        <lem n="0002.2">uno</lem>
+                        <rdg>una</rdg>
+                     </app> schiarimento, il quale non poteva essere che doloroso: </lem>
+                  <rdg n="1">Tutti e tre erano turbati per la stessa ragione, ma in diverso modo.
+                     Fermo come colui che ad un tratto dalla prosperità e dalla gioia </rdg>
+                  <rdg n="2">Tutti e due si volsero</rdg>
+               </app><app>
+                  <lem n="0003">tutti e due lasciando travedere in mezzo al dolore, e con l'amore
+                     diverso che ognun d'essi portava a Lucia, un <app>
+                        <lem n="0003.1">cruccio pur diverso</lem>
+                        <rdg>pur diverso cruccio</rdg>
+                     </app>
+                     <app>
+                        <lem n="0003.2">perchè ella avesse taciuta loro qualche cosa</lem>
+                        <rdg n="1">per non</rdg>
+                        <rdg n="2">del non essere stati prima d'allora <del>messi a parte</del>
+                           fatti partecipi d'un</rdg>
+                     </app>, e una tal cosa.</lem>
+               </app><app>
+                  <lem n="0004">Agnese, benché ansiosa di sentir parlare la <app>
+                        <lem n="0004.1">figlia (e</lem>
+                        <rdg>figlia, e</rdg>
+                     </app> dobbiamo confessare che in quell’ansia oltre tutti i sentimenti di una
+                     madre affettuosa, vi capiva anche un po’ di curiosità pura, come ella l’avrebbe
+                     provata se si fosse trattato di </lem>
+               </app></p>
+         </div>
+         <div n="024b">
+            <p><app>
+                  <lem n="0005"><app>
+                        <lem n="0005.1">estranei)</lem>
+                        <rdg>un dal</rdg>
+                     </app> pure non pote’ <app>
+                        <lem n="0005.2">tenersi di farle</lem>
+                        <rdg><del>trattenersi dal</del></rdg>
+                     </app> un rimprovero. </lem>
+               </app><app>
+                  <lem n="0006">- A tua madre non dir niente d’una cosa simile! - Ora vi dirò tutto,
+                     rispose Lucia, asciu gandosi gli occhi col grembiule. - Parla parla! Parlate,
+                     parlate! Gridavano in una volta la madre e lo sposo. - Santissima Vergine!
+                     sclamò Lucia, chi avrebbe creduto che le cose potessero </lem>
+               </app></p>
+         </div>
+      </body>
+   </text>
+</TEI>
