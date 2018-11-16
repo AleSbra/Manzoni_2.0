@@ -380,7 +380,7 @@
                 </zone>
                 <zone n="12" xml:id="t7" ulx="48" uly="436" lrx="579" lry="631" change="#csp2 #rsp02"
                     style="font-size:22" rend="posizione:1.8 0.8">
-                    <line>Lucia entrò nella stanza terrena che Fermo </line>
+                    <line><milestone unit="section" type="p" xml:id="psp1"/><milestone unit="seg" n="0001"/>Lucia entrò nella stanza terrena che Fermo </line>
                     <line>stava angosciosamente informando Agnese, </line>
                     <line>la quale angosciosamente lo ascoltava.<del>Tutti </del></line></zone>
                 <zone n="12.1" ulx="48" uly="631" lrx="579" lry="863" change="#csp2-4"
@@ -390,12 +390,12 @@
                     <line>che ad un tratto dalla prosperità e dalla gioia</line>
                     <line>Tutti e due si volsero</line></zone>
                 <zone n="12.2" xml:id="t7-3" ulx="48" uly="863" lrx="579" lry="1699"
-                    change="#csp2-6 #rsp03" style="font-size:22" rend="posizione:1.65 -1"><line>Tutti
+                    change="#csp2-6 #rsp03" style="font-size:22" rend="posizione:1.65 -1"><line><milestone unit="seg" n="0002"/>Tutti
                         e due si volsero a colei che ne sapeva</line>
                     <line>più di loro, e <del>dalla quale </del>
                         <add place="above" style="indent:241">da cui</add> aspettavano uno </line>
                     <line>schiarimento, il quale non poteva essere che </line>
-                    <line>doloroso: tutti e due lasciavano travedere in </line>
+                    <line>doloroso: <milestone unit="seg" n="0003"/>tutti e due lasciavano travedere in </line>
                     <line>mezzo al dolore e con l’amore diverso che </line>
                     <line>ognuno d’essi portava a Lucia, un <del>profondo </del>
                     </line>
@@ -405,7 +405,7 @@
                     <line><del>stati prima d’allora messi a parte </del>
                         <del>fattì </del></line>
                     <line>partecipi d’un perché ella avesse taciuta loro </line>
-                    <line>qualche cosa, e una tal cosa. Agnese, </line>
+                    <line>qualche cosa, e una tal cosa. <milestone unit="section" type="p" xml:id="psp2"/><milestone unit="seg" n="0004"/>Agnese, </line>
                     <line>benché ansiosa di sentir parlare la figlia,</line>
                     <line>(e dobbiamo confessare che in quell’ansia </line>
                     <line>oltre tutti i sentimenti di una madre affettuosa,</line>
@@ -456,9 +456,9 @@
                 </zone>
                 <zone n="3.1" xml:base="t9-1" ulx="64" uly="295" lrx="622" lry="872" change="#rsp04"
                     style="font-size:24" rend="posizione:1.9 0.8">
-                    <line>estranei) pure non pote’ <del>trattenersi dal </del></line>
+                    <line><milestone unit="seg" n="0005"/>estranei) pure non pote’ <del>trattenersi dal </del></line>
                     <line>tenersi di farle un rimprovero. </line>
-                    <line>- A tua madre non dir niente d’una </line>
+                    <line><milestone unit="seg" n="0006"/>- A tua madre non dir niente d’una </line>
                     <line>cosa simile! </line>
                     <line>- Ora vi dirò tutto, rispose Lucia, asciu</line>
                     <line>gandosi gli occhi col grembiule. </line>

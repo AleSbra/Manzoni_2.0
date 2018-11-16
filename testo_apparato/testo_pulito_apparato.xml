@@ -37,10 +37,10 @@
                </app><app>
                   <lem n="0002">Tutti e due si volsero a colei che ne sapeva più di loro, e <app>
                         <lem n="0002.1">da cui</lem>
-                        <rdg><del type="sps">dalla quale</del></rdg>
+                        <rdg type="sps"><del>dalla quale</del></rdg>
                      </app>aspettavano <app>
                         <lem n="0002.2">uno</lem>
-                        <rdg>una</rdg>
+                        <rdg type="su">un<del>a</del></rdg>
                      </app> schiarimento, il quale non poteva essere che doloroso: </lem>
                   <rdg n="1">Tutti e tre erano turbati per la stessa ragione, ma in diverso modo.
                      Fermo come colui che ad un tratto dalla prosperità e dalla gioia </rdg>
@@ -54,7 +54,7 @@
                      <app>
                         <lem n="0003.2">perchè ella avesse taciuta loro qualche cosa</lem>
                         <rdg n="1">per non</rdg>
-                        <rdg n="2">del non essere stati prima d'allora <del>messi a parte</del>
+                        <rdg n="2">del non essere stati prima d'allora <del rend="prima">messi a parte</del>
                            fatti partecipi d'un</rdg>
                      </app>, e una tal cosa.</lem>
                </app><app>

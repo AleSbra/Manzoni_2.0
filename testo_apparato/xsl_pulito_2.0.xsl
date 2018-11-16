@@ -120,8 +120,24 @@
                 <span class="caret"/>
             </button>
             <ul class="dropdown-menu">
-               <xsl:for-each select="tei:rdg"> <li>
+               <xsl:for-each select="tei:rdg"><li>
                     <a>
+                        <xsl:choose>
+                            <xsl:when test="@type='da'">
+                                <i>da: </i>
+                            </xsl:when>
+                            <xsl:when test="@type='sps'">
+                                <i>sps: </i>
+                            </xsl:when>
+                            <xsl:when test="@type='su'"> <xsl:choose>
+                                <xsl:when test="@type='da'">
+                                    <i>da: </i>
+                                </xsl:when>
+                                <xsl:when test="@type='sps'">
+                                    <i>su: </i>
+                                </xsl:when>
+                            </xsl:choose> </xsl:when>
+                        </xsl:choose> 
                        <xsl:apply-templates/>
                     </a>
                 </li></xsl:for-each>
@@ -130,10 +146,10 @@
     </xsl:template>
 
     <xsl:template match="tei:del">
-        [<i>
-            <xsl:text>prima: </xsl:text>
-        </i>
-        <xsl:apply-templates/>]
+        <xsl:if test="@rend">
+            <i><xsl:value-of select="@rend"/>: </i>
+        </xsl:if>
+        <span style="text-decoration:underline dashed"><xsl:apply-templates/></span>
     </xsl:template>
 
     <xsl:template match="tei:desc">
@@ -143,5 +159,7 @@
             <xsl:text>) </xsl:text>
         </i>
     </xsl:template>
+    
+   
 
 </xsl:stylesheet>

@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs"
     xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0">
-    <xsl:param name="fl-sp">fl</xsl:param>
+    <xsl:param name="fl-sp">sp</xsl:param>
 <!-- tempalte per l'applicazione di name="contenuto" al variare del parametro -->
     <xsl:template match="//tei:sourceDoc/tei:surfaceGrp/tei:surface[@n]">
         <xsl:choose>
@@ -149,15 +149,24 @@
     </xsl:template>
     <!-- template per l'impaginazione in paragrafi -->
     <xsl:template match="tei:milestone">
-       <xsl:variable name="cur-mile" select="@xml:id"/>
-      
-      <xsl:if test="not(ancestor::tei:zone/tei:line[1]/node()[1][@xml:id = $cur-mile])">
-          <xsl:text disable-output-escaping="yes">&lt;/p></xsl:text>
-      </xsl:if>
-            <xsl:text disable-output-escaping="yes">&lt;p></xsl:text> 
-            [<xsl:value-of select="substring-after(@xml:id, concat('p', $fl-sp))"/>] 
-            
+        <xsl:choose>
+            <xsl:when test="@unit='seg'">
+                <a href="../../testo_apparato/puliti/{@n}.html" target="_blank">[<xsl:value-of select="@n"/>]</a>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="cur-mile" select="@xml:id"/>
+                
+                <xsl:if test="not(ancestor::tei:zone/tei:line[1]/node()[1][@xml:id = $cur-mile])">
+                    <xsl:text disable-output-escaping="yes">&lt;/p></xsl:text>
+                </xsl:if>
+                <xsl:text disable-output-escaping="yes">&lt;p></xsl:text> 
+                [<xsl:value-of select="substring-after(@xml:id, concat('p', $fl-sp))"/>] 
+                
+                
+            </xsl:otherwise>
+        </xsl:choose>
         
+      
     </xsl:template>
 <!-- esclusione delle informazioni del teiHeader -->
     <xsl:template match="tei:teiHeader"/>
