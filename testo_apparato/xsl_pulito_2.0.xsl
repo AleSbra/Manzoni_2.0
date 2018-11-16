@@ -7,34 +7,37 @@
     <xsl:template match="tei:rdg/tei:del"/>
     
     <xsl:template match="tei:text/tei:body/tei:div[@n]">
-        <xsl:result-document href="puliti/{@n}.html">
-            <html>
-                <head>
-                    <title><xsl:value-of select=" concat(./tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title/text(), tei:div, @n)"/></title>
-                <style>
-                    p {
-                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-                    font-size: 12px;
-                    text-align: justify;
-                    }
-                    del {
-                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-                    font-size: 12px;
-                    text-align: justify;
-                    color:#f44842;
-                    }
-                    rdg{
-                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-                    font-size: 12px;
-                    text-align: justify;
-                    color: #086604;
-                    }
-                </style>
-                </head>
-                <body>
-                    <h1><xsl:value-of select="tei:head/text()"/></h1>
-                    <xsl:for-each select="tei:p//tei:app">
-                        <xsl:choose>
+       
+           
+                    <xsl:for-each select="tei:p/tei:app">
+                        <xsl:result-document href="puliti/{tei:lem/@n}.html">
+                            <html>
+                                <head>
+                                    <title><xsl:value-of select="concat(ancestor::tei:div/@n, ': ' , tei:lem/@n)"/>
+                                    </title>
+                                    <style>
+                                        p {
+                                        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+                                        font-size: 12px;
+                                        text-align: justify;
+                                        }
+                                        del {
+                                        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+                                        font-size: 12px;
+                                        text-align: justify;
+                                        color:#f44842;
+                                        }
+                                        rdg{
+                                        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+                                        font-size: 12px;
+                                        text-align: justify;
+                                        color: #086604;
+                                        }
+                                    </style>
+                                </head>
+                                <body>
+                                    <h1><xsl:value-of select="tei:head/text()"/></h1>
+                            <xsl:choose>
                             <xsl:when test="tei:lem">
                                 <xsl:variable name="num" select="tei:lem, @n"/>
                                 <p><xsl:value-of select="$num"/><xsl:apply-templates/></p>
@@ -54,10 +57,11 @@
                                 <p class="rdg"><xsl:number select="tei:rdg, @n"></xsl:number><xsl:apply-templates/></p>
                                
                             </xsl:when>
-                        </xsl:choose>
-                    </xsl:for-each>
-                </body>
+                        </xsl:choose> </body>
             </html>
-        </xsl:result-document>
+                        </xsl:result-document>
+                    </xsl:for-each>
+               
+        
     </xsl:template>
 </xsl:stylesheet>
