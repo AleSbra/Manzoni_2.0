@@ -50,7 +50,7 @@
                                             <li class="rdg"><xsl:apply-templates/></li>
                                         </xsl:for-each>
                                     </ol>
-                                    <xsl:for-each select="tei:lem/tei:app">
+                                    <!--<xsl:for-each select="tei:lem/tei:app">
                                         <p><xsl:apply-templates select="tei:lem"></xsl:apply-templates></p>
                                         <ol><xsl:choose>
                                             <xsl:when test="tei:rdg/tei:del">
@@ -60,7 +60,7 @@
                                                 <li class="rdg_sub"><xsl:value-of select="tei:rdg/text()"/></li>
                                             </xsl:when>
                                         </xsl:choose></ol>
-                                    </xsl:for-each>
+                                    </xsl:for-each>-->
                            </body>
             </html>
                         </xsl:result-document>
@@ -68,4 +68,17 @@
                
         
     </xsl:template>
+    
+    <xsl:template match="tei:app[ancestor::tei:app]">
+        <span>[<xsl:apply-templates/>]</span>
+    </xsl:template>
+    
+    <xsl:template match="tei:del">
+        <i><xsl:text>prima: </xsl:text></i><xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="tei:desc">
+        <i><xsl:text> (</xsl:text><xsl:apply-templates/><xsl:text>) </xsl:text></i>
+    </xsl:template>
+    
 </xsl:stylesheet>
