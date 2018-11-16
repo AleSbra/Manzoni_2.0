@@ -37,7 +37,7 @@
                </app><app>
                   <lem n="0002">Tutti e due si volsero a colei che ne sapeva più di loro, e <app>
                         <lem n="0002.1">da cui</lem>
-                        <rdg><del>dalla quale</del></rdg>
+                        <rdg><del type="sps">dalla quale</del></rdg>
                      </app>aspettavano <app>
                         <lem n="0002.2">uno</lem>
                         <rdg>una</rdg>
@@ -49,7 +49,7 @@
                   <lem n="0003">tutti e due lasciando travedere in mezzo al dolore, e con l'amore
                      diverso che ognun d'essi portava a Lucia, un <app>
                         <lem n="0003.1">cruccio pur diverso</lem>
-                        <rdg>pur diverso cruccio</rdg>
+                        <rdg type="da"><del>pur diverso</del> cruccio</rdg>
                      </app>
                      <app>
                         <lem n="0003.2">perchè ella avesse taciuta loro qualche cosa</lem>
