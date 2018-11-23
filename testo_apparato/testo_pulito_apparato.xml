@@ -29,7 +29,56 @@
    </teiHeader>
    <text>
       <body>
-         <div n="024a">
+         <div n="024a_fl">
+            <head><app>
+                  <lem n="0001">Cap. III</lem>
+                  <rdg type="prima">Capitolo III</rdg>
+               </app>
+               <app>
+                  <lem n="0002">Il Causidico</lem>
+                  <rdg type="sps">Don Rodrigo</rdg>
+               </app></head>
+            <p><app>
+                  <lem n="0003">I tre rimasti a consiglio erano agitati turbati per la stessa causa
+                     ma in diverso modo.</lem>
+               </app>
+               <app>
+                  <lem n="0004"> Fermo si trovava nello stato d’un uomo il quale ad un tratto dalla
+                     prosperità e dalla gioja è balzato in una <app>
+                        <lem n="0004.1">sventura</lem>
+                        <rdg type="prima">miseria</rdg>
+                     </app>
+                     <app>
+                        <lem n="0004.2">della quale non conosce che una parte;</lem>
+                        <rdg n="1" type="prima">che non conosce ancora appieno;</rdg>
+                        <rdg n="2">che</rdg>
+                     </app>
+                  </lem>
+               </app>
+               <app>
+                  <lem n="0005">
+                     <app>
+                        <lem n="0005.1">è ansioso di sapere il di più</lem>
+                        <rdg type="prima">d[…]</rdg>
+                     </app>, vuole essere informato di tutto, aspetta sospira nuove rivelazioni, e <app>
+                        <lem n="0005.2">non ne può aspettare che non accrescano</lem>
+                        <rdg type="prima"> e non ne può aspettare che non accrescano e</rdg>
+                     </app> il suo rammarico, che non peggiorino la sua condizione.</lem>
+               </app><app>
+                  <lem n="0006"> Al dolore, al rancore, alla rabbia, si aggiungeva ora il martello
+                     della gelosia. </lem>
+               </app>
+               <app>
+                  <lem n="0007">Egli aveva sempre avuta piena fede in Lucia, ma un mistero di questo
+                     genere, <app>
+                        <lem n="0007.1">un</lem>
+                        <rdg type="su">d[ì]</rdg>
+                     </app> silenzio in questa materia lo tormentava, egli era come spaventato di
+                     conoscere che Lucia aveva una cosa sul cuore, e ch’egli non ne aveva saputo
+                     nulla. </lem>
+               </app></p>
+         </div>
+         <div n="024a_sp">
             <head>Capitolo III</head>
             <p><app>
                   <lem n="0001">Lucia entrò nella stanza terrena che Fermo stava angosciosamente
@@ -54,8 +103,8 @@
                      <app>
                         <lem n="0003.2">perchè ella avesse taciuta loro qualche cosa</lem>
                         <rdg n="1">per non</rdg>
-                        <rdg n="2">del non essere stati prima d'allora <del rend="prima">messi a parte</del>
-                           fatti partecipi d'un</rdg>
+                        <rdg n="2">del non essere stati prima d'allora <del rend="prima">messi a
+                              parte</del> fatti partecipi d'un</rdg>
                      </app>, e una tal cosa.</lem>
                </app><app>
                   <lem n="0004">Agnese, benché ansiosa di sentir parlare la <app>
@@ -66,7 +115,7 @@
                      provata se si fosse trattato di </lem>
                </app></p>
          </div>
-         <div n="024b">
+         <div n="024b_sp">
             <p><app>
                   <lem n="0005"><app>
                         <lem n="0005.1">estranei)</lem>

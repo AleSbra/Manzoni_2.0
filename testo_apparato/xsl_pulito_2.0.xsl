@@ -2,17 +2,37 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs"
     xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0">
+    <xsl:param name="crapp">fl</xsl:param>
     <xsl:template match="tei:teiHeader"/>
     <!--<xsl:template match="tei:del"/>-->
-    <xsl:template match="tei:text/tei:body/tei:div[@n]">
-
-
+    <xsl:template match="tei:text/tei:body/tei:div[contains(@n, concat('_', $crapp))]">
+        <xsl:choose>
+            <xsl:when test="$crapp='sp'">
+                <xsl:call-template name="apparato">
+                    <xsl:with-param name="crapp">
+                        <xsl:value-of select="$crapp"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+                
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="apparato">
+                    <xsl:with-param name="crapp">
+                        <xsl:value-of select="$crapp"/>
+                    </xsl:with-param>
+                </xsl:call-template>
+            </xsl:otherwise>
+            
+        </xsl:choose>
+    </xsl:template>
+<xsl:template name="apparato">
+    <xsl:param name="crapp"/>
         <xsl:for-each select="tei:p/tei:app | tei:head/tei:app">
-            <xsl:result-document href="puliti/{tei:lem/@n}.html">
+            <xsl:result-document href="puliti/{$crapp}/{tei:lem/@n}.html">
                 <html>
                     <head>
                         <title>
-                            <xsl:value-of select="concat(ancestor::tei:div/@n, ': ', tei:lem/@n)"/>
+                            <xsl:value-of select="concat(ancestor::tei:div[contains(@n, concat('_', $crapp))], ': ', tei:lem/@n)"/>
                         </title>
                         <link rel="stylesheet"
                             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
@@ -24,26 +44,7 @@
                                 font-size: 14px;
                                 text-align: justify;
                             }
-                            .del{
-                                font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-                                font-size: 12px;
-                                text-align: justify;
-                                color: #f44842;
-                            }
-                            .rdg{
-                                font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-                                font-size: 12px;
-                                text-align: justify;
-                            
-                            
-                            }
-                            .rdg_sub{
-                                font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-                                font-size: 12px;
-                                text-align: justify;
-                                color: #086604;
-                            }
-                            
+                           
                             .dropdown-menu{
                                 position: absolute;
                                 top: 100%;
