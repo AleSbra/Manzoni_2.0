@@ -342,7 +342,7 @@
 
                 <zone n="9" xml:id="t5" ulx="616" uly="388" lrx="1242" lry="1771"
                     change="#cfl5 #rfl3" style="font-size:24" rend="posizione:2.3 0.8">
-                    <line><milestone unit="section" type="p" xml:id="pfl1"/>I tre rimasti a consiglio erano agitati </line>
+                    <line><milestone unit="section" type="p" xml:id="pfl01"/>I tre rimasti a consiglio erano agitati </line>
                     <line>turbati per la stessa causa ma in diverso </line>
                     <line>modo. Fermo si trovava nello stato d’un </line>
                     <line>uomo il quale ad un tratto dalla prosperità </line>
@@ -359,7 +359,7 @@
                     <line>che non accrescano <del>e non ne può aspettare </del>
                     </line>
                     <line><del>che non accrescano </del> il suo rammarico che non </line>
-                    <line>peggiorino la sua condizione. <milestone unit="section" type="p" xml:id="pfl2"/>Al dolore </line>
+                    <line>peggiorino la sua condizione. <milestone unit="section" type="p" xml:id="pfl02"/>Al dolore </line>
                     <line>al rancore alla rabbia si aggiungeva </line>
                     <line>ora il mantello della gelosia. Egli aveva </line>
                     <line>sempre avuta piena fede in Lucia, </line>
@@ -380,7 +380,7 @@
                 </zone>
                 <zone n="12" xml:id="t7" ulx="48" uly="436" lrx="579" lry="631" change="#csp2 #rsp02"
                     style="font-size:22" rend="posizione:1.8 0.8">
-                    <line><milestone unit="section" type="p" xml:id="psp1"/><milestone unit="seg" n="0001"/>Lucia entrò nella stanza terrena che Fermo </line>
+                    <line><milestone unit="section" type="p" xml:id="psp01"/><milestone unit="seg" n="0001"/>Lucia entrò nella stanza terrena che Fermo </line>
                     <line>stava angosciosamente informando Agnese, </line>
                     <line>la quale angosciosamente lo ascoltava.<del>Tutti </del></line></zone>
                 <zone n="12.1" ulx="48" uly="631" lrx="579" lry="863" change="#csp2-4"
@@ -405,7 +405,7 @@
                     <line><del>stati prima d’allora messi a parte </del>
                         <del>fattì </del></line>
                     <line>partecipi d’un perché ella avesse taciuta loro </line>
-                    <line>qualche cosa, e una tal cosa. <milestone unit="section" type="p" xml:id="psp2"/><milestone unit="seg" n="0004"/>Agnese, </line>
+                    <line>qualche cosa, e una tal cosa. <milestone unit="section" type="p" xml:id="psp02"/><milestone unit="seg" n="0004"/>Agnese, </line>
                     <line>benché ansiosa di sentir parlare la figlia,</line>
                     <line>(e dobbiamo confessare che in quell’ansia </line>
                     <line>oltre tutti i sentimenti di una madre affettuosa,</line>
@@ -423,7 +423,7 @@
                 <graphic url="images/024b.jpg.png" width="1285.03125px" height="1870.03125px"/>
                 <zone n="1" xml:id="t8" ulx="624" uly="227" lrx="1272" lry="1712"
                     change="#cfl6 #rfl4" style="font-size:24" rend="posizione:2.2 0.8">
-                    <line><milestone unit="section" type="p" xml:id="pfl3"/>Agnese, la madre di Lucia era pure </line>
+                    <line><milestone unit="section" type="p" xml:id="pfl03"/>Agnese, la madre di Lucia era pure </line>
                     <line>stupita, scandalizzata di essere all’</line>
                     <line>oscuro di una cosa simile: ella che sapeva </line>
                     <line>tante cose che non la toccavano per </line>
@@ -431,7 +431,7 @@
                     <line>della sua Lucia! Agnese le avrebbe </line>
                     <line>fatto un rabotto terribile se in questo </line>
                     <line>caso il bisogno d’ascoltare non avesse vinto </line>
-                    <line>d’assai quello di parlare. <milestone unit="section" type="p" xml:id="pfl4"/><del>Parla! Parla! </del>
+                    <line>d’assai quello di parlare. <milestone unit="section" type="p" xml:id="pfl04"/><del>Parla! Parla! </del>
                     </line>
                     <line><del>Parlate! Parlate! </del> Lucia… ma </line>
                     <line>dalle sue parole il lettore intenderà lo stato </line>
@@ -441,7 +441,7 @@
                     <line>vergognosa, singhiozzando, arrossando, </line>
                     <line>sclamò! <del>Vergine </del> Santissima Vergine! </line>
                     <line>Chi avrebbe creduto che le cose sarebbero </line>
-                    <line>giunte a questo segno! Quel senza timore </line>
+                    <line>giunte a questo segno! <milestone unit="section" type="p" xml:id="pfl05"/>Quel senza timore </line>
                     <line>di Dio di Don Rodrigo veniva spesso </line>
                     <line>alla filanda <del>dove io andava a </del><add place="above"
                             style="indent:841">a vederci</add> lavorare la </line>
@@ -464,7 +464,7 @@
                     <line>gandosi gli occhi col grembiule. </line>
                     <line>- Parla parla! Parlate, parlate! Gridavano </line>
                     <line>in una volta la madre e lo sposo. </line>
-                    <line>- Santissima Vergine! sclamò Lucia, </line>
+                    <line><milestone unit="section" type="p" xml:id="psp03"/>- Santissima Vergine! sclamò Lucia, </line>
                     <line>chi avrebbe creduto che le cose potessero </line></zone>
                 <zone n="3.1" xml:base="t9-4" ulx="64" uly="295" lrx="622" lry="1646" change="#csp3"
                     style="font-size:24" rend="posizione:1.9 0.8">
@@ -516,7 +516,7 @@
                     <line>fuggiva, chi gridava; e purtroppo c’era </line>
                     <line>chi lasciava fare. <del>Il padrone </del>
                     </line>
-                    <line><milestone unit="section" type="p" xml:id="pfl05"/>Se ci lamentavamo al padrone, egli </line>
+                    <line><milestone unit="section" type="p" xml:id="pfl06"/>Se ci lamentavamo al padrone, egli </line>
                     <line>ci diceva: badate a fare il fatto vostro, </line>
                     <line>non gli fate ansa, sono scherzi, e borbottava </line>
                     <line>poi: gli è un cavaliere; gli è un uomo </line>
@@ -618,7 +618,7 @@
                         <line style="indent:20">il passo e raggiunto le compagne; e </line>
                         <line style="indent:30">intanto aveva sentito quell’altro </line>
                         <line style="indent:40">signore ridere forte, e Don Rodrigo </line>
-                        <line style="indent:50">dire: scommettiamo. Il giorno </line>
+                        <line style="indent:50">dire: scommettiamo. <milestone unit="section" type="p" xml:id="psp04"/>Il giorno </line>
                         <line style="indent:35">appresso <del>colui </del><add place="above"
                                 style="indent:166">coloro</add> s’erano pur trovate sul </line>
                     </zone>
@@ -646,7 +646,7 @@
                 <graphic url="images/024d.jpg" width="1285.03125px" height="1870.03125px"/>
                 <zone n="1" xml:id="t15" ulx="655" uly="182" lrx="1279" lry="1687"
                     change="#cfl8 #rfl6" style="font-size:24" rend="posizione:2.4 0.8">
-                    <line>Ma la filanda era sul finire per </line>
+                    <line><milestone unit="section" type="p" xml:id="pfl07"/>Ma la filanda era sul finire per </line>
                     <line>grazia di Dio, e per quei pochi giorni io </line>
                     <line>stetti sempre in mezzo alle altre </line>
                     <line>di modo ch’egli non mi potè cogliere. </line>
@@ -661,7 +661,7 @@
                     <line>Ma pregai tanto Fermo che aspettasse </line>
                     <line>le nozze: pensava che quando sarei </line>
                     <line>sua moglie colui non avrebbe più </line>
-                    <line>tormentarmi; ed ora… Qui l<del>a </del><add place="superimposed"
+                    <line>tormentarmi; ed ora… <milestone unit="section" type="p" xml:id="pfl08"/>Qui l<del>a </del><add place="superimposed"
                         >e</add></line>
                     <line><del>povera </del> parole della povera Lucia </line>
                     <line>furono tronche da un violento </line>
@@ -678,7 +678,7 @@
                 </zone>
                 <zone n="3.1" xml:id="t16-1" ulx="51" uly="221" lrx="649" lry="571"
                     style="font-size:24" change="#csp8 #rsp08" rend="posizione:1.7 0.8">
-                    <line>- A chi hai raccontato? Domandò Agnese, </line>
+                    <line><milestone unit="section" type="p" xml:id="psp05"/>- A chi hai raccontato? Domandò Agnese, </line>
                     <line>andando incontro, non senza un po’ di sdegno, </line>
                     <line><del>alla parola </del> al nome del confidente pre</line>
                     <line>ferito.</line>
@@ -724,7 +724,7 @@
                     <line>
                         <del>addolcito in quel caso </del>
                     </line>
-                    <line>Al nome riverito del Padre Cristoforo, lo sdegno </line>
+                    <line><milestone unit="section" type="p" xml:id="psp06"/>Al nome riverito del Padre Cristoforo, lo sdegno </line>
                     <line>di Agense si raddolcì. – Hai fatto bene, </line>
                     <line>diss’ella; ma perché non raccontar </line>
                     <line>tutto anche a tua madre?</line>
@@ -749,7 +749,7 @@
                     change="#cfl9 #rfl7" style="font-size:24" rend="posizione:2.4 0.8">
                     <line>Parlarne a tua madre? disse Agnese</line>
                     <line><del type="gap"/> se io l’avessi saputo </line>
-                    <line>prima… Lucia non rispose perché </line>
+                    <line>prima… <milestone unit="section" type="p" xml:id="pfl09"/>Lucia non rispose perché </line>
                     <line>la risposta che si sentiva in mente </line>
                     <line>non era da darsi a sua madre: tutto </line>
                     <line>il vicinato ne sarebbe stato informato.</line>
@@ -757,7 +757,7 @@
                     <line>savano dall’obbligo di parlare. <del>Non l’hai </del></line>
                     <line>Non ne <del>f </del>hai <del>detto </del> fatto parola </line>
                     <line>con nessuno? Ridomandò Agnese. </line>
-                    <line>Si mamma l’ho detto al Padre <del>Galdino </del></line>
+                    <line><milestone unit="section" type="p" xml:id="pfl10"/>Si mamma l’ho detto al Padre <del>Galdino </del></line>
                     <line><add place="margin" style="indent:546">Cristoforo</add> in confessione –
                             <del>E Agn </del> Hai fatto bene; </line>
                     <line>ma dovevi dirlo anche a tua madre. </line>
@@ -769,7 +769,7 @@
                     <line>e che egli ci penserebbe e che se </line>
                     <line>durava la persecuzione egli ci penserebbe </line>
                     <line><del>d’una </del>
-                        <del type="gap"/> Oh che imbroglio, che </line>
+                        <del type="gap"/> <milestone unit="section" type="p" xml:id="pfl11"/>Oh che imbroglio, che </line>
                     <line>imbroglio! riprese la madre. Fermo </line>
                     <line>si arrestò tutto ad un tratto; guardò </line>
                 </zone>
@@ -811,7 +811,7 @@
                     <line>riconoscere ad un amico ch’egli ha avuto </line>
                     <line>il torto: e a voi doveva io parlare di </line>
                     <line>questo? Purtroppo lo sapete ora! </line>
-                    <line>- E che ti ha detto il Padre? Domandò </line>
+                    <line><milestone unit="section" type="p" xml:id="psp07"/>- E che ti ha detto il Padre? Domandò </line>
                     <line>Agnese. </line>
                     <line>- Ch’io cercassi di affrettare le nozze il </line>
                     <line>più che potrei, e intanto mi stessi </line>
@@ -831,14 +831,14 @@
                     <line>
                         <del>che fa quel birbante! </del>
                     </line>
-                    <line>Per amor del cielo, gridò Lucia, <del>gettan </del></line>
+                    <line><milestone unit="section" type="p" xml:id="pfl12"/>Per amor del cielo, gridò Lucia, <del>gettan </del></line>
                     <line>
                         <del>Gettandogli quasi le braccia al collo </del>
                     </line>
                     <line>No no per amor del cielo. <del>Come volete </del></line>
                     <line><del>che Dio ci ajuti </del> Dio c’è anche pei poveri! </line>
                     <line>Come volete ch’egli ci ajuti se facciamo </line>
-                    <line>del male? No no per amor del cielo </line>
+                    <line>del male? <milestone unit="section" type="p" xml:id="pfl13"/>No no per amor del cielo </line>
                     <line>ripeteva Agnese. Fermo disse Lucia, </line>
                     <line>voi avete un mestiere, ed io so lavorare, </line>
                     <line>andiamo lontano tanto che altrui non </line>
@@ -848,7 +848,7 @@
                     <line>la fede di stato libero? <del>Non </del><add place="above"
                             style="indent:1023">non</add> saremo pigliati </line>
                     <line>come vagabondi? Dove andarci a porre? </line>
-                    <line>Lucia ricadde nel pianto. Sentite! </line>
+                    <line><milestone unit="section" type="p" xml:id="pfl14"/>Lucia ricadde nel pianto. Sentite! </line>
                     <line>disse Agnese: sentitemi che son vecchia. </line>
                     <line>Era questa una confessione che la buona </line>
                     <line>Agnese faceva di rado, un caso di somma </line>
@@ -917,7 +917,7 @@
                     <line>tanto lontana dal pensare… </line>
                     <line>Qui le parole di Lucia furono tronche </line>
                     <line>da un violento scoppio di pianto. </line>
-                    <line>- Ah birbone! Ah dannato! Ah </line>
+                    <line><milestone unit="section" type="p" xml:id="psp08"/>- Ah birbone! Ah dannato! Ah </line>
                     <line>assassino! Sclamava Fermo scorrendo </line>
                     <line>su e giù per la stanza, <del>e mettendo </del><add place="above"
                             style="indent:367">stringendo </add></line>
@@ -941,7 +941,7 @@
                         <line>volete che ci ajuti, se facciamo del male? </line>
                         <line>– No, no, per amor del cielo, ripeteva </line>
                         <line>Agnese. </line>
-                        <line>-Fermo disse Lucia, con un’aria di </line>
+                        <line><milestone unit="section" type="p" xml:id="psp09"/>-Fermo disse Lucia, con un’aria di </line>
                         <line>speranza, e di risoluzione più tranquilla: </line>
                         <line>voi avere un mestiere, ed io so lavorare: </line>
                         <line>andiamo tanto lontano che <del>costui non </del></line>
@@ -997,13 +997,13 @@
                     <line><del>gente che si ride degli imbrogli </del><add place="above"
                             style="indent:666">che parevano disperati ma un buon parere di un uomo
                             </add><add place="below" style="indent:664">che aveva studiato, aggiustò
-                            tutto </add>. Fate </line>
+                                tutto </add>.<milestone unit="section" type="p" xml:id="pfl15"/> Fate </line>
                     <line>a modo mio Fermo. Pigliati quei </line>
                     <line>quattro capponi, poveretti! Che doveva </line>
                     <line>sgozzare io questa mattina pel banchetto: </line>
                     <line>teneteli ben stretti, per le gambe, andate </line>
                     <line>a Lecco: sapere dove abita il dottor </line>
-                    <line><del type="gap"/>. – lo so benissimo- Bene </line>
+                    <line><del type="gap"/>. – lo so benissimo- <milestone unit="section" type="p" xml:id="pfl16"/>Bene </line>
                     <line>andate da lui, presentategli i capponi: </line>
                     <line>perché vedere quando provate che uno </line>
                     <line>può <del>dare </del><add place="above" style="indent:727">regalare</add>
@@ -1022,7 +1022,7 @@
                 </zone>
                 <zone n="3" xml:id="t25" ulx="30" uly="211" lrx="639" lry="1766"
                     change="#csp14 #rsp16" style="font-size:24" rend="posizione:1.8 0.8">
-                    <line>- Sentite<del>, del </del> figliuoli; date retta a me, </line>
+                    <line><milestone unit="section" type="p" xml:id="psp10"/>- Sentite<del>, del </del> figliuoli; date retta a me, </line>
                     <line>disse dopo qualche momento Agnese. Io </line>
                     <line>sono venuta al mondo prima di voi; e il </line>
                     <line>mondo lo conosco un poco. Non bisogna poi </line>
@@ -1045,7 +1045,7 @@
                     <line>naso rosso, e una voglia di lampone sulla </line>
                     <line>guancia. </line>
                     <line>- Lo conosco di vista, disse Fermo. </line>
-                    <line>- Bene, continuò Agnese; quegli è un uomo! </line>
+                    <line><milestone unit="section" type="p" xml:id="psp11"/>- Bene, continuò Agnese; quegli è un uomo! </line>
                     <line>Ho visto io più d’uno impicciato come </line>
                     <line>un pulcino nella stoppa e che non sapeva </line>
                     <line>dove dargli del capo, e dopo essere stato un’</line>
@@ -1060,7 +1060,7 @@
                     change="#cfl12 #rfl10" style="font-size:24" rend="posizione:2.2 0.8">
                     <line>un timollo che saltellando nella </line>
                     <line>barca per disperazione cade nell’acqua </line>
-                    <line>e si trova in casa sua. Fate così Fermo. </line>
+                    <line>e si trova in casa sua. <milestone unit="section" type="p" xml:id="pfl17"/>Fate così Fermo. </line>
                     <line><del>Quando </del> Nelle situazioni molto imbrogliate </line>
                     <line>il parere che piace più è quello di pigliar </line>
                     <line>tempo per avere un altro parere definitivo: </line>
@@ -1074,7 +1074,7 @@
                     <line>volentieri il parere <del>di Agnese che fu </del></line>
                     <line><del>superba di averlo fatto </del>. Lucia <del>lo agg </del></line>
                     <line>vi aggiunse la sua approvazione. </line>
-                    <line>Agnese superba d’averlo dato <del>prese </del><add place="above"
+                    <line><milestone unit="section" type="p" xml:id="pfl18"/>Agnese superba d’averlo dato <del>prese </del><add place="above"
                             style="indent:1300">pigliò</add>
                     </line>
                     <line>i capponi,<del><add place="above" style="indent:744">dalle sue</add> </del>
@@ -1110,7 +1110,7 @@
                     <line>quei signori. Raccontategli tutto l’accaduto; </line>
                     <line>e vedete ch’egli saprà trovarvi il ban </line>
                     <line>dolo. </line>
-                    <line>Nei frangenti difficoltosi, il parere che </line>
+                    <line><milestone unit="section" type="p" xml:id="psp12"/>Nei frangenti difficoltosi, il parere che </line>
                     <line>più apprenda generalmente è quello <del>di pigliar </del>
                     </line>
                     <line><del>tempo </del> che dia occasione di pigliare tempo </line>
