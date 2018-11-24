@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0" xmlns:svg="http://www.w3.org/2000/svg"
     exclude-result-prefixes="svg">
-    <xsl:param name="mode" select="'writing_fl'"/>
+    <xsl:param name="mode" select="'reading_sp'"/>
     <xsl:template match="/" exclude-result-prefixes="svg">
         <xsl:for-each select="//tei:surfaceGrp">
             <xsl:variable name="surface-id" select="@xml:id"/>
@@ -26,9 +26,17 @@
                                     <listChange xmlns="http://www.tei-c.org/ns/1.0">
                                         <xsl:for-each select="tei:change[@xml:id]">
                                             <xsl:if
-                                                test="ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone[contains(@change, current()/@xml:id)]">
+                                                test="if ((for $c in ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone/tokenize(@change, '#') return normalize-space($c) = current()/@xml:id) = true()) then true() else false()">
                                                 <change ref="{@xml:id}">
-                                                  <xsl:value-of select="tei:desc"/>
+                                                    <xsl:if test="@type = 'patch'">
+                                                        <xsl:attribute name="type">
+                                                            <xsl:value-of select="@type"/>
+                                                        </xsl:attribute>
+                                                        <xsl:attribute name="target">
+                                                            <xsl:value-of select="ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone[if ((for $c in tokenize(@change, '#') return normalize-space($c) = current()/@xml:id) = true()) then true() else false()]/parent::tei:surface/@n"/>
+                                                        </xsl:attribute>
+                                                    </xsl:if>
+                                                    <xsl:value-of select="tei:desc"/>
                                                 </change>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -41,9 +49,17 @@
                                     <listChange xmlns="http://www.tei-c.org/ns/1.0">
                                         <xsl:for-each select="tei:change">
                                             <xsl:if
-                                                test="ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone[contains(@change, current()/@xml:id)]">
+                                                test="if ((for $c in ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone/tokenize(@change, '#') return normalize-space($c) = current()/@xml:id) = true()) then true() else false()">
                                                 <change ref="{@xml:id}">
-                                                  <xsl:value-of select="tei:desc"/>
+                                                    <xsl:if test="@type = 'patch'">
+                                                        <xsl:attribute name="type">
+                                                            <xsl:value-of select="@type"/>
+                                                        </xsl:attribute>
+                                                        <xsl:attribute name="target">
+                                                            <xsl:value-of select="ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone[if ((for $c in tokenize(@change, '#') return normalize-space($c) = current()/@xml:id) = true()) then true() else false()]/parent::tei:surface/@n"/>
+                                                        </xsl:attribute>
+                                                    </xsl:if>
+                                                    <xsl:value-of select="tei:desc"/>
                                                 </change>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -56,9 +72,17 @@
                                     <listChange xmlns="http://www.tei-c.org/ns/1.0">
                                         <xsl:for-each select="tei:change">
                                             <xsl:if
-                                                test="ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone[contains(@change, current()/@xml:id)]">
+                                                test="if ((for $c in ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone/tokenize(@change, '#') return normalize-space($c) = current()/@xml:id) = true()) then true() else false()">
                                                 <change ref="{@xml:id}">
-                                                  <xsl:value-of select="tei:desc"/>
+                                                    <xsl:if test="@type = 'patch'">
+                                                        <xsl:attribute name="type">
+                                                            <xsl:value-of select="@type"/>
+                                                        </xsl:attribute>
+                                                        <xsl:attribute name="target">
+                                                            <xsl:value-of select="ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone[if ((for $c in tokenize(@change, '#') return normalize-space($c) = current()/@xml:id) = true()) then true() else false()]/parent::tei:surface/@n"/>
+                                                        </xsl:attribute>
+                                                    </xsl:if>
+                                                    <xsl:value-of select="tei:desc"/>
                                                 </change>
                                             </xsl:if>
                                         </xsl:for-each>
@@ -71,9 +95,17 @@
                                     <listChange xmlns="http://www.tei-c.org/ns/1.0">
                                         <xsl:for-each select="tei:change">
                                             <xsl:if
-                                                test="ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone[contains(@change, current()/@xml:id)]">
+                                                test="if ((for $c in ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone/tokenize(@change, '#') return normalize-space($c) = current()/@xml:id) = true()) then true() else false()">
                                                 <change ref="{@xml:id}">
-                                                  <xsl:value-of select="tei:desc"/>
+                                                    <xsl:if test="@type = 'patch'">
+                                                        <xsl:attribute name="type">
+                                                            <xsl:value-of select="@type"/>
+                                                        </xsl:attribute>
+                                                        <xsl:attribute name="target">
+                                                            <xsl:value-of select="ancestor::tei:TEI//tei:surfaceGrp[@xml:id = $surface-id]//tei:zone[if ((for $c in tokenize(@change, '#') return normalize-space($c) = current()/@xml:id) = true()) then true() else false()]/parent::tei:surface/@n"/>
+                                                        </xsl:attribute>
+                                                    </xsl:if>
+                                                    <xsl:value-of select="tei:desc"/>
                                                 </change>
                                             </xsl:if>
                                         </xsl:for-each>

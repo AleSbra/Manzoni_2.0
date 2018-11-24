@@ -93,10 +93,10 @@
                     <change xml:id="csp5-2" type="refused">
                         <desc>cancellazione testo FL</desc>
                     </change>
-                    <change xml:id="csp6">
+                    <change xml:id="csp6" type="patch">
                         <desc>testo su cartiglio</desc>
                     </change>
-                    <change xml:id="csp6-1">
+                    <change xml:id="csp6-1" type="patch">
                         <desc>retro del cartiglio</desc>
                     </change>
                     <change xml:id="csp7">
@@ -114,7 +114,7 @@
                     <change xml:id="csp8-3">
                         <desc>testo finale 024d</desc>
                     </change>
-                    <change xml:id="csp9">
+                    <change xml:id="csp9" type="patch">
                         <desc>testo sul cartiglio</desc>
                     </change>
                     <change xml:id="csp10">
@@ -135,11 +135,11 @@
                     <change xml:id="csp11-3">
                         <desc>testo FL rifiutato</desc>
                     </change>
-                    <change xml:id="csp12">
+                    <change xml:id="csp12" type="patch">
                         <desc>cartiglio I</desc>
                     </change>
 
-                    <change xml:id="csp13">
+                    <change xml:id="csp13" type="patch">
                         <desc>cartiglio II</desc>
                     </change>
                     <change xml:id="csp14">
@@ -218,7 +218,7 @@
                     <change xml:id="rsp05">
                         <desc>due righe prima del caritglio</desc>
                     </change>
-                    <change xml:id="rsp06">
+                    <change xml:id="rsp06" type="patch">
                         <desc>testo su cartiglio</desc>
                     </change>
                     <change xml:id="rsp07">
@@ -227,7 +227,7 @@
                     <change xml:id="rsp08">
                         <desc>testo iniziale</desc>
                     </change>
-                    <change xml:id="rsp09">
+                    <change xml:id="rsp09" type="patch">
                         <desc>testo su cartiglio</desc>
                     </change>
                     <change xml:id="rsp10">
@@ -236,7 +236,7 @@
                     <change xml:id="rsp11">
                         <desc>testo intero</desc>
                     </change>
-                    <change xml:id="rsp12">
+                    <change xml:id="rsp12" type="patch">
                         <desc>testo cartiglio I</desc>
                     </change>
                     <change xml:id="rsp13">
@@ -245,7 +245,7 @@
                     <change xml:id="rsp14" type="accepted">
                         <desc>testo su FL</desc>
                     </change>
-                    <change xml:id="rsp15">
+                    <change xml:id="rsp15" type="patch">
                         <desc>testo cartiglio II</desc>
                     </change>
                     <change xml:id="rsp16">
