@@ -6,8 +6,8 @@
          <script type="text/javascript" src="output/js/jquery-1.8.2.min.js"></script>
         <script type="text/javascript" src="output/js/jquery-ui-1.9.0.custom.min.js"></script>
         <link rel="stylesheet" type="text/css" href="output/js/jquery-ui.css">
-        <style type="text/css">
-           h1{
+            <style type="text/css">
+                   h1{
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 	color: #eeeeee;
 	text-align: center;
@@ -60,7 +60,6 @@
 	margin-bottom: 10px;
 	text-align: left;
 }
-
 a{text-decoration:none;
 color: #5C9EAD;
 font-size:16px;
@@ -78,7 +77,8 @@ font-size:16px;
             margin:auto;
 }
 
-            div#top_controls, div#canvas { margin-left: 30%; }
+            .page_wide_margin { margin-left: 10%; }
+            .page_thin_margin { margin-left: 5%; }
             div#sliderwrap {padding: 1em 0 0 0;}
             p#desc{ font-size: 70%; padding: 0 6em 0 0; height:1em; font-weight: bold; color:#326273; display: inline;}
             div#side_controls {float: left;}
@@ -109,17 +109,8 @@ font-size:16px;
                 color:#333;
                 display:none;
             }
-			.box{
-	width: 15%;
-	height: auto;
-	position:absolute;	
-	text-align: left;
-	align-content: center;
-	align-items: center;
-	margin-top: 5%;	
-	display:list-item;
-}
-            .but {
+			
+             .but {
                 border : 1px solid;
                 padding : 2px 4px 2px 4px;
                 text-decoration : none;
@@ -128,8 +119,6 @@ font-size:16px;
                 background : #eeeeee;
                 margin-right : 20px
             }
-			.but:hover{font-weight: bold;
-	text-shadow: 0.5px 0.5px #000000}
             .title {
                border: solid;
 	border-color:#5C9EAD;
@@ -142,7 +131,7 @@ font-size:16px;
                 min-height : 1171px
                 
             }
-            .modeOn {
+             .modeOn {
               color: #326273;
 	text-shadow: 0.5px 0.5px #000000
 
@@ -167,6 +156,87 @@ font-size:16px;
             }
 			contenitore{width: 50%;
 			height: auto;}
+			
+					
+	.cartiglio {
+	   position: absolute;
+	   border: 1px solid Black;
+	   box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+	}
+	
+	.cartiglio_info {
+	   background-color: white;
+	   border-bottom: 1px solid Black;
+	   padding: 6px;
+	}
+	
+	.cartiglio_mostra {
+	   float: right;
+	}
+	
+	#container {
+	   display: flex;
+	   flex-wrap: no-wrap;
+	}
+	
+	.box{
+	   width: 15%;
+    	text-align: left;
+    	align-content: center;
+    	align-items: center;
+    	margin-top: 5%;	
+    	display:list-item;
+    }
+    
+    #testo {
+    display: none;
+    width: 15%;
+    }
+    
+    .transcription_content h1{
+        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+        text-align: center;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 16px;
+    }
+    .transcription_content h2{
+        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+        text-align: center;
+        font-size: 14px;
+    }
+    .transcription_content p{
+        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+        font-size: 12px;
+        text-align: justify;
+    }
+    .transcription_content .block{
+        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+        font-size: 12px;
+        text-align: justify;
+        display: block;
+    }
+    .transcription_content .inline{
+        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+        font-size: 12px;
+        text-align: justify;
+    }
+    .transcription_content .box{
+        text-decoration: none;
+        width: 350px;
+        height: 500px;
+        position: absolute;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .transcription_content .note{margin-top:30px;
+    font-size:10px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";}
+	
+	</div>
+	
         </style>
     </head>
     <body>
@@ -176,71 +246,63 @@ font-size:16px;
         <!--<p style="padding-top:10px; font-size:85%">Click on the image to see zones appearing according to the order in which they were
             written. Click on "Reading Sequence" to see zones appearing in the order in which
             they should be read.</p>--> 
-            <div id="top_controls">
+
+ 
+<div id="container">  
+        <div class="box"><p><a href="index.html" class="button">Home</a></p>
+            <p><a href="ordine_narrativo.html" class="button" id="switch_order">Vedi l'ordine narrativo</a></p>
+		<p><b>Ordine Compositivo</b></p>  
+            <p><a id="reading_sp" href="" class="button">Sposi Promessi</a> &nbsp;<a href="lettura_sp.html" class="but toggleTranscription"><i>testo</i></a></p>
+            <p><a id="reading_fl" href="" class="button modeOn">Fermo e Lucia</a> &nbsp;<a href="lettura_fl.html" class="but toggleTranscription"><i>testo</i></a></p>
+
+<p><b>Vai a:</b> <a id="prev" href="" class="button">&lt;&lt;</a> <select id="pagelist">
+    <option value="50r">50r</option>
+    <option value="50v">50v</option>
+    <option value="51r">51r</option>
+    <option value="51v">51v</option>
+    <option value="52r">52r</option>
+    <option value="52v">52v</option>
+    <option value="53r">53r</option>
+    <option value="53v">53v</option>
+</select> <a id="next" href="" class="button">&gt;&gt;</a></p> 
+		
+			<!--<p><a href="cartiglio_1.html" onclick="return popitup('cartiglio_1.html')" class="button">Cartiglio 1</a></p>		
+			<p><a href="cartiglio_2.html" onclick="return pop1up('cartiglio_2.html')" class="button">Cartiglio 2</a></p>-->			
+</div>
+     
+
+    <div id="testo" data-mode="fl">
+        <h3>Trascrizione (<span id="testo_mode">Fermo e Lucia</span>)</h3>
+        <div id="testo_content"></div>
+    </div>
+    
+    <div id="page" class="page_wide_margin">
+        <div id="top_controls" >
             <div id="sliderwrap">
                 <div id="slider"></div>
             </div>
             <p id="desc"></p>
         </div>
-
- 
-  
-        <div class="box"><p><a href="index.html" class="button">Home</a></p>
-        <p><a href="ordine_narrativo.html" class="button">Vedi l'ordine narrativo</a></p>
-		<p><b>Ordine Compositivo</b></p>
-			<p><a id="writing_sp" href="" class="button">Sposi Promessi</a> &nbsp;
-			<a href="lettura_sp.html" onclick="return pop2up('lettura_sp.html')" class="but"><i>testo</i></a>
-			</p>
-	<p><a id="writing_fl" href="" class="button">Fermo e Lucia</a> &nbsp;<a href="lettura_fl.html" onclick="return pop2up('lettura_fl.html')" class="but"><i>testo</i></a></p>
-
-<p><b>Vai a:</b> <a id="prev" href="" class="button">&lt;&lt;</a> <select id="pagelist">
-    <option>50r</option>
-	<option>50v</option>
-	<option>51r</option>
-	<option>51v</option>
-	<option>52r</option>
-	<option>52v</option>
-	<option>53r</option>
-	<option>53v</option>
-</select> <a id="next" href="" class="button">&gt;&gt;</a></p> 
-		
-			<p><a href="cartiglio_1.html" onclick="return popitup('cartiglio_1.html')" class="button">Cartiglio 1</a></p>		
-			<p><a href="cartiglio_2.html" onclick="return pop1up('cartiglio_2.html')" class="button">Cartiglio 2</a></p>			
-</div>
-     
-
         <div id="canvas"></div>
-        
+    </div>
+    
+</div>
+        <div id="cartigli">
+            
+        </div>
+        <div class="cartiglio" id="cartiglio_template" style="display:none">
+            <div class="cartiglio_info">Cartiglio <span class="cartiglio_folio"></span> <button class="cartiglio_mostra">testo on/off</button></div>
+            <div class="patch"></div>
+        </div>
         
 <script type="application/javascript">
-	function popitup(url){newwindow = window.open(url,'cartiglio_1','height=450px,width=400px');
-						 if (window.focus){newwindow.focus()}
-						 return false;}
-	function pop1up(url){newwindow = window.open(url,'cartiglio_2','height=1000px,width=400px');
-						 if (window.focus){newwindow.focus()}
-						 return false;}
-	function pop2up(url){newwindow = window.open(url,'popup_testo','height=900px,width=570px');
-						 if (window.focus){newwindow.focus()}
-						 return false;}
-	/*function show_hide(){
-                var visualizza = document.getElementById("show-hide");
-                var cont = document.getElementById("cont")
-                if (visualizza.innerHTML == "Visualizza cartigli"){
-                    url.style.visibility = "visible";
-                    visualizza.innerHTML = "Nascondi cartigli";
-                }
-                else if (visualizza.innerHTML == "Nascondi cartigli") {
-                    url.style.visibility = "hidden";
-                    visualizza.innerHTML = "Visualizza cartigli";
-                }
-            }	*/
-var filelist = [["50r--writing_fl.svg","50v--writing_fl.svg","51r--writing_fl.svg","51v--writing_fl.svg","52r--writing_fl.svg","52v--writing_fl.svg","53r--writing_fl.svg","53v--writing_fl.svg"],
+var filelist = [["50r--writing_fl.svg", "50v--writing_fl.svg","51r--writing_fl.svg","51v--writing_fl.svg","52r--writing_fl.svg","52v--writing_fl.svg","53r--writing_fl.svg","53v--writing_fl.svg"],
                             ["50r--writing_sp.svg","50v--writing_sp.svg","51r--writing_sp.svg","51v--writing_sp.svg","52r--writing_sp.svg","52v--writing_sp.svg","53r--writing_sp.svg","53v--writing_sp.svg"]];
 var dirlist = ["output/writing_fl", "output/writing_sp"];
 var imgcounter = 0;
 var imglist = 0;
-//"51r.1--writing_fl.svg", "51r.2--writing_fl.svg","51v.1--writing_fl.svg","52v.2--writing_fl.svg","52v.1--writing_fl.svg",
-//"51r.1--writing_sp.svg","51r.2--writing_sp.svg","51v.1--writing_sp.svg","52v.1--writing_sp.svg","52v.2--writing_sp.svg",
+ //"51r.1--writing_fl.svg","51r.2--writing_fl.svg","51v.1--writing_fl.svg","52v.1--writing_fl.svg","52v.2--writing_fl.svg", 
+ //,   
 function getsrc() {
     return dirlist[imglist]+'/'+filelist[imglist][imgcounter % filelist[imglist].length];
 }
@@ -311,7 +373,12 @@ function makeSlider(sequence) {
         //show next
         if (!sequence[gstep.step].minimized) { $(svg).find('#'+sequence[gstep.step].s).show(); }
         $('#desc').text(function(){return $(svg).find('change[ref="'+sequence[gstep.step].s+'"]').text()});
-
+        
+        stepData = sequence[gstep.step]
+        if (stepData.type === 'patch') {
+            showPatch(stepData.target);
+        }
+        
         setStep($(this), ui);
       }
       else if (ui.value < gstep.value) {
@@ -319,17 +386,40 @@ function makeSlider(sequence) {
         $(svg).find('#'+sequence[gstep.step-1].s).hide();
         $('#desc').text(function(){return $(svg).find('change[ref="'+sequence[gstep.step-1].s+'"]').text()});
 
+        stepData = sequence[gstep.step-1]
+        if (stepData) {
+            if (stepData.type === 'patch') {
+                removePatch(stepData.target);
+            }
+        }       
+
         setStep($(this), ui);
          
      }
     },
     change: function( event, ui) {
         for (var i=0;i<sequence.length;i++){
-            if (i < gstep.step && !sequence[i].minimized) $(svg).find('#'+sequence[i].s).show();    
-            else $(svg).find('#'+sequence[i].s).hide(); 
+            if (i < gstep.step && !sequence[i].minimized) {
+                $(svg).find('#'+sequence[i].s).show();
+                stepData = sequence[i]
+                if (stepData.type === 'patch') {
+                    showPatch(stepData.target);
+                }
+            } else {
+                $(svg).find('#'+sequence[i].s).hide();
+                stepData = sequence[i]
+                if (stepData) {
+                    if (stepData.type === 'patch') {
+                        removePatch(stepData.target);
+                    }
+                } 
+            } 
         }
-        if (gstep.step != 0) $('#desc').text(function(){return $(svg).find('change[ref="'+sequence[gstep.step-1].s+'"]').text()});
-        else $('#desc').text('');
+        if (gstep.step != 0) {
+            $('#desc').text(function(){return $(svg).find('change[ref="'+sequence[gstep.step-1].s+'"]').text()});
+        } else {
+            $('#desc').text('');
+        }
     } 
   });
 }
@@ -361,9 +451,12 @@ function gstep_reset(){this.step=0; this.value=0;}
 function getSequence (svg) {
     sequence = [] ;
     $(svg).find('change').each(function() {
-      sequence.push(
-        {s : $(this).attr('ref'), minimized : false}
-        );
+      sequence.push({
+        s : $(this).attr('ref'), 
+        minimized : false, 
+        type: $(this).attr('type'),
+        target: $(this).attr('target')
+        });
     });
     return sequence;
 }
@@ -414,6 +507,55 @@ $('body').click(function() {
         $('#minip').css("display", "none");
     }
 });
+
+// show patches
+function showPatch(target) {
+
+    if ($('#' + target.replace(/\./g, '_')).length == 0) {
+        $.get('output/writing_sp/'+target+'--writing_sp.svg', function(data){        
+        svgRoot = $(data).find('svg');
+        // Scale to page SVG scale.
+        w = svgRoot.attr("width");
+        h = svgRoot.attr("height");
+    
+        page_w = $("#canvas > svg").attr('width');
+        new_w = (page_w * 40) / 100;
+        scale = (new_w*100) / w;
+        new_h = (h*scale)/100;
+    
+        //resize svg width
+        svgRoot.attr("width", new_w)
+                 .attr("height", new_h);
+                 
+        tpl = $('#cartiglio_template').clone()  
+        tpl.attr('id', target.replace(/\./g, '_'))
+        tpl.find('.patch').append(svgRoot);        
+        tpl.css('left', $("#canvas").get(0).getBoundingClientRect().x + ($("#canvas").width()/4))
+        tpl.css('top', $("#canvas").get(0).getBoundingClientRect().y + ($("#canvas").height()/2))
+        tpl.show();
+        tpl.find('.cartiglio_folio').text(target);        
+        tpl.find('.patch').trigger("addToDom");
+        tpl.find('.cartiglio_mostra').click(function () {
+            svgRoot.find("g > g").toggle()
+        })
+        $('#cartigli').append(tpl)
+      });
+    }
+}
+
+function removePatch(target) {    
+   patch = $('#'+target.replace(/\./g, '_'))
+   patch.find('.cartiglio_mostra').off('click')
+   patch.find('.patch > svg').remove();
+   patch.remove() 
+}
+
+// remove all patches
+function removePatches() {
+   $('.cartiglio_mostra').off('click')
+   $('.patch > svg').remove();
+   $('#cartigli').empty();   
+}
 
 $("#canvas").live("addToDom", function(e) {
     svg = $(this).find('svg');
@@ -511,21 +653,163 @@ $("#canvas").live("addToDom", function(e) {
         gstep.value = $('#slider').slider("option").value + $('#slider').slider("option").step;
         $('#slider').slider("value", gstep.value);
         $(svg).find('#'+sequence[gstep.step].s).show();
-        $('#desc').text(function(){return $(svg).find('change[ref="'+sequence[gstep.step].s+'"]').text()});
+        // If this step is of type='patch', show patch.
+        stepData = sequence[gstep.step]
+        if (stepData.type === 'patch') {
+            showPatch(stepData.target);
+        }
+        $('#desc').text(function(){return $(svg).find('change[ref="'+stepData.s+'"]').text()});
         gstep.step++;
       }
       else dragstop = false;
     });
     
 });
+
+// Set page based on hash
+function goToPage(pageRequested) {
+    if (pageRequested) {    
+        removePatches();
+        imgcounter = $('#pagelist').find('option[value="'+pageRequested+'"]').index()
+        $('#pagelist option:eq('+imgcounter+')').prop('selected', true);
+        updateimg();
+        $('#minis').children().remove();
+    }
+}
+
+// Set text (image list)
+function setText(text) {
+    switch (text) {
+        case 'sp': 
+            imglist = 1;
+            $('#writing_sp').addClass('modeOn')
+            $('#writing_fl').removeClass('modeOn')
+        break;
+        case 'fl': 
+            imglist = 0;
+            $('#writing_fl').addClass('modeOn')
+            $('#writing_sp').removeClass('modeOn')
+        break;
+        default: imglist = 0        
+    }
+}
+
+// show transcription
+function showTranscription(folio, mode) {
+    $.get('testi/'+mode+'/'+folio+'.html', function(data) {
+            text = $.grep($(data), function( n, i ) {
+                return ( $(n).hasClass('box') );
+            })[0]
+            text.classList.remove('box')
+            text.classList.add('transcription_content')
+            $('#testo_content').html(text)            
+        }, 'text')
     
+    $('#testo').data('mode', mode)
+    mode_label = mode === 'sp'? 'Sposi Promessi' : 'Fermo e Lucia'
+    $('#testo_mode').text(mode_label)
+   
+}
+
+// get url params
+function getHashParams() {
+
+    var hashParams = {};
+    var e,
+        a = /\+/g,  // Regex for replacing addition symbol with a space
+        r = /([^&;=]+)=?([^&;]*)/g,
+        d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+        q = window.location.hash.substring(1);
+
+    while (e = r.exec(q))
+       hashParams[d(e[1])] = d(e[2]);
+
+    return hashParams;
+}
+
+
+// Startup operations
+$(document).ready(function() {
+    params = getHashParams()
+    goToPage(params.folio)
+    setText(params.testo)
+    updateimg()
+})
+
+$( window ).on( 'hashchange', function( e ) {    
+    params = getHashParams()
+    goToPage(params.folio)
+    setText(params.testo)
+    updateimg()    
+    showTranscription(params.folio, $('#testo').data('mode'))
+} );
+
+// Update Hash predictably
+function setHashParam(param) {    
+    params = getHashParams()
+    if (param.key === 'folio') {
+        folio = param.value
+    } else {
+        folio = params.folio ? params.folio : $('#pagelist > option:eq(1)').get(0).value
+    }
+    if (param.key === 'testo') {
+        testo = param.value
+    } else {
+        testo = params.testo ? params.testo : $('.modeOn').attr('id').split('_')[1]
+    }    
+    location.hash = '#folio='+folio+'&testo='+testo
+}
+
 // General Controls
 
-$('#writing_fl').click(function() {imglist=0; updateimg(); updatestyle(this); return false});
-$('#writing_sp').click(function() {imglist=1; updateimg(); updatestyle(this); return false});
-$('#pagelist').change(function() {imgcounter=$('#pagelist option:selected').index(); updateimg();});
-$('#prev').click(function() {imgcounter--;updateimg(); $('#minis').children().remove(); return false;});
-$('#next').click(function() {imgcounter++;updateimg(); $('#minis').children().remove(); return false;});
+$('#writing_fl').click(function() {removePatches(); setHashParam({key: 'testo', value: 'fl'}); updatestyle(this); return false});
+$('#writing_sp').click(function() {removePatches(); setHashParam({key: 'testo', value: 'sp'}); updatestyle(this); return false});
+$('#pagelist').change(function(e) {
+    value = $(e.target).find('option:selected')[0].value
+    setHashParam({key: 'folio', value: value});
+});
+$('#prev').click(function() {
+    if (imgcounter - 1 >= 0) {
+        $('#pagelist option:eq('+(imgcounter-1)+')').prop('selected', true);
+        $('#pagelist').change()
+    }
+    return false;
+});
+$('#next').click(function() {
+    if (imgcounter + 1 < filelist[imglist].length - 1) {
+       $('#pagelist option:eq('+(imgcounter+1)+')').prop('selected', true);
+        $('#pagelist').change()
+    }
+    return false;
+});
+$('#switch_order').click(function(e) {
+    location = $(e.target).attr('href') + window.location.hash
+    return false;
+})
+$('.toggleTranscription').click(function(e) {
+
+    folio = $('#pagelist > option:selected').get(0).value
+
+    mode_id = $(e.target).closest('p').find('a:eq(0)').attr('id')
+    mode = mode_id.match('sp') ? 'sp' : 'fl'
+    
+    container = $('#testo')
+    if (container.is(':visible')) {
+        if (container.data('mode') ===  mode) {
+            container.hide()
+            $('#page').addClass('page_wide_margin')
+            $('#page').removeClass('page_thin_margin')   
+        }        
+    } else {        
+        container.show()
+        $('#page').addClass('page_thin_margin')
+        $('#page').removeClass('page_wide_margin')
+    }
+    
+    showTranscription(folio, mode)
+    
+    return false;
+})
 </script>
     </body>
 </html>
