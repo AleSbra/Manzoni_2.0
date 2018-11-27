@@ -101,12 +101,12 @@
                                 </xsl:when>
                                 <xsl:when test="tei:line[@type = 'title']">
                                     <h1>
-                                        <xsl:value-of select="tei:line/text()"/>
+                                        <xsl:apply-templates/>
                                     </h1>
                                 </xsl:when>
                                 <xsl:when test="tei:line[@type = 'subtitle']">
                                     <h2>
-                                        <xsl:value-of select="tei:line/text()"/>
+                                        <xsl:apply-templates/>
                                     </h2>
                                 </xsl:when>
 
@@ -151,7 +151,7 @@
     <xsl:template match="tei:milestone">
         <xsl:choose>
             <xsl:when test="@unit='seg'">
-                <a href="../../testo_apparato/puliti/{@n}.html" target="_blank">[<xsl:value-of select="@n"/>]</a>
+                <a href="testo_apparato/puliti/{$fl-sp}/{@n}.html" target="_blank">[<xsl:value-of select="@n"/>]</a>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:variable name="cur-mile" select="@xml:id"/>

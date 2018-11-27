@@ -305,7 +305,7 @@
                 <graphic url="images/024a.jpg.png" width="1285.03125px" height="1870.03125px"/>
                 <zone n="1" xml:id="t1" ulx="733" uly="229" lrx="1000" lry="292"
                     change="#cfl01 #rfl01" style="font-size:24" rend="posizione:1.1 2">
-                    <line type="title">Cap. III</line>
+                    <line type="title"><milestone unit="seg" n="0001"/>Cap. III</line>
                 </zone>
                 <zone n="2" xml:id="t1-1" ulx="733" uly="229" lrx="1000" lry="292" change="#csp2-1"
                     style="nobox;">
@@ -332,7 +332,7 @@
                 </zone>
                 <zone n="7" xml:id="t4" ulx="793" uly="287" lrx="1023" lry="337"
                     change="#cfl4 #rfl2" style="font-size:24" rend="posizione:0.8 0.8">
-                    <line type="subtitle">Il Causidico</line>
+                    <line type="subtitle"><milestone unit="seg" n="0002"/>Il Causidico</line>
                 </zone>
                 <zone n="8" xml:id="t4-1" ulx="793" uly="287" lrx="1023" lry="337" change="#csp2-2"
                     style="nobox;">
@@ -342,9 +342,9 @@
 
                 <zone n="9" xml:id="t5" ulx="616" uly="388" lrx="1242" lry="1771"
                     change="#cfl5 #rfl3" style="font-size:24" rend="posizione:2.3 0.8">
-                    <line><milestone unit="section" type="p" xml:id="pfl01"/>I tre rimasti a consiglio erano agitati </line>
+                    <line><milestone unit="section" type="p" xml:id="pfl01"/><milestone unit="seg" n="0003"/>I tre rimasti a consiglio erano agitati </line>
                     <line>turbati per la stessa causa ma in diverso </line>
-                    <line>modo. Fermo si trovava nello stato d’un </line>
+                    <line>modo. <milestone unit="seg" n="0004"/>Fermo si trovava nello stato d’un </line>
                     <line>uomo il quale ad un tratto dalla prosperità </line>
                     <line>e dalla gioja è balzato in una <add place="above" style="indent:1033"
                             >sventura</add><del>miseria </del>
@@ -353,7 +353,7 @@
                         <del>che non conosce ancora appieno; che </del>
                     </line>
                     <line>della quale non conosce che una parte; </line>
-                    <line>e ansioso di sapere il di più, vuole </line>
+                    <line><milestone unit="seg" n="0005"/>e ansioso di sapere il di più, vuole </line>
                     <line>essere informato di tutto, aspetta sospira </line>
                     <line>nuove rivelazioni e non ne può aspettare </line>
                     <line>che non accrescano <del>e non ne può aspettare </del>
@@ -456,9 +456,9 @@
                 </zone>
                 <zone n="3.1" xml:base="t9-1" ulx="64" uly="295" lrx="622" lry="872" change="#rsp04"
                     style="font-size:24" rend="posizione:1.9 0.8">
-                    <line><milestone unit="seg" n="0005"/>estranei) pure non pote’ <del>trattenersi dal </del></line>
+                    <line><!--<milestone unit="seg" n="0005"/>-->estranei) pure non pote’ <del>trattenersi dal </del></line>
                     <line>tenersi di farle un rimprovero. </line>
-                    <line><milestone unit="seg" n="0006"/>- A tua madre non dir niente d’una </line>
+                    <line><!--<milestone unit="seg" n="0006"/>-->- A tua madre non dir niente d’una </line>
                     <line>cosa simile! </line>
                     <line>- Ora vi dirò tutto, rispose Lucia, asciu</line>
                     <line>gandosi gli occhi col grembiule. </line>
@@ -626,7 +626,7 @@
             </surfaceGrp>
             <surfaceGrp>
                 <surface n="51r.2" xml:id="s3.2" type="patch" subtype="verso" flipping="true"
-                    attachment="glued">
+                    attachment="glued"> 
                     <graphic url="images/024c2.jpg.png" width="607.03125px" height="702.03125px"/>
                     <zone n="1" xml:id="t14" ulx="15" uly="323" lrx="597" lry="545" change="#csp6-1"
                         style="font-size:24" rend="posizione:3.3 -2"><line style="indent:70">

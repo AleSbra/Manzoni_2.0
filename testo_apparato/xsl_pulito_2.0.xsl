@@ -39,6 +39,10 @@
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/>
                         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"/>
                         <style>
+                            h1{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+                            font-size: 20px;
+                            font-weight: bold;
+                            text-align: justify;}
                             p{
                                 font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
                                 font-size: 14px;
@@ -81,7 +85,7 @@
                                         <a href="{following::tei:lem[1][@n]/@n}.html"> >></a>
                                     </xsl:if>
                               
-                            </h1>
+                            </h1> 
                             <div>
                                 <xsl:for-each select="tei:lem">
                                     <xsl:apply-templates/>
