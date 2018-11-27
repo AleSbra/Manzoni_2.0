@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0" xmlns:svg="http://www.w3.org/2000/svg"
     exclude-result-prefixes="svg">
-    <xsl:param name="mode" select="'reading_sp'"/>
+    <xsl:param name="mode" select="'writing_sp'"/>
     <xsl:template match="/" exclude-result-prefixes="svg">
         <xsl:for-each select="//tei:surfaceGrp">
             <xsl:variable name="surface-id" select="@xml:id"/>

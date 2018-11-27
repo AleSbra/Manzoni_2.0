@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs"
     xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0">
-    <xsl:param name="fl-sp">sp</xsl:param>
+    <xsl:param name="fl-sp">fl</xsl:param>
 <!-- tempalte per l'applicazione di name="contenuto" al variare del parametro -->
     <xsl:template match="//tei:sourceDoc/tei:surfaceGrp/tei:surface[@n]">
         <xsl:choose>
