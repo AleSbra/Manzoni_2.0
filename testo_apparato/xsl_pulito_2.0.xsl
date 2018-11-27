@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs"
     xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0">
-    <xsl:param name="crapp">fl</xsl:param>
+    <xsl:param name="crapp">sp</xsl:param>
     <xsl:template match="tei:teiHeader"/>
     <!--<xsl:template match="tei:del"/>-->
     <xsl:template match="tei:text/tei:body/tei:div[contains(@n, concat('_', $crapp))]">
@@ -47,6 +47,7 @@
                                 font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
                                 font-size: 14px;
                                 text-align: justify;
+                                margin-top:10px;
                             }
                            
                             .dropdown-menu{

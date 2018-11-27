@@ -359,9 +359,9 @@
                     <line>che non accrescano <del>e non ne può aspettare </del>
                     </line>
                     <line><del>che non accrescano </del> il suo rammarico che non </line>
-                    <line>peggiorino la sua condizione. <milestone unit="section" type="p" xml:id="pfl02"/>Al dolore </line>
+                    <line>peggiorino la sua condizione. <milestone unit="section" type="p" xml:id="pfl02"/><milestone unit="seg" n="0006"/>Al dolore </line>
                     <line>al rancore alla rabbia si aggiungeva </line>
-                    <line>ora il mantello della gelosia. Egli aveva </line>
+                    <line>ora il mantello della gelosia. <milestone unit="seg" n="0007"/>Egli aveva </line>
                     <line>sempre avuta piena fede in Lucia, </line>
                     <line>ma un mistero di questo genere, un </line>
                     <line>silenzio di questa materia lo tormentava, </line>
@@ -456,9 +456,9 @@
                 </zone>
                 <zone n="3.1" xml:base="t9-1" ulx="64" uly="295" lrx="622" lry="872" change="#rsp04"
                     style="font-size:24" rend="posizione:1.9 0.8">
-                    <line><!--<milestone unit="seg" n="0005"/>-->estranei) pure non pote’ <del>trattenersi dal </del></line>
+                    <line><milestone unit="seg" n="0005"/>estranei) pure non pote’ <del>trattenersi dal </del></line>
                     <line>tenersi di farle un rimprovero. </line>
-                    <line><!--<milestone unit="seg" n="0006"/>-->- A tua madre non dir niente d’una </line>
+                    <line><milestone unit="seg" n="0006"/>- A tua madre non dir niente d’una </line>
                     <line>cosa simile! </line>
                     <line>- Ora vi dirò tutto, rispose Lucia, asciu</line>
                     <line>gandosi gli occhi col grembiule. </line>
