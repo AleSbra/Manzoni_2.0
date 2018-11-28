@@ -29,7 +29,8 @@
    </teiHeader>
    <text>
       <body>
-         <div n="024a_fl">
+        <div type="fl">
+           <div n="024a_fl">
             <head><app>
                   <lem n="0001">Cap. III</lem>
                   <rdg type="prima"><del>Capitolo III</del></rdg>
@@ -78,7 +79,9 @@
                      nulla. </lem>
                </app></p>
          </div>
-         <div n="024a_sp">
+        </div>
+         <div type="sp">
+            <div n="024a_sp">
             <head>Capitolo III</head>
             <p><app>
                   <lem n="0001">Lucia entrò nella stanza terrena che Fermo stava angosciosamente
@@ -130,7 +133,7 @@
                      parlate! Gridavano in una volta la madre e lo sposo. - Santissima Vergine!
                      sclamò Lucia, chi avrebbe creduto che le cose potessero </lem>
                </app></p>
-         </div>
+         </div></div>
       </body>
    </text>
 </TEI>

@@ -65,7 +65,7 @@
 }
 a{text-decoration:none;
 color: #5C9EAD;
-font-size:16px;
+font-size:12px;
 }
 	p{marigin:2px;
 		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
@@ -241,7 +241,7 @@ text-shadow: -1px 0px hsla(0,0%,0%,1.00);
     <body>
       <header><h1 class="titolo">Dal <i>Fermo e Lucia</i> agli <i>Sposi Promessi</i></h1></header>
 <div class="title"><h2>Saggio di filologia degli scartafacci</h2>
-                        <h4>Alessia Marini, Elena Pierazzo</h4></div>
+                        <h4>Alessia Marini, Elena Pierazzo, Raffaele Viglianti</h4></div>
         <!--<p style="padding-top:10px; font-size:85%">Click on the image to see zones appearing according to the order in which they were
             written. Click on "Reading Sequence" to see zones appearing in the order in which
             they should be read.</p>--> 
@@ -271,7 +271,7 @@ text-shadow: -1px 0px hsla(0,0%,0%,1.00);
      
 
     <div id="testo" data-mode="fl">
-        <h3>Trascrizione (<span id="testo_mode">Fermo e Lucia</span>)</h3>
+        <h3>Trascrizione <span id="testo_mode">Fermo e Lucia</span></h3>
         <div id="testo_content"></div>
     </div>
     
@@ -710,6 +710,24 @@ function showTranscription(folio, mode) {
    
 }
 
+// show apparatus
+    // TODO: May want to combine this with showTranscription
+function showApparatus(appnum, mode) {
+    $.get('testoapparato/puliti/'+mode+'/'+appnum+'.html', function(data) {
+            text = $.grep($(data), function( n, i ) {
+                return ( $(n).hasClass('box') );
+            })[0]
+            text.classList.remove('box')
+            text.classList.add('transcription_content')
+            $('#testo_content').html(text)            
+        }, 'text')
+    
+    $('#testo').data('mode', mode)
+    mode_label = mode === 'sp'? 'Sposi Promessi' : 'Fermo e Lucia'
+    $('#testo_mode').text(mode_label)
+   
+}
+
 // get url params
 function getHashParams() {
 
@@ -809,6 +827,32 @@ $('.toggleTranscription').click(function(e) {
     
     return false;
 })
-</script>
+$('.toggleApparatus').click(function(e) {
+    window.alert("Made it!!")
+
+    folio = $('#pagelist > option:selected').get(0).value
+
+    mode_id = $(e.target).closest('p').find('a:eq(0)').attr('id')
+    mode = mode_id.match('sp') ? 'sp' : 'fl'
+    
+    container = $('#testo')
+    if (container.is(':visible')) {
+        if (container.data('mode') ===  mode) {
+            container.hide()
+            $('#page').addClass('page_wide_margin')
+            $('#page').removeClass('page_thin_margin')   
+        }        
+    } else {        
+        container.show()
+        $('#page').addClass('page_thin_margin')
+        $('#page').removeClass('page_wide_margin')
+    }
+    
+    showApparatus(appnum, mode)
+    
+    return false;
+})
+
+        </script>
     </body>
 </html>
