@@ -5,7 +5,7 @@
     <xsl:param name="crapp">sp</xsl:param>
     <xsl:template match="tei:teiHeader"/>
     <!--<xsl:template match="tei:del"/>-->
-    <xsl:template match="tei:text/tei:body/tei:div[contains(@n, concat('_', $crapp))]">
+    <xsl:template match="tei:text/tei:body//tei:div[contains(@n, concat('_', $crapp))]">
         <xsl:choose>
             <xsl:when test="$crapp='sp'">
                 <xsl:call-template name="apparato">
@@ -32,17 +32,65 @@
                 <html>
                     <head>
                         <title>
-                            <xsl:value-of select="concat(ancestor::tei:div[contains(@n, concat('_', $crapp))], ': ', tei:lem/@n)"/>
+                            <xsl:value-of select="concat(ancestor::tei:div/@n, ': ', tei:lem/@n)"/>
                         </title>
                         <link rel="stylesheet"
                             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/>
                         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"/>
                         <style>
-                            h1{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-                            font-size: 20px;
-                            font-weight: bold;
-                            text-align: justify;}
+                            .title{
+                            border: solid;
+                            border-color:#5C9EAD;
+                            margin-left:10%;
+                            margin-right: 10%;
+                            margin-top: 2px;
+                            padding: 2px;}
+                            h1{
+                            font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+                            color: #eeeeee;
+                            text-align: center;
+                            font-weight: bolder;
+                            font-size: 48px;
+                            }
+                            h2{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+                            text-align: center;
+                            text-align: center;
+                            font-weight: bolder;}
+                            
+                            h3{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+                            text-align: center;
+                            text-align: center;}
+                            
+                            h4{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+                            text-align: center;
+                            text-align: center;}
+                            
+                            h5{font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+                            color: #326273;
+                            margin-top: 10px;
+                            text-align: left}
+                            
+                            header{
+                            background-color: #326273;
+                            width: auto;
+                            height: auto;
+                            align-self: center;
+                            align-content: center;
+                            align-items: center;
+                            float: none;
+                            padding:3.5px;
+                            margin-left: 10%;
+                            margin-right: 10%;
+                            margin-top: 2%;
+                            }
+                            body{
+                            background-color: #eeeeee;
+                            width: 100%;
+                            border-radius: 25%;
+                            height: auto;
+                            }
+                            
                             p{
                                 font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
                                 font-size: 14px;
@@ -72,21 +120,35 @@
                                 box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
                             }</style>
                     </head>
-                    <body>
+                    <body><header>
+                        <h1 class="titolo">Dal <i>Fermo e Lucia</i> agli <i>Sposi Promessi</i></h1>
+                    </header>
+                        <div class="title">
+                            <h2>Saggio di filologia degli scartafacci</h2>
+                            <h4>Alessia Marini, Elena Pierazzo, Raffaele Viglianti</h4>
+                        </div>
                         <div class="container">
-                            <h1>
+                            <h2>Apparato <xsl:choose>
+                                <xsl:when test="$crapp = 'sp'">Sposi Promessi</xsl:when>
+                                <xsl:otherwise>Fermo e Lucia</xsl:otherwise>
+                            </xsl:choose>
+                            </h2>
+                            <h3> 
                                 <xsl:if test="preceding::tei:lem[parent::tei:app[parent::tei:p |parent::tei:head]][1][@n]">
                                         <a
                                             href="{preceding::tei:lem[parent::tei:app[parent::tei:p |parent::tei:head]][1][@n]/@n}.html"
                                             >&lt;&lt; </a>
                                     </xsl:if> 
-                                <xsl:value-of
-                                    select="concat(ancestor::tei:div/@n, ': ', tei:lem/@n)"/>  
+                                
+                                <xsl:text>Folio </xsl:text><xsl:value-of
+                                    select="concat(substring-before(ancestor::tei:div/@n, '_'), ': frase', tei:lem/@n)"/> 
+                                
+                                
                                 <xsl:if test="following::tei:lem[1][@n]">
                                         <a href="{following::tei:lem[1][@n]/@n}.html"> >></a>
                                     </xsl:if>
                               
-                            </h1> 
+                            </h3> 
                             <div>
                                 <xsl:for-each select="tei:lem">
                                     <xsl:apply-templates/>
