@@ -80,7 +80,12 @@
                   </app>
                </p>
             </div>
-
+               <div n="024b_fl">
+                  <p/>
+               </div>
+               <div n="024c_fl">
+                  <p/>
+               </div>
             </body>
          </text>
          <text xml:id="sp">
@@ -123,9 +128,7 @@
                         l’avrebbe provata se si fosse trattato di </lem>
                   </app></p>
             </div>
-            <div n="024b_fl">
-               <p/>
-            </div>
+            
             <div n="024b_sp">
                <p><app>
                      <lem n="0005"><app>
@@ -163,9 +166,7 @@
                   </app></p>
 
             </div>
-            <div n="024c_fl">
-               <p/>
-            </div>
+            
             <div n="024c_sp">
                <p><app>
                      <lem n="0008" type="cancellanda">Se noi ci lamentavamo al padrone, il padrone
@@ -224,10 +225,8 @@
                               </app> forte, e Don Rodrigo <app>
                                  <lem n="0010a5">dire</lem>
                                  <rdg type="sps">diceva</rdg>
-                              </app>:scommettiamo. </lem>
+                              </app>: scommettiamo. </lem>
                         </app></rdg>
-
-
                   </app><app>
                      <lem n="0011">sulla <app>
                            <lem n="0011.1">strada, ma</lem>
