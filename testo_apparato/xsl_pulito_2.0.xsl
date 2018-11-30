@@ -189,14 +189,20 @@
                 <span class="caret"/>
             </button>
             <ul class="dropdown-menu">
-               <xsl:for-each select="tei:rdg"><li>
+               <xsl:for-each select="tei:rdg |tei:rdg [ancestor::tei:rdg]"><li>
                     <a>
                         <xsl:choose>
+                            <xsl:when test="@type='prima'">
+                                <i>prima: </i>
+                            </xsl:when>
                             <xsl:when test="@type='da'">
                                 <i>da: </i>
                             </xsl:when>
                             <xsl:when test="@type='sps'">
                                 <i>sps: </i>
+                            </xsl:when>
+                            <xsl:when test="@type='sts'">
+                                <i>sts: </i>
                             </xsl:when>
                             <xsl:when test="@type='su'"> <xsl:choose>
                                 <xsl:when test="@type='da'">
