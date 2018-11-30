@@ -2,10 +2,10 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs"
     xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0">
-    <xsl:param name="crapp">sp</xsl:param>
+    <xsl:param name="crapp">fl</xsl:param>
     <xsl:template match="tei:teiHeader"/>
     <!--<xsl:template match="tei:del"/>-->
-    <xsl:template match="tei:text/tei:body//tei:div[contains(@n, concat('_', $crapp))]">
+    <xsl:template match="tei:text/tei:body/tei:div[contains(@n, concat('_', $crapp))]">
         <xsl:choose>
             <xsl:when test="$crapp='sp'">
                 <xsl:call-template name="apparato">
@@ -27,6 +27,7 @@
     </xsl:template>
 <xsl:template name="apparato">
     <xsl:param name="crapp"/>
+    <xsl:variable name="current-text" select="ancestor::tei:text[@xml:id]/@xml:id"/>
         <xsl:for-each select="tei:p/tei:app | tei:head/tei:app">
             <xsl:result-document href="puliti/{$crapp}/{tei:lem/@n}.html">
                 <html>
@@ -134,18 +135,18 @@
                             </xsl:choose>
                             </h2>
                             <h3> 
-                                <xsl:if test="preceding::tei:lem[parent::tei:app[parent::tei:p |parent::tei:head]][1][@n]">
+                                <xsl:if test="preceding::tei:lem[ancestor::tei:text/@xml:id = $current-text][parent::tei:app[parent::tei:p |parent::tei:head]][1][@n]">
                                         <a
-                                            href="{preceding::tei:lem[parent::tei:app[parent::tei:p |parent::tei:head]][1][@n]/@n}.html"
+                                            href="{preceding::tei:lem[ancestor::tei:text/@xml:id = $current-text][parent::tei:app[parent::tei:p |parent::tei:head]][1][@n]/@n}.html"
                                             >&lt;&lt; </a>
                                     </xsl:if> 
                                 
                                 <xsl:text>Folio </xsl:text><xsl:value-of
-                                    select="concat(substring-before(ancestor::tei:div/@n, '_'), ': frase', tei:lem/@n)"/> 
+                                    select="concat(substring-before(ancestor::tei:div/@n, '_'), ': frase ', tei:lem/@n)"/> 
                                 
                                 
-                                <xsl:if test="following::tei:lem[1][@n]">
-                                        <a href="{following::tei:lem[1][@n]/@n}.html"> >></a>
+                                <xsl:if test="following::tei:lem[1][@n][ancestor::tei:text/@xml:id = $current-text]">
+                                    <a href="{following::tei:lem[1][@n][ancestor::tei:text/@xml:id = $current-text]/@n}.html"> >></a>
                                     </xsl:if>
                               
                             </h3> 
