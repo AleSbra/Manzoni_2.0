@@ -423,7 +423,7 @@
                 <graphic url="images/024b.jpg.png" width="1285.03125px" height="1870.03125px"/>
                 <zone n="1" xml:id="t8" ulx="624" uly="227" lrx="1272" lry="1712"
                     change="#cfl6 #rfl4" style="font-size:24" rend="posizione:2.2 0.8">
-                    <line><milestone unit="section" type="p" xml:id="pfl03"/>Agnese, la madre di Lucia era pure </line>
+                    <line><milestone unit="section" type="p" xml:id="pfl03"/><milestone unit="seg" n="0008"/>Agnese, la madre di Lucia era pure </line>
                     <line>stupita, scandalizzata di essere all’</line>
                     <line>oscuro di una cosa simile: ella che sapeva </line>
                     <line>tante cose che non la toccavano per </line>
@@ -433,14 +433,14 @@
                     <line>caso il bisogno d’ascoltare non avesse vinto </line>
                     <line>d’assai quello di parlare. <milestone unit="section" type="p" xml:id="pfl04"/><del>Parla! Parla! </del>
                     </line>
-                    <line><del>Parlate! Parlate! </del> Lucia… ma </line>
+                    <line><del>Parlate! Parlate! </del> <milestone unit="seg" n="0009"/>Lucia… ma </line>
                     <line>dalle sue parole il lettore intenderà lo stato </line>
                     <line>del suo animo. Parla! Parla! Parlate! </line>
                     <line>Parlate! Gridavano in una volta la </line>
-                    <line>madre e Fermo. Lucia atterrita, costernata, </line>
+                    <line>madre e Fermo. <milestone unit="seg" n="0010"/>Lucia atterrita, costernata, </line>
                     <line>vergognosa, singhiozzando, arrossando, </line>
                     <line>sclamò! <del>Vergine </del> Santissima Vergine! </line>
-                    <line>Chi avrebbe creduto che le cose sarebbero </line>
+                    <line><milestone unit="seg" n="0011"/>Chi avrebbe creduto che le cose sarebbero </line>
                     <line>giunte a questo segno! <milestone unit="section" type="p" xml:id="pfl05"/>Quel senza timore </line>
                     <line>di Dio di Don Rodrigo veniva spesso </line>
                     <line>alla filanda <del>dove io andava a </del><add place="above"
@@ -510,21 +510,21 @@
                 <graphic url="images/024c.jpg.png" width="1285.03125px" height="1870.03125px"/>
                 <zone n="1" xml:id="t10" ulx="628" uly="193" lrx="1252" lry="1703"
                     change="#cfl7 #rfl5" style="font-size:24" rend="posizione:2.2 0.8">
-                    <line>Ne diceva una trista a chi una peggio </line>
+                    <line><milestone unit="seg" n="0012"/>Ne diceva una trista a chi una peggio </line>
                     <line>e si pigliava <del type="gap"/>
                         <del>certe lib </del> tante libertà, chi </line>
                     <line>fuggiva, chi gridava; e purtroppo c’era </line>
                     <line>chi lasciava fare. <del>Il padrone </del>
                     </line>
-                    <line><milestone unit="section" type="p" xml:id="pfl06"/>Se ci lamentavamo al padrone, egli </line>
+                    <line><milestone unit="section" type="p" xml:id="pfl06"/><milestone unit="seg" n="0013"/>Se ci lamentavamo al padrone, egli </line>
                     <line>ci diceva: badate a fare il fatto vostro, </line>
                     <line>non gli fate ansa, sono scherzi, e borbottava </line>
                     <line>poi: gli è un cavaliere; gli è un uomo </line>
                     <line>che può fare del male, è un uomo che </line>
-                    <line>sa mostrare il viso. Quel tristo veniva </line>
+                    <line>sa mostrare il viso. <milestone unit="seg" n="0014"/>Quel tristo veniva </line>
                     <line>talvolta con alcuni più amici, gente </line>
                     <line>come lui<del>; veniva e mostrava ad essi </del></line>
-                    <line><del type="gap"/> . Un giorno mi trovò mentre </line>
+                    <line><del type="gap"/> . <milestone unit="seg" n="0015"/>Un giorno mi trovò mentre </line>
                     <line>io usciva e mi volle tirare in disparte </line>
                     <line>e si prese con me più libertà: io gli </line>
                     <line>sfuggii ed egli mi disse in collera: </line>
