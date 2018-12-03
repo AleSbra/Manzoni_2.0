@@ -208,6 +208,9 @@
                     <li>
                         <a>
                             <xsl:choose>
+                                <xsl:when test="@type='ins'">
+                                    <i>inserito: </i>
+                                </xsl:when>
                                 <xsl:when test="@type = 'prima'">
                                     <i>prima: </i>
                                 </xsl:when>

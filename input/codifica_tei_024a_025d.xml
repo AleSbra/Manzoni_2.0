@@ -646,13 +646,13 @@
                 <graphic url="images/024d.jpg" width="1285.03125px" height="1870.03125px"/>
                 <zone n="1" xml:id="t15" ulx="655" uly="182" lrx="1279" lry="1687"
                     change="#cfl8 #rfl6" style="font-size:24" rend="posizione:2.4 0.8">
-                    <line><milestone unit="section" type="p" xml:id="pfl07"/>Ma la filanda era sul finire per </line>
+                    <line><milestone unit="section" type="p" xml:id="pfl07"/><milestone unit="seg" n="0016"/>Ma la filanda era sul finire per </line>
                     <line>grazia di Dio, e per quei pochi giorni io </line>
                     <line>stetti sempre in mezzo alle altre </line>
                     <line>di modo ch’egli non mi potè cogliere. </line>
                     <line>Ma la persecuzione non finì: <del>quel </del>
                     </line>
-                    <line>colui, mi aspettava quando io andava </line>
+                    <line>colui, <milestone unit="seg" n="0017"/>mi aspettava quando io andava </line>
                     <line>al mercato e vi ricorderete mamma </line>
                     <line>ch’io vi dissi che aveva paura d’andar </line>
                     <line>sola e non ci andai più: mi aspettava </line>
@@ -661,7 +661,7 @@
                     <line>Ma pregai tanto Fermo che aspettasse </line>
                     <line>le nozze: pensava che quando sarei </line>
                     <line>sua moglie colui non avrebbe più </line>
-                    <line>tormentarmi; ed ora… <milestone unit="section" type="p" xml:id="pfl08"/>Qui l<del>a </del><add place="superimposed"
+                    <line>tormentarmi; ed ora… <milestone unit="section" type="p" xml:id="pfl08"/><milestone unit="seg" n="0018"/>Qui l<del>a </del><add place="superimposed"
                         >e</add></line>
                     <line><del>povera </del> parole della povera Lucia </line>
                     <line>furono tronche da un violento </line>
@@ -747,19 +747,19 @@
                 <graphic url="images/025a.jpg.png" width="1285.03125px" height="1870.03125px"/>
                 <zone n="1" xml:id="t18" ulx="645" uly="179" lrx="1269" lry="1660"
                     change="#cfl9 #rfl7" style="font-size:24" rend="posizione:2.4 0.8">
-                    <line>Parlarne a tua madre? disse Agnese</line>
+                    <line><milestone unit="seg" n="0019"/>Parlarne a tua madre? disse Agnese</line>
                     <line><del type="gap"/> se io l’avessi saputo </line>
                     <line>prima… <milestone unit="section" type="p" xml:id="pfl09"/>Lucia non rispose perché </line>
                     <line>la risposta che si sentiva in mente </line>
                     <line>non era da darsi a sua madre: tutto </line>
                     <line>il vicinato ne sarebbe stato informato.</line>
-                    <line><del>Lucia fu </del> I singulti di Lucia la dispen</line>
+                    <line><del>Lucia fu </del> <milestone unit="seg" n="0020"/>I singulti di Lucia la dispen</line>
                     <line>savano dall’obbligo di parlare. <del>Non l’hai </del></line>
                     <line>Non ne <del>f </del>hai <del>detto </del> fatto parola </line>
                     <line>con nessuno? Ridomandò Agnese. </line>
                     <line><milestone unit="section" type="p" xml:id="pfl10"/>Si mamma l’ho detto al Padre <del>Galdino </del></line>
                     <line><add place="margin" style="indent:546">Cristoforo</add> in confessione –
-                            <del>E Agn </del> Hai fatto bene; </line>
+                        <del>E Agn </del> <milestone unit="seg" n="0021"/>Hai fatto bene; </line>
                     <line>ma dovevi dirlo anche a tua madre. </line>
                     <line>E che ti ha detto il Padre <del>Galdino </del>
                         <add place="above" style="indent:972">Cristoforo</add>? </line>
@@ -769,7 +769,7 @@
                     <line>e che egli ci penserebbe e che se </line>
                     <line>durava la persecuzione egli ci penserebbe </line>
                     <line><del>d’una </del>
-                        <del type="gap"/> <milestone unit="section" type="p" xml:id="pfl11"/>Oh che imbroglio, che </line>
+                        <del type="gap"/> <milestone unit="section" type="p" xml:id="pfl11"/><milestone unit="seg" n="0022"/>Oh che imbroglio, che </line>
                     <line>imbroglio! riprese la madre. Fermo </line>
                     <line>si arrestò tutto ad un tratto; guardò </line>
                 </zone>
@@ -826,7 +826,7 @@
                 <graphic url="images/025b.jpg.png" width="1285.03125px" height="1827.03125px"/>
                 <zone n="1.1" xml:id="t20-1" ulx="636" uly="179" lrx="1281" lry="1712"
                     change="#cfl10 #rfl8" style="font-size:24" rend="posizione:2.5 0.8">
-                    <line>Lucia con un atto di tenerezza accorata </line>
+                    <line><milestone unit="seg" n="0023"/>Lucia con un atto di tenerezza accorata </line>
                     <line>e rabbiosa, e disse: questa è l’ultima </line>
                     <line>
                         <del>che fa quel birbante! </del>
@@ -835,20 +835,20 @@
                     <line>
                         <del>Gettandogli quasi le braccia al collo </del>
                     </line>
-                    <line>No no per amor del cielo. <del>Come volete </del></line>
+                    <line><milestone unit="seg" n="0024"/>No no per amor del cielo. <del>Come volete </del></line>
                     <line><del>che Dio ci ajuti </del> Dio c’è anche pei poveri! </line>
                     <line>Come volete ch’egli ci ajuti se facciamo </line>
                     <line>del male? <milestone unit="section" type="p" xml:id="pfl13"/>No no per amor del cielo </line>
                     <line>ripeteva Agnese. Fermo disse Lucia, </line>
                     <line>voi avete un mestiere, ed io so lavorare, </line>
                     <line>andiamo lontano tanto che altrui non </line>
-                    <line>senta più parlare di noi. Ah! Lucia! </line>
+                    <line>senta più parlare di noi. <milestone unit="seg" n="0025"/>Ah! Lucia! </line>
                     <line><del type="gap"/> e poi? Non siamo ancora </line>
                     <line>marito e moglie: il curato vorrà farci </line>
                     <line>la fede di stato libero? <del>Non </del><add place="above"
                             style="indent:1023">non</add> saremo pigliati </line>
                     <line>come vagabondi? Dove andarci a porre? </line>
-                    <line><milestone unit="section" type="p" xml:id="pfl14"/>Lucia ricadde nel pianto. Sentite! </line>
+                    <line><milestone unit="section" type="p" xml:id="pfl14"/>Lucia ricadde nel pianto. <milestone unit="seg" n="0026"/>Sentite! </line>
                     <line>disse Agnese: sentitemi che son vecchia. </line>
                     <line>Era questa una confessione che la buona </line>
                     <line>Agnese faceva di rado, un caso di somma </line>
@@ -984,7 +984,7 @@
                 <graphic url="images/025c.jpg.png" width="1285.03125px" height="1891.03125px"/>
                 <zone n="1" xml:id="t24" ulx="643" uly="200" lrx="1267" lry="1711"
                     change="#cfl11 #rfl9" style="font-size:24" rend="posizione:2.2 0.8">
-                    <line>alle sue parole. Io ho veduto un </line>
+                    <line><milestone unit="seg" n="0027"/>alle sue parole. Io ho veduto un </line>
                     <line>poco il mondo: <del>il diavolo </del> non bisogna </line>
                     <line>spaventarsi troppo: il diavolo non è </line>
                     <line>mai brutto come si dipinge; e a noi </line>
@@ -997,7 +997,7 @@
                     <line><del>gente che si ride degli imbrogli </del><add place="above"
                             style="indent:666">che parevano disperati ma un buon parere di un uomo
                             </add><add place="below" style="indent:664">che aveva studiato, aggiustò
-                                tutto </add>.<milestone unit="section" type="p" xml:id="pfl15"/> Fate </line>
+                                tutto </add>.<milestone unit="section" type="p" xml:id="pfl15"/><milestone unit="seg" n="0028"/> Fate </line>
                     <line>a modo mio Fermo. Pigliati quei </line>
                     <line>quattro capponi, poveretti! Che doveva </line>
                     <line>sgozzare io questa mattina pel banchetto: </line>
@@ -1007,7 +1007,7 @@
                     <line>andate da lui, presentategli i capponi: </line>
                     <line>perché vedere quando provate che uno </line>
                     <line>può <del>dare </del><add place="above" style="indent:727">regalare</add>
-                        gli si dà retta. Contategli </line>
+                        gli si dà retta. <milestone unit="seg" n="0029"/>Contategli </line>
                     <line>tutto il fatto, e domandategli parere </line>
                     <line>che ne ho visto io <del>dig </del> della gente che </line>
                     <line>non sapevano dove dar del capo, </line>
@@ -1058,10 +1058,10 @@
                 <graphic url="images/025d.jpg.png" width="1285.03125px" height="1872.03125px"/>
                 <zone n="1" xml:id="t26" ulx="600" uly="205" lrx="1258" lry="1676"
                     change="#cfl12 #rfl10" style="font-size:24" rend="posizione:2.2 0.8">
-                    <line>un timollo che saltellando nella </line>
+                    <line><milestone unit="seg" n="0030"/>un timollo che saltellando nella </line>
                     <line>barca per disperazione cade nell’acqua </line>
                     <line>e si trova in casa sua. <milestone unit="section" type="p" xml:id="pfl17"/>Fate così Fermo. </line>
-                    <line><del>Quando </del> Nelle situazioni molto imbrogliate </line>
+                    <line><milestone unit="seg" n="0031"/><del>Quando </del> Nelle situazioni molto imbrogliate </line>
                     <line>il parere che piace più è quello di pigliar </line>
                     <line>tempo per avere un altro parere definitivo: </line>
                     <line>ogni consiglio e determinato </line>
@@ -1070,7 +1070,7 @@
                     <line>meglio è semplice, non nuoce, e nello </line>
                     <line>stesso tempo <del>lascia </del> dà una lusinga indeter </line>
                     <line>minata che per questo mezzo si troverà </line>
-                    <line>una uscita. Fermo adunque abbracciò molto </line>
+                    <line>una uscita. <milestone unit="seg" n="0032"/>Fermo adunque abbracciò molto </line>
                     <line>volentieri il parere <del>di Agnese che fu </del></line>
                     <line><del>superba di averlo fatto </del>. Lucia <del>lo agg </del></line>
                     <line>vi aggiunse la sua approvazione. </line>
