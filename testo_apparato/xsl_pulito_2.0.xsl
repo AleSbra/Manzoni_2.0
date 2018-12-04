@@ -208,6 +208,9 @@
                     <li>
                         <a>
                             <xsl:choose>
+                                <xsl:when test="@type='risc'">
+                                    <i>riscritto: </i>
+                                </xsl:when>
                                 <xsl:when test="@type='ins'">
                                     <i>inserito: </i>
                                 </xsl:when>
@@ -256,6 +259,11 @@
         <xsl:apply-templates/>
         <xsl:text>]</xsl:text>
     </xsl:template>
-
+    
+<xsl:template match="tei:seg">
+    <span style="text-decoration: underline">
+        <xsl:apply-templates/>
+    </span>
+</xsl:template>
 
 </xsl:stylesheet>
