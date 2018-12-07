@@ -168,6 +168,7 @@ text-shadow: -1px 0px hsla(0,0%,0%,1.00);
 	   background-color: white;
 	   border-bottom: 1px solid Black;
 	   padding: 6px;
+	   height: 20px;
 	}
 	
 	.cartiglio_mostra {
@@ -514,9 +515,7 @@ function showPatch(target) {
     if ($('#' + target.replace(/\./g, '_')).length == 0) {
         $.get('output/writing_sp/'+target+'--writing_sp.svg', function(data){        
         svgRoot = $(data).find('svg');
-        // Scale to page SVG scale.
-        w = svgRoot.attr("width");
-        h = svgRoot.attr("height");
+        
         visibleAnchor = false
         
         // place at coordinates of zone
@@ -537,14 +536,9 @@ function showPatch(target) {
             patchZone.closest('g').hide()
         }
     
-        page_w = $("#canvas > svg").attr('width');
-        new_w = (page_w * 40) / 100;
-        scale = (new_w*100) / w;
-        new_h = (h*scale)/100;
-    
         //resize svg width
         svgRoot.attr("width", patchLocation.width)
-               .attr("height", patchLocation.height);
+               .attr("height", patchLocation.height - 20);
                  
         tpl = $('#cartiglio_template').clone()  
         tpl.attr('id', target.replace(/\./g, '_'))
