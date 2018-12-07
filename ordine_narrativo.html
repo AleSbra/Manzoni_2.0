@@ -161,6 +161,7 @@ font-size:12px;
 	.cartiglio {
 	   position: absolute;
 	   border: 1px solid Black;
+	   background-color: white;
 	   box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
 	}
 	
@@ -513,11 +514,30 @@ $('body').click(function() {
 function showPatch(target) {
 
     if ($('#' + target.replace(/\./g, '_')).length == 0) {
-        $.get('output/reading_sp/'+target+'--reading_sp.svg', function(data){        
+        $.get('output/writing_sp/'+target+'--writing_sp.svg', function(data){        
         svgRoot = $(data).find('svg');
         // Scale to page SVG scale.
         w = svgRoot.attr("width");
         h = svgRoot.attr("height");
+        visibleAnchor = false
+        
+        // place at coordinates of zone
+        patchId = $(svgRoot).find('g > g').attr('data-patch')
+        patchZone = $('#canvas').find(patchId)
+        
+        if (patchZone.closest('g').css('display') !== 'none') {
+            visibleAnchor = true
+        }
+        
+        if (!visibleAnchor) {
+            patchZone.closest('g').show()
+        }
+        
+        patchLocation = patchZone.get(0).getBoundingClientRect()
+        
+        if (!visibleAnchor) {
+            patchZone.closest('g').hide()
+        }
     
         page_w = $("#canvas > svg").attr('width');
         new_w = (page_w * 40) / 100;
@@ -525,14 +545,14 @@ function showPatch(target) {
         new_h = (h*scale)/100;
     
         //resize svg width
-        svgRoot.attr("width", new_w)
-                 .attr("height", new_h);
+        svgRoot.attr("width", patchLocation.width)
+               .attr("height", patchLocation.height);
                  
         tpl = $('#cartiglio_template').clone()  
         tpl.attr('id', target.replace(/\./g, '_'))
         tpl.find('.patch').append(svgRoot);        
-        tpl.css('left', $("#canvas").get(0).getBoundingClientRect().x + ($("#canvas").width()/4))
-        tpl.css('top', $("#canvas").get(0).getBoundingClientRect().y + ($("#canvas").height()/2))
+        tpl.css('left', patchLocation.left + window.scrollX)
+        tpl.css('top', patchLocation.top + window.scrollY)
         tpl.show();
         tpl.find('.cartiglio_folio').text(target);        
         tpl.find('.patch').trigger("addToDom");
@@ -540,8 +560,33 @@ function showPatch(target) {
             svgRoot.find("g > g").toggle()
         })
         $('#cartigli').append(tpl)
+        
+        makeDraggable(tpl.get(0))
       });
     }
+}
+
+function makeDraggable(el) {
+    bcr = el.getBoundingClientRect()
+    
+    function disableSelect(event) {
+        event.preventDefault()
+    }
+    
+    function move(ev) {
+        el.style.position = 'absolute'
+        el.style.left = (ev.clientX - (bcr.width / 2)) + window.scrollX + 'px'
+        el.style.top = ev.clientY + window.scrollY + 'px'
+    }
+    el.querySelector('.cartiglio_info').addEventListener('mousedown', function() {
+        window.addEventListener('mousemove', move)
+        window.addEventListener('selectstart', disableSelect)
+    })
+    window.addEventListener('mouseup', function() {
+        window.removeEventListener('mousemove', move)
+        window.removeEventListener('selectstart', disableSelect)
+    })
+    
 }
 
 function removePatch(target) {    
