@@ -539,7 +539,7 @@ function showPatch(target) {
         //resize svg width
         svgRoot.attr("width", patchLocation.width)
                .attr("height", patchLocation.height - 20);
-                 
+        
         tpl = $('#cartiglio_template').clone()  
         tpl.attr('id', target.replace(/\./g, '_'))
         tpl.find('.patch').append(svgRoot);        
@@ -548,8 +548,8 @@ function showPatch(target) {
         tpl.show();
         tpl.find('.cartiglio_folio').text(target);        
         tpl.find('.patch').trigger("addToDom");
-        tpl.find('.cartiglio_mostra').click(function () {
-            svgRoot.find("g > g").toggle()
+        tpl.find('.cartiglio_mostra').click(function (ev) {
+            $(ev.target).closest('.cartiglio').find('svg g > g').toggle()
         })
         $('#cartigli').append(tpl)
         
@@ -570,7 +570,8 @@ function makeDraggable(el) {
         el.style.left = (ev.clientX - (bcr.width / 2)) + window.scrollX + 'px'
         el.style.top = ev.clientY + window.scrollY + 'px'
     }
-    el.querySelector('.cartiglio_info').addEventListener('mousedown', function() {
+    el.querySelector('.cartiglio_info').addEventListener('mousedown', function(ev) {
+        if (ev.target.classList.contains('cartiglio_mostra')) return false
         window.addEventListener('mousemove', move)
         window.addEventListener('selectstart', disableSelect)
     })
