@@ -465,7 +465,7 @@
                     <line>- Parla parla! Parlate, parlate! Gridavano </line>
                     <line>in una volta la madre e lo sposo. </line>
                     <line><milestone unit="section" type="p" xml:id="psp03"/>- Santissima Vergine! sclamò Lucia, </line>
-                    <line>chi avrebbe creduto che le cose potessero <milestone unit="seg" n="0007"/></line></zone>
+                    <line>chi avrebbe creduto che le cose potessero </line></zone>
                 <zone n="3.1" xml:base="t9-4" ulx="64" uly="295" lrx="622" lry="1646" change="#csp3"
                     style="font-size:24" rend="posizione:1.9 0.8">
                     <line>estranei) pure non pote’ <del>trattenersi dal </del></line>
@@ -555,7 +555,7 @@
                 </zone>
                 <zone n="5.1" xml:id="t12-1" ulx="36" uly="455" lrx="610" lry="592"
                     change="#csp5 #rsp05" style="font-size:24" rend="position:2 0.8">
-                    <line><milestone unit="seg" n="0008"/><milestone unit="seg" n="0009"/>Arrivare a questo segno! E con voce rotta </line>
+                    <line><milestone unit="seg" n="0007"/>Arrivare a questo segno! E con voce rotta </line>
                     <line>dal pianto raccontò che pochi giorni prima, </line>
                 </zone>
                 <zone xml:id="t12-2" n="5.2" ulx="36" uly="592" lrx="610" lry="1262" change="#csp5-1 #rsp06b"
@@ -592,7 +592,7 @@
                     </line></zone>
                 <zone n="5.3" xml:id="t12-3" ulx="81" uly="1262" lrx="609" lry="1666"
                     change="#csp7 #rsp07" rend="posizione:1.7 0.8">
-                    <line><milestone unit="seg" n="0011"/>la <del>via, in </del> strada, ma Lucia era nel </line>
+                    <line>la <del>via, in </del> strada, ma Lucia era nel </line>
                     <line>mezzo delle compagne con gli occhi bassi; </line>
                     <line>e l’altro signore sghignazzava, e Don </line>
                     <line><del>Rodrigo </del>
@@ -608,7 +608,7 @@
                     <graphic url="images/024c1.jpg.png" width="607.03125px" height="702.03125px"/>
                     <zone n="1" xml:id="t13" corresp="#t12-2" ulx="6" uly="36" lrx="597" lry="690"
                         change="#csp6 #rsp06" style="font-size:24" rend="posizione:4.5 -1">
-                        <line><milestone unit="seg" n="0010"/>mentre ella tornava dalla filanda ed era </line>
+                        <line>mentre ella tornava dalla filanda ed era </line>
                         <line>rimasta addietro dalle sue compagne, le era </line>
                         <line>passato innanzi Don Rodrigo, in compagnia </line>
                         <line>d’un altro signore; che il primo aveva </line>
@@ -678,7 +678,7 @@
                 </zone>
                 <zone n="3.1" xml:id="t16-1" ulx="51" uly="221" lrx="649" lry="571"
                     style="font-size:24" change="#csp8 #rsp08" rend="posizione:1.7 0.8">
-                    <line><milestone unit="section" type="p" xml:id="psp05"/><milestone unit="seg" n="0012"/>- A chi hai raccontato? Domandò Agnese, </line>
+                    <line><milestone unit="section" type="p" xml:id="psp05"/><milestone unit="seg" n="0008"/>- A chi hai raccontato? Domandò Agnese, </line>
                     <line>andando incontro, non senza un po’ di sdegno, </line>
                     <line><del>alla parola </del> al nome del confidente pre</line>
                     <line>ferito.</line>
@@ -687,7 +687,7 @@
                 </zone>
                 <zone n="3.2" xml:id="t16-2" ulx="51" uly="571" lrx="649" lry="788"
                     style="font-size:24" change="#csp8-2 #rsp09b"
-                    rend="posizione:1.5 0.8" type="patch">
+                    rend="posizione:1.5 0.8" type="patch"><milestone unit="seg" n="0009"/>
                     <line>soave di scusa <del>e fu quel giorno, se vi </del>
                     </line>
                     <line>
@@ -704,7 +704,7 @@
                 </zone>
                 <zone n="3.3" xml:id="t16-3" ulx="51" uly="788" lrx="649" lry="1597"
                     change="#csp8-3 #rsp10" style="font-size:24" rend="posizione:1.6 -0.5">
-                    <line><milestone unit="seg" n="0014"/>chiesa del convento: e, se avete posto mente, </line>
+                    <line><milestone unit="seg" n="0010"/>chiesa del convento: e, se avete posto mente, </line>
                     <line><del>quel giorno io indugiava </del>
                         <del>andava facendo </del>
                         <add place="above" style="indent:85">quella mattina io andava mettendo mano

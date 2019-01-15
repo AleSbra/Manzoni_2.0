@@ -237,6 +237,11 @@
             </ul>
         </div>
     </xsl:template>
+    
+    <xsl:template match="tei:app/tei:lem[ancestor::tei:lem]">
+        <ol><xsl:apply-templates select="tei:app/tei:lem"/>
+        <li><xsl:apply-templates select="//tei:rdg"/></li></ol>
+    </xsl:template>
 
     <xsl:template match="tei:del">
         <xsl:if test="@rend">
