@@ -445,7 +445,7 @@
                <div n="024c_sp">
                   <p><app>
                         <lem n="0007">Arrivare a questo segno! E con voce rotta dal pianto raccontò
-                           che pochi giorni prima, <app>
+                           che pochi giorni prima, <app type="cart">
                               <lem n="0007.4">mentre ella tornava dalla filanda, ed era rimasta
                                  addietro dalle sue compagne, le era passato innanzi Don Rodrigo, in
                                  compagnia d'un altro signore; che il primo aveva provato a
@@ -496,7 +496,7 @@
                               <rdg type="prima"><del>Rodrigo freme</del></rdg>
                            </app> diceva: vedremo, vedremo. Per grazia del cielo, continuò Lucia, quel
                            giorno era l’ultimo della filanda. Io <del>non </del> raccontai subito…</lem>
-                        <!--<rdg type="cancellanda">andare a questo segno! E singhiozzando continuò. <app>
+                        <rdg type="cancellanda">andare a questo segno! E singhiozzando continuò. <app>
                               <lem>Colui</lem>
                               <rdg type="prima">Colui continuando che</rdg>
                            </app>(che Dio … gli tocchi il cuore) cominciò quest’estate a venire alla
@@ -509,7 +509,7 @@
                               <rdg type="sps">quale</rdg>
                            </app> diceva una parola non mica <del>bella</del> buona, a chi faceva di
                            peggio. Che noi ci lamentavamo al padrone, il padrone ci rispondeva che
-                              <del>non</del> egli non sapeva che farci</rdg>-->
+                              <del>non</del> egli non sapeva che farci</rdg>
                      </app></p>
                </div>
                <div n="024d_sp">

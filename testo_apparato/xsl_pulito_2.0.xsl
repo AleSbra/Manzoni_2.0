@@ -193,18 +193,25 @@
                 </html>
             </xsl:result-document>
         </xsl:for-each>
-
-
     </xsl:template>
-
-    <xsl:template match="tei:app[ancestor::tei:app]">
-        <div class="dropdown" style="display:inline-block">
+    
+<!--<xsl:template match="tei:lem">
+            <ol><xsl:apply-templates select="tei:app/tei:lem,@type='cartiglio'">
+                <li><xsl:apply-templates select="/tei:rdg"/></li></ol>
+</xsl:template>-->
+    <xsl:template match="tei:app">
+        <xsl:choose>
+            <xsl:when test="tei:app, @type='cart'">
+                <ol><i><u><xsl:text>(su cartiglio)</xsl:text></u></i> <p><i><xsl:apply-templates select="tei:lem"/></i></p>
+                <li><i><u><xsl:text>(sotto cartiglio)</xsl:text></u></i><p><xsl:apply-templates select="tei:rdg"/></p></li></ol>
+            </xsl:when>
+            <xsl:otherwise>  <div class="dropdown" style="display:inline-block">
             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
                 <xsl:apply-templates select="tei:lem"/>
                 <span class="caret"/>
             </button>
-            <ul class="dropdown-menu">
-                <xsl:for-each select="tei:rdg | tei:rdg[ancestor::tei:rdg]">
+            <ol class="dropdown-menu">
+                <xsl:for-each select="tei:rdg">
                     <li>
                         <a>
                             <xsl:choose>
@@ -234,14 +241,12 @@
                         </a>
                     </li>
                 </xsl:for-each>
-            </ul>
-        </div>
+            </ol>
+        </div></xsl:otherwise>
+        </xsl:choose>
+      
     </xsl:template>
     
-    <xsl:template match="tei:app/tei:lem[ancestor::tei:lem]">
-        <ol><xsl:apply-templates select="tei:app/tei:lem"/>
-        <li><xsl:apply-templates select="//tei:rdg"/></li></ol>
-    </xsl:template>
 
     <xsl:template match="tei:del">
         <xsl:if test="@rend">
