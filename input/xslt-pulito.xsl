@@ -93,7 +93,7 @@
                             <xsl:choose>
                                 <xsl:when test="@type = 'patch'">
                                     <xsl:variable name="patch-id"
-                                        select="substring-after(@corresp, '#')"/>
+                                        select="@xml:id"/>
 
                                     <xsl:for-each select="//tei:zone[@xml:id = $patch-id]">
                                         <p id="{$patch-id}">
