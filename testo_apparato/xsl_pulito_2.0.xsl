@@ -106,6 +106,8 @@
                                 text-align: justify;
                                 margin-top: 10px;
                             }
+                            li{font-size: 14px;
+                            font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";}
                             
                             .dropdown-menu{
                                 position: absolute;
@@ -165,11 +167,6 @@
                                 </xsl:if>
 
                             </h3>
-                            <div>
-                                <xsl:for-each select="tei:lem">
-                                    <xsl:apply-templates/>
-                                </xsl:for-each>
-                            </div>
                             <ol>
                                 <xsl:for-each select="tei:rdg">
                                     <li class="rdg">
@@ -177,6 +174,12 @@
                                     </li>
                                 </xsl:for-each>
                             </ol>
+                            <div>
+                                <xsl:for-each select="tei:lem">
+                                    <xsl:apply-templates/>
+                                </xsl:for-each>
+                            </div>
+                            
                             <!--<xsl:for-each select="tei:lem/tei:app">
                                         <p><xsl:apply-templates select="tei:lem"></xsl:apply-templates></p>
                                         <ol><xsl:choose>
@@ -201,9 +204,13 @@
 </xsl:template>-->
     <xsl:template match="tei:app">
         <xsl:choose>
-            <xsl:when test="tei:app, @type='cart'">
-                <ol><i><u><xsl:text>(su cartiglio)</xsl:text></u></i> <p><i><xsl:apply-templates select="tei:lem"/></i></p>
-                <li><i><u><xsl:text>(sotto cartiglio)</xsl:text></u></i><p><xsl:apply-templates select="tei:rdg"/></p></li></ol>
+            <xsl:when test="/tei:app, @type='cart'">
+                <ol><i><u><xsl:text>(sotto cartiglio)</xsl:text></u></i> <xsl:for-each select="tei:rdg">
+                    <li class="rdg">
+                        <xsl:apply-templates/>
+                    </li>
+                </xsl:for-each><i><u><xsl:text>(su cartiglio)</xsl:text></u></i> <p><i><xsl:apply-templates select="tei:lem"/></i></p>
+                </ol>
             </xsl:when>
             <xsl:otherwise>  <div class="dropdown" style="display:inline-block">
             <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
@@ -271,7 +278,7 @@
     </xsl:template>
     
 <xsl:template match="tei:seg">
-    <span style="text-decoration: underline">
+    <span style="text-decoration: underline;">
         <xsl:apply-templates/>
     </span>
 </xsl:template>
