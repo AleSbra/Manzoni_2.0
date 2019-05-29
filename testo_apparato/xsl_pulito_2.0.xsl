@@ -176,7 +176,7 @@
                             </ol>
                             <div>
                                 <xsl:for-each select="tei:lem">
-                                    <xsl:apply-templates/>
+                                    <b><xsl:apply-templates/></b>
                                 </xsl:for-each>
                             </div>
                             
@@ -205,11 +205,11 @@
     <xsl:template match="tei:app">
         <xsl:choose>
             <xsl:when test="/tei:app, @type='cart'">
-                <ol><i><u><xsl:text>(sotto cartiglio)</xsl:text></u></i> <xsl:for-each select="tei:rdg">
+                <ol><xsl:for-each select="tei:rdg">
                     <li class="rdg">
                         <xsl:apply-templates/>
                     </li>
-                </xsl:for-each><i><u><xsl:text>(su cartiglio)</xsl:text></u></i> <p><i><xsl:apply-templates select="tei:lem"/></i></p>
+                </xsl:for-each> <p><xsl:apply-templates select="tei:lem"/></p>
                 </ol>
             </xsl:when>
             <xsl:otherwise>  <div class="dropdown" style="display:inline-block">

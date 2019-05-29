@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="file:/H:/SCRIVANIA/ADI%202019/BiDiPIN/input/xslt_autori.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Autrici bio-bibliografia</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div xml:id="aut_am">
+            <p><persName><name>Alda</name> <surname>Merini</surname></persName>
+            <placeName>Milano</placeName>,<date type="birth">21/03/1931</date> 
+               <placeName>Milano</placeName>,<date type="death">01/09/2009</date> </p>
+            <div xml:id="am_abstr"></div>
+            <div xml:id="am_biog"></div>
+            <div xml:id="am_risutili"></div>
+         </div>
+         <div xml:id="aut_mls">
+            <p><persName><name>Maria Luisa</name> <surname>Spaziani</surname></persName>
+            <placeName>Torino</placeName>,<date type="birth">07/12/1922</date>
+            <placeName>Roma</placeName>, <date type="death">30/06/2014</date></p>
+            <div xml:id="ms_abstr"></div>
+            <div xml:id="ms_biog"></div>
+            <div xml:id="ms_risutili"></div>
+         </div>
+         <div xml:id="aut_ar">
+            <p><persName><name>Amelia</name> <surname>Rosselli</surname></persName>
+            <placeName>Parigi</placeName>, <date type="birth">28/03/1930</date>
+            <placeName>Roma</placeName>, <date type="death">11/02/1996</date></p>
+            <div xml:id="ar_abstr"></div>
+            <div xml:id="ar_biog"></div>
+            <div xml:id="ar_risutili"></div>
+         </div>
+         <div xml:id="aut_dm">
+            <p><persName><name>Daria</name> <surname>Menicanti</surname></persName>
+            <placeName>Piacenza</placeName>, <date type="birth">1914</date>
+            <placeName>Mozzate</placeName>, <date type="death">04/01/1995</date></p>
+            <div xml:id="dm_abstr"></div>
+            <div xml:id="dm_biog"></div>
+            <div xml:id="dm_risutili"></div>
+         </div>
+         <div xml:id="aut_ap">
+            <p><persName><name>Antonia</name> <surname>Pozzi</surname></persName>
+            <placeName>Milano</placeName>, <date type="birth">13/02/1912</date>
+            <placeName>Milano</placeName>, <date type="death">03/12/1938</date></p>
+            <div xml:id="ap_abstr"></div>
+            <div xml:id="ap_biog"></div>
+            <div xml:id="ap_risutili"></div>
+         </div>
+      </body>
+  </text>
+</TEI>
